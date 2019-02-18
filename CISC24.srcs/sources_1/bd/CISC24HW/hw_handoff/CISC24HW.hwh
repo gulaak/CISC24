@@ -1,0 +1,2545 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri May  4 03:23:17 2018" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="CISC24HW" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" NAME="Rst" SIGIS="rst" SIGNAME="External_Ports_Rst">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shiftregister_0" PORT="Rst"/>
+        <CONNECTION INSTANCE="ps2Controller_0" PORT="reset"/>
+        <CONNECTION INSTANCE="PCounter_0" PORT="Rst"/>
+        <CONNECTION INSTANCE="clockdivider18_0" PORT="reset"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="Cathode" RIGHT="0" SIGIS="data" SIGNAME="decoder_0_Cathode">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="Cathode"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="7" NAME="Anode" RIGHT="0" SIGIS="data" SIGNAME="decoder_0_Anode">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="decoder_0" PORT="Anode"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="blk_mem_gen_0" PORT="clka"/>
+        <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clka"/>
+        <CONNECTION INSTANCE="blk_mem_gen_1" PORT="clkb"/>
+        <CONNECTION INSTANCE="AccumReg_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="ExecReg_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="divider_0" PORT="clk"/>
+        <CONNECTION INSTANCE="InterruptHandler_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="ScanToAscii_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="PCounter_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="PS2Timeout_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="DecodeUnit_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="BranchUnit_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="FSMController_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="clockdivider18_0" PORT="clk_in"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="DebugSel" SIGIS="undef" SIGNAME="External_Ports_DebugSel">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MemDebugMux_0" PORT="Sel"/>
+        <CONNECTION INSTANCE="RegDebugMux_0" PORT="Sel"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="8" NAME="DinSw" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_DinSw">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MemDebugMux_0" PORT="DinSW"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="data" SIGNAME="BranchUnit_0_CCROut">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="BranchUnit_0" PORT="CCROut"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="PS2_CLK" SIGIS="undef" SIGNAME="External_Ports_PS2_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="shiftregister_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="ps2Controller_0" PORT="ps2_clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="PS2_DATA" SIGIS="undef" SIGNAME="External_Ports_PS2_DATA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps2Controller_0" PORT="ps2_data"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="inttest" RIGHT="0" SIGIS="data" SIGNAME="ps2Controller_0_out_data">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ps2Controller_0" PORT="out_data"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_Sel">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="debugmux_0" PORT="Sel"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="2" NAME="RegSel" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_RegSel">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegDebugMux_0" PORT="RegSw"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/ALUMuxB_0" HWVERSION="1.0" INSTANCE="ALUMuxB_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALUMuxB" VLNV="xilinx.com:module_ref:ALUMuxB:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_ALUMuxB_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="RegB" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RamB" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="18" NAME="Immed" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Immediate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Immediate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="ALUMuxB_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ALU_Shift_Unit_0" HWVERSION="1.0" INSTANCE="ALU_Shift_Unit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU_Shift_Unit" VLNV="xilinx.com:module_ref:ALU_Shift_Unit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_ALU_Shift_Unit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="OP" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RESULT" RIGHT="0" SIGIS="undef" SIGNAME="ALU_Shift_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="SHIFT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/AMAMux_0" HWVERSION="1.0" INSTANCE="AMAMux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AMAMux" VLNV="xilinx.com:module_ref:AMAMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_AMAMux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="AMA" SIGIS="undef" SIGNAME="DecodeUnit_0_AMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="AMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_AMASel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="AMASel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AMAOut" SIGIS="undef" SIGNAME="AMAMux_0_AMAOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Demux1to2_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/AccumReg_0" HWVERSION="1.0" INSTANCE="AccumReg_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="AccumReg" VLNV="xilinx.com:module_ref:AccumReg:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_AccumReg_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Rst" SIGIS="rst" SIGNAME="FSMController_0_Reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="AccumEn" SIGIS="undef" SIGNAME="FSMController_0_AccumEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="AccumEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="ALU_Data" RIGHT="0" SIGIS="undef" SIGNAME="MUXALU_0_ALU_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="ALU_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Accum_Out" RIGHT="0" SIGIS="undef" SIGNAME="AccumReg_0_Accum_Out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_1" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Arith_Unit_0" HWVERSION="1.0" INSTANCE="Arith_Unit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Arith_Unit" VLNV="xilinx.com:module_ref:Arith_Unit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_Arith_Unit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="OP" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="IMMED" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="Arith_Unit_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_ARITH"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RESULT" RIGHT="0" SIGIS="undef" SIGNAME="Arith_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="ARITH"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/BranchUnit_0" HWVERSION="1.0" INSTANCE="BranchUnit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="BranchUnit" VLNV="xilinx.com:module_ref:BranchUnit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_BranchUnit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="MUXALU_0_CCR_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="MASK" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_MASK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="MASK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CCRen" SIGIS="undef" SIGNAME="FSMController_0_CCREn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="CCREn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Rst" SIGIS="rst" SIGNAME="FSMController_0_ClrCCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="ClrCCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="CCRLoad" SIGIS="undef" SIGNAME="FSMController_0_CCRLoad">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="CCRLoad"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCRStack" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_12_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_12" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="MaskEn" SIGIS="undef" SIGNAME="FSMController_0_MaskEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="MaskEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCROut" RIGHT="0" SIGIS="undef" SIGNAME="BranchUnit_0_CCROut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CCR"/>
+            <CONNECTION INSTANCE="RamDataMux_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="BRANCH" SIGIS="undef" SIGNAME="BranchUnit_0_BRANCH">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="BRANCH"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/DecodeUnit_0" HWVERSION="1.0" INSTANCE="DecodeUnit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DecodeUnit" VLNV="xilinx.com:module_ref:DecodeUnit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_DecodeUnit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IRWrite" SIGIS="undef" SIGNAME="FSMController_0_IRWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="IRWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Halt" SIGIS="undef" SIGNAME="DecodeUnit_0_Halt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCounter_0" PORT="HALT"/>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Halt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="Instruction" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="18" NAME="Immediate" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Immediate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_2" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_3" PORT="Din"/>
+            <CONNECTION INSTANCE="ALUMuxB_0" PORT="Immed"/>
+            <CONNECTION INSTANCE="PCAddressMux_0" PORT="Immed"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="SrcA" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_SrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegDebugMux_0" PORT="SrcA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="waitprog" SIGIS="undef" SIGNAME="DecodeUnit_0_waitprog">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DynamicMux_1" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="SrcB" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_SrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="AddB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="MASK" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_MASK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="MASK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="Opcode" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_Shift_Unit_0" PORT="OP"/>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="OP"/>
+            <CONNECTION INSTANCE="Arith_Unit_0" PORT="OP"/>
+            <CONNECTION INSTANCE="Logic_Unit_0" PORT="OP"/>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="AMA" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_0" PORT="Sel"/>
+            <CONNECTION INSTANCE="AMAMux_0" PORT="AMA"/>
+            <CONNECTION INSTANCE="FSMController_0" PORT="AMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="AMB" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Din"/>
+            <CONNECTION INSTANCE="FSMController_0" PORT="AMB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Demux1to2_0" HWVERSION="1.0" INSTANCE="Demux1to2_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Demux1to2" VLNV="xilinx.com:module_ref:Demux1to2:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_Demux1to2_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Sel" SIGIS="undef" SIGNAME="AMAMux_0_AMAOut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AMAMux_0" PORT="AMAOut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="Accum" RIGHT="0" SIGIS="undef" SIGNAME="Mux2to1_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_1" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RamData" RIGHT="0" SIGIS="undef" SIGNAME="Demux1to2_0_RamData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamDataMux_0" PORT="WriteBack"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RegData" RIGHT="0" SIGIS="undef" SIGNAME="Demux1to2_0_RegData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegSelMux_0" PORT="Accum"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/DynamicMux_1" HWVERSION="1.0" INSTANCE="DynamicMux_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DynamicMux" VLNV="xilinx.com:module_ref:DynamicMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_DynamicMux_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="Din" SIGIS="undef" SIGNAME="DecodeUnit_0_waitprog">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="waitprog"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Sel" SIGIS="undef" SIGNAME="PS2Timeout_0_WriteRam">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PS2Timeout_0" PORT="WriteRam"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Dout" SIGIS="undef" SIGNAME="DynamicMux_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="waitprog"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ExecReg_0" HWVERSION="1.0" INSTANCE="ExecReg_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ExecReg" VLNV="xilinx.com:module_ref:ExecReg:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_ExecReg_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Rst" SIGIS="rst" SIGNAME="FSMController_0_Reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ExecEn" SIGIS="undef" SIGNAME="FSMController_0_ExecEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="ExecEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="Mux2to1_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="ALUMuxB_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALUMuxB_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="DoutA" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_VHDL_0" PORT="A"/>
+            <CONNECTION INSTANCE="ALU_Shift_Unit_0" PORT="A"/>
+            <CONNECTION INSTANCE="divider_0" PORT="A"/>
+            <CONNECTION INSTANCE="Arith_Unit_0" PORT="A"/>
+            <CONNECTION INSTANCE="Logic_Unit_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="DoutB" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_Shift_Unit_0" PORT="COUNT"/>
+            <CONNECTION INSTANCE="Multiplier_VHDL_0" PORT="B"/>
+            <CONNECTION INSTANCE="divider_0" PORT="B"/>
+            <CONNECTION INSTANCE="Arith_Unit_0" PORT="B"/>
+            <CONNECTION INSTANCE="Arith_Unit_0" PORT="IMMED"/>
+            <CONNECTION INSTANCE="Logic_Unit_0" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/FSMController_0" HWVERSION="1.0" INSTANCE="FSMController_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FSMController" VLNV="xilinx.com:module_ref:FSMController:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_FSMController_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="Opcode" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="AMA" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="AMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="AMB" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="AMB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="INTADD" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_INTADD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCAddressMux_0" PORT="Int"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INT0" SIGIS="undef" SIGNAME="InterruptHandler_0_OUTINT0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="OUTINT0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INT1" SIGIS="undef" SIGNAME="InterruptHandler_0_OUTINT1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="OUTINT1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INT2" SIGIS="undef" SIGNAME="InterruptHandler_0_OUTINT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="OUTINT2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INT3" SIGIS="undef" SIGNAME="InterruptHandler_0_OUTINT3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="OUTINT3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ToggleINT" SIGIS="undef" SIGNAME="FSMController_0_ToggleINT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="IntEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Done" SIGIS="undef" SIGNAME="divider_0_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="divider_0" PORT="done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Lprom" SIGIS="undef"/>
+        <PORT DIR="O" NAME="RamWA" SIGIS="undef" SIGNAME="FSMController_0_RamWA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="wea"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IRWrite" SIGIS="undef" SIGNAME="FSMController_0_IRWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="IRWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RamWB" SIGIS="undef" SIGNAME="FSMController_0_RamWB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="web"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ALUSELB" SIGIS="undef" SIGNAME="FSMController_0_ALUSELB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="waitprog" SIGIS="undef" SIGNAME="DynamicMux_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DynamicMux_1" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Halt" SIGIS="undef" SIGNAME="DecodeUnit_0_Halt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Halt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PCEN" SIGIS="undef" SIGNAME="FSMController_0_PCEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCounter_0" PORT="PCEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="BRANCH" SIGIS="undef" SIGNAME="BranchUnit_0_BRANCH">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="BRANCH"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CCREn" SIGIS="undef" SIGNAME="FSMController_0_CCREn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="CCRen"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MaskEn" SIGIS="undef" SIGNAME="FSMController_0_MaskEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="MaskEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Reset" SIGIS="rst" SIGNAME="FSMController_0_Reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="Reset"/>
+            <CONNECTION INSTANCE="AccumReg_0" PORT="Rst"/>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="Rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="INTCLR" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_INTCLR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="INTCLR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="PCSel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_PCSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCAddressMux_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PCLoad" SIGIS="undef" SIGNAME="FSMController_0_PCLoad">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCounter_0" PORT="load"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ClrCCR" SIGIS="undef" SIGNAME="FSMController_0_ClrCCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="Rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PCINC" SIGIS="undef" SIGNAME="FSMController_0_PCINC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCounter_0" PORT="PCINC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="RamDataSel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamDataSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamDataMux_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="SrcB" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ExecEn" SIGIS="undef" SIGNAME="FSMController_0_ExecEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="ExecEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CCRLoad" SIGIS="undef" SIGNAME="FSMController_0_CCRLoad">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="CCRLoad"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="CounterSel" SIGIS="undef" SIGNAME="FSMController_0_CounterSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_2" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="AMASel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_AMASel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AMAMux_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="Count" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_Count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_2" PORT="B"/>
+            <CONNECTION INSTANCE="RamAddAMux_0" PORT="Count"/>
+            <CONNECTION INSTANCE="RamAddBMux_0" PORT="Count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="RegWriteSel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RegWriteSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegSelMux_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MMSel" SIGIS="undef" SIGNAME="FSMController_0_MMSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_1" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="RamAddSelA" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamAddSelA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamAddAMux_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="RamAddSelB" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamAddSelB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamAddBMux_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="SBSel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_SBSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux4to1_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegEn" SIGIS="undef" SIGNAME="FSMController_0_RegEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="En"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DivEn" SIGIS="undef" SIGNAME="FSMController_0_DivEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="divider_0" PORT="divEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegWA" SIGIS="undef" SIGNAME="FSMController_0_RegWA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="WriteA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegWB" SIGIS="undef" SIGNAME="FSMController_0_RegWB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="WriteB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="AccumEn" SIGIS="undef" SIGNAME="FSMController_0_AccumEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AccumReg_0" PORT="AccumEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegRead" SIGIS="undef" SIGNAME="FSMController_0_RegRead">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="ReadEn"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/InterruptHandler_0" HWVERSION="1.0" INSTANCE="InterruptHandler_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="InterruptHandler" VLNV="xilinx.com:module_ref:InterruptHandler:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_InterruptHandler_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="INT0" SIGIS="undef" SIGNAME="ps2Controller_0_Int0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps2Controller_0" PORT="Int0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INT1" SIGIS="undef" SIGNAME="ps2Controller_0_Int1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps2Controller_0" PORT="Int1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INT2" SIGIS="undef" SIGNAME="ps2Controller_0_Int2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps2Controller_0" PORT="Int2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="INT3" SIGIS="undef" SIGNAME="ps2Controller_0_Int3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps2Controller_0" PORT="Int3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="INTCLR" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_INTCLR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="INTCLR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IntEn" SIGIS="undef" SIGNAME="FSMController_0_ToggleINT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="ToggleINT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OUTINT0" SIGIS="undef" SIGNAME="InterruptHandler_0_OUTINT0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="INT0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OUTINT1" SIGIS="undef" SIGNAME="InterruptHandler_0_OUTINT1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="INT1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OUTINT2" SIGIS="undef" SIGNAME="InterruptHandler_0_OUTINT2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="INT2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="OUTINT3" SIGIS="undef" SIGNAME="InterruptHandler_0_OUTINT3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="INT3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Logic_Unit_0" HWVERSION="1.0" INSTANCE="Logic_Unit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Logic_Unit" VLNV="xilinx.com:module_ref:Logic_Unit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_Logic_Unit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="OP" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="Logic_Unit_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_LOGIC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RESULT" RIGHT="0" SIGIS="undef" SIGNAME="Logic_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="LOGIC"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUXALU_0" HWVERSION="1.0" INSTANCE="MUXALU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUXALU" VLNV="xilinx.com:module_ref:MUXALU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_MUXALU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="OP" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="ARITH" RIGHT="0" SIGIS="undef" SIGNAME="Arith_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Arith_Unit_0" PORT="RESULT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="LOGIC" RIGHT="0" SIGIS="undef" SIGNAME="Logic_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Logic_Unit_0" PORT="RESULT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="SHIFT" RIGHT="0" SIGIS="undef" SIGNAME="ALU_Shift_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_Shift_Unit_0" PORT="RESULT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="MULT" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_VHDL_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_VHDL_0" PORT="Result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="DIV" RIGHT="0" SIGIS="undef" SIGNAME="divider_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="divider_0" PORT="Result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR_DIV" RIGHT="0" SIGIS="undef" SIGNAME="divider_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="divider_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR_MULT" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_VHDL_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_VHDL_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR_ARITH" RIGHT="0" SIGIS="undef" SIGNAME="Arith_Unit_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Arith_Unit_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR_LOGIC" RIGHT="0" SIGIS="undef" SIGNAME="Logic_Unit_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Logic_Unit_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="ALU_OUT" RIGHT="0" SIGIS="undef" SIGNAME="MUXALU_0_ALU_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AccumReg_0" PORT="ALU_Data"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR_OUT" RIGHT="0" SIGIS="undef" SIGNAME="MUXALU_0_CCR_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MemDebugMux_0" HWVERSION="1.0" INSTANCE="MemDebugMux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MemDebugMux" VLNV="xilinx.com:module_ref:MemDebugMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_MemDebugMux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="8" NAME="DinSW" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_DinSw">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DinSw"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="DinReg" RIGHT="0" SIGIS="undef" SIGNAME="RamAddAMux_0_Add">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamAddAMux_0" PORT="Add"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="MemDebugMux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="addra"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Sel" SIGIS="undef" SIGNAME="External_Ports_DebugSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DebugSel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Multiplier_VHDL_0" HWVERSION="1.0" INSTANCE="Multiplier_VHDL_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Multiplier_VHDL" VLNV="xilinx.com:module_ref:Multiplier_VHDL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_Multiplier_VHDL_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Result" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_VHDL_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="MULT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_VHDL_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_MULT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Mux2to1_0" HWVERSION="1.0" INSTANCE="Mux2to1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux2to1" VLNV="xilinx.com:module_ref:Mux2to1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_Mux2to1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Sel" SIGIS="undef" SIGNAME="DecodeUnit_0_AMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="AMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Mux2to1_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Mux2to1_1" HWVERSION="1.0" INSTANCE="Mux2to1_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux2to1" VLNV="xilinx.com:module_ref:Mux2to1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_Mux2to1_1_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="AccumReg_0_Accum_Out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="AccumReg_0" PORT="Accum_Out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="Mux4to1_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux4to1_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Sel" SIGIS="undef" SIGNAME="FSMController_0_MMSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="MMSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Mux2to1_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Demux1to2_0" PORT="Accum"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Mux2to1_2" HWVERSION="1.0" INSTANCE="Mux2to1_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux2to1" VLNV="xilinx.com:module_ref:Mux2to1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_Mux2to1_0_1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="RegDebugMux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegDebugMux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_Count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Sel" SIGIS="undef" SIGNAME="FSMController_0_CounterSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="CounterSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Mux2to1_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="AddA"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Mux4to1_0" HWVERSION="1.0" INSTANCE="Mux4to1_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Mux4to1" VLNV="xilinx.com:module_ref:Mux4to1:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_Mux4to1_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="RegA" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RegB" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RamA" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RamB" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="doutb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="Mux4to1_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_1" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_SBSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="SBSel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/PCAddressMux_0" HWVERSION="1.0" INSTANCE="PCAddressMux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PCAddressMux" VLNV="xilinx.com:module_ref:PCAddressMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_PCAddressMux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="8" NAME="PC" RIGHT="0" SIGIS="undef" SIGNAME="PCounter_0_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCounter_0" PORT="Address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="Int" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_INTADD">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="INTADD"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="stack" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="Immed" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Immediate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Immediate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_PCSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="PCSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="Address" RIGHT="0" SIGIS="undef" SIGNAME="PCAddressMux_0_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCounter_0" PORT="data"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/PCounter_0" HWVERSION="1.0" INSTANCE="PCounter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PCounter" VLNV="xilinx.com:module_ref:PCounter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_PCounter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="PCEN" SIGIS="undef" SIGNAME="FSMController_0_PCEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="PCEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="PCINC" SIGIS="undef" SIGNAME="FSMController_0_PCINC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="PCINC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="load" SIGIS="undef" SIGNAME="FSMController_0_PCLoad">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="PCLoad"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="data" RIGHT="0" SIGIS="undef" SIGNAME="PCAddressMux_0_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCAddressMux_0" PORT="Address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Rst" SIGIS="rst" SIGNAME="External_Ports_Rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="HALT" SIGIS="undef" SIGNAME="DecodeUnit_0_Halt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Halt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="Address" RIGHT="0" SIGIS="undef" SIGNAME="PCounter_0_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="addra"/>
+            <CONNECTION INSTANCE="PCAddressMux_0" PORT="PC"/>
+            <CONNECTION INSTANCE="RamDataMux_0" PORT="PC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/PS2Timeout_0" HWVERSION="1.0" INSTANCE="PS2Timeout_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="PS2Timeout" VLNV="xilinx.com:module_ref:PS2Timeout:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_PS2Timeout_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WriteEn" SIGIS="undef" SIGNAME="ps2Controller_0_WriteEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps2Controller_0" PORT="WriteEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="WriteRam" SIGIS="undef" SIGNAME="PS2Timeout_0_WriteRam">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="wea"/>
+            <CONNECTION INSTANCE="DynamicMux_1" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/RamAddAMux_0" HWVERSION="1.0" INSTANCE="RamAddAMux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RamAddAMux" VLNV="xilinx.com:module_ref:RamAddAMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_RamAddAMux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="RegA" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="13" NAME="Immed13" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_2" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="Immed8" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_3_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_3" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="Count" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_Count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="Add" RIGHT="0" SIGIS="undef" SIGNAME="RamAddAMux_0_Add">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MemDebugMux_0" PORT="DinReg"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamAddSelA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RamAddSelA"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/RamAddBMux_0" HWVERSION="1.0" INSTANCE="RamAddBMux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RamAddBMux" VLNV="xilinx.com:module_ref:RamAddBMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_RamAddBMux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="9" NAME="Immed189" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_1" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RegB" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RegA" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="Count" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_Count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Count"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="Add" RIGHT="0" SIGIS="undef" SIGNAME="RamAddBMux_0_Add">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="addrb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamAddSelB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RamAddSelB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/RamDataMux_0" HWVERSION="1.0" INSTANCE="RamDataMux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RamDataMux" VLNV="xilinx.com:module_ref:RamDataMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_RamDataMux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="WriteBack" RIGHT="0" SIGIS="undef" SIGNAME="Demux1to2_0_RamData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Demux1to2_0" PORT="RamData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="PC" RIGHT="0" SIGIS="undef" SIGNAME="PCounter_0_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCounter_0" PORT="Address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="BranchUnit_0_CCROut">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="CCROut"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="RamDataMux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="dina"/>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="dinb"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamDataSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RamDataSel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/RegDebugMux_0" HWVERSION="1.0" INSTANCE="RegDebugMux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RegDebugMux" VLNV="xilinx.com:module_ref:RegDebugMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_RegDebugMux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="2" NAME="RegSw" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_RegSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RegSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="SrcA" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_SrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="SrcA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="RegDebugMux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_2" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Sel" SIGIS="undef" SIGNAME="External_Ports_DebugSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DebugSel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/RegSelMux_0" HWVERSION="1.0" INSTANCE="RegSelMux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RegSelMux" VLNV="xilinx.com:module_ref:RegSelMux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_RegSelMux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RegWriteSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RegWriteSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="Accum" RIGHT="0" SIGIS="undef" SIGNAME="Demux1to2_0_RegData">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Demux1to2_0" PORT="RegData"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RegA" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RegB" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="OutA" RIGHT="0" SIGIS="undef" SIGNAME="RegSelMux_0_OutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DinA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="OutB" RIGHT="0" SIGIS="undef" SIGNAME="RegSelMux_0_OutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DinB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/RegisterBank_0" HWVERSION="1.0" INSTANCE="RegisterBank_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RegisterBank" VLNV="xilinx.com:module_ref:RegisterBank:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_RegisterBank_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WriteA" SIGIS="undef" SIGNAME="FSMController_0_RegWA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RegWA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WriteB" SIGIS="undef" SIGNAME="FSMController_0_RegWB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RegWB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Reset" SIGIS="rst" SIGNAME="FSMController_0_Reset">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ReadEn" SIGIS="undef" SIGNAME="FSMController_0_RegRead">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RegRead"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="En" SIGIS="undef" SIGNAME="FSMController_0_RegEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RegEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="AddA" RIGHT="0" SIGIS="undef" SIGNAME="Mux2to1_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_2" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="AddB" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_SrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="SrcB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="DinA" RIGHT="0" SIGIS="undef" SIGNAME="RegSelMux_0_OutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegSelMux_0" PORT="OutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="DinB" RIGHT="0" SIGIS="undef" SIGNAME="RegSelMux_0_OutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegSelMux_0" PORT="OutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="DoutA" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_0" PORT="A"/>
+            <CONNECTION INSTANCE="RegSelMux_0" PORT="RegA"/>
+            <CONNECTION INSTANCE="Mux4to1_0" PORT="RegA"/>
+            <CONNECTION INSTANCE="RamAddAMux_0" PORT="RegA"/>
+            <CONNECTION INSTANCE="RamAddBMux_0" PORT="RegA"/>
+            <CONNECTION INSTANCE="debugmux_0" PORT="RegA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="DoutB" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegSelMux_0" PORT="RegB"/>
+            <CONNECTION INSTANCE="Mux4to1_0" PORT="RegB"/>
+            <CONNECTION INSTANCE="ALUMuxB_0" PORT="RegB"/>
+            <CONNECTION INSTANCE="RamAddBMux_0" PORT="RegB"/>
+            <CONNECTION INSTANCE="FSMController_0" PORT="SrcB"/>
+            <CONNECTION INSTANCE="debugmux_0" PORT="RegB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ScanToAscii_0" HWVERSION="1.0" INSTANCE="ScanToAscii_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ScanToAscii" VLNV="xilinx.com:module_ref:ScanToAscii:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_ScanToAscii_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="7" NAME="scancode" RIGHT="0" SIGIS="undef" SIGNAME="ps2Controller_0_keycode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps2Controller_0" PORT="keycode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="ascii" RIGHT="0" SIGIS="undef" SIGNAME="ScanToAscii_0_ascii">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shiftregister_0" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/blk_mem_gen_0" HWVERSION="8.4" INSTANCE="blk_mem_gen_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.4">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_4;d=pg058-blk-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="0"/>
+        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_BYTE_SIZE" VALUE="9"/>
+        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="1"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="CISC24HW_blk_mem_gen_0_0.mif"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="1"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="080000"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
+        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="0"/>
+        <PARAMETER NAME="C_WEA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="24"/>
+        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="24"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="512"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="512"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="9"/>
+        <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
+        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="0"/>
+        <PARAMETER NAME="C_WEB_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="24"/>
+        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="24"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="512"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="512"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="9"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
+        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
+        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
+        <PARAMETER NAME="C_COMMON_CLK" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_USE_URAM" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRA_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRB_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_DEEPSLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SHUTDOWN_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SAFETY_CKT" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="1"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     3.20565 mW"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_blk_mem_gen_0_0"/>
+        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
+        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
+        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
+        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
+        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
+        <PARAMETER NAME="Memory_Type" VALUE="Single_Port_RAM"/>
+        <PARAMETER NAME="PRIM_type_to_Implement" VALUE="BRAM"/>
+        <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
+        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
+        <PARAMETER NAME="ECC" VALUE="false"/>
+        <PARAMETER NAME="softecc" VALUE="false"/>
+        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_DEEPSLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_SHUTDOWN_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_A" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_B" VALUE="false"/>
+        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
+        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
+        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="false"/>
+        <PARAMETER NAME="Byte_Size" VALUE="9"/>
+        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
+        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
+        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="false"/>
+        <PARAMETER NAME="Write_Width_A" VALUE="24"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="512"/>
+        <PARAMETER NAME="Read_Width_A" VALUE="24"/>
+        <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_A" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Write_Width_B" VALUE="24"/>
+        <PARAMETER NAME="Read_Width_B" VALUE="24"/>
+        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
+        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="true"/>
+        <PARAMETER NAME="Coe_File" VALUE="romint.coe"/>
+        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="true"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="080000"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTB_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
+        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
+        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
+        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="0"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="0"/>
+        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="0"/>
+        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
+        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
+        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
+        <PARAMETER NAME="use_bram_block" VALUE="Stand_Alone"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="EN_SAFETY_CKT" VALUE="false"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clka" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="PS2Timeout_0_WriteRam">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PS2Timeout_0" PORT="WriteRam"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="8" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="PCounter_0_Address">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PCounter_0" PORT="Address"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="shiftregister_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shiftregister_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_0_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Instruction"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addra"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clka"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dina"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="douta"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/blk_mem_gen_1" HWVERSION="8.4" INSTANCE="blk_mem_gen_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="MEMORY" MODTYPE="blk_mem_gen" VLNV="xilinx.com:ip:blk_mem_gen:8.4">
+      <DOCUMENTS>
+        <DOCUMENT SOURCE="http://www.xilinx.com/cgi-bin/docs/ipdoc?c=blk_mem_gen;v=v8_4;d=pg058-blk-mem-gen.pdf"/>
+      </DOCUMENTS>
+      <PARAMETERS>
+        <PARAMETER NAME="C_FAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_XDEVICEFAMILY" VALUE="artix7"/>
+        <PARAMETER NAME="C_ELABORATION_DIR" VALUE="./"/>
+        <PARAMETER NAME="C_INTERFACE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_AXI_SLAVE_TYPE" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BRAM_BLOCK" VALUE="0"/>
+        <PARAMETER NAME="C_ENABLE_32BIT_ADDRESS" VALUE="0"/>
+        <PARAMETER NAME="C_CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="C_HAS_AXI_ID" VALUE="0"/>
+        <PARAMETER NAME="C_AXI_ID_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="C_MEM_TYPE" VALUE="2"/>
+        <PARAMETER NAME="C_BYTE_SIZE" VALUE="9"/>
+        <PARAMETER NAME="C_ALGORITHM" VALUE="1"/>
+        <PARAMETER NAME="C_PRIM_TYPE" VALUE="1"/>
+        <PARAMETER NAME="C_LOAD_INIT_FILE" VALUE="0"/>
+        <PARAMETER NAME="C_INIT_FILE_NAME" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="C_INIT_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="C_USE_DEFAULT_DATA" VALUE="1"/>
+        <PARAMETER NAME="C_DEFAULT_DATA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_RSTA" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_A" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_A" VALUE="0"/>
+        <PARAMETER NAME="C_INITA_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENA" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEA" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEA" VALUE="0"/>
+        <PARAMETER NAME="C_WEA_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_A" VALUE="24"/>
+        <PARAMETER NAME="C_READ_WIDTH_A" VALUE="24"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_A" VALUE="522"/>
+        <PARAMETER NAME="C_READ_DEPTH_A" VALUE="522"/>
+        <PARAMETER NAME="C_ADDRA_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="C_HAS_RSTB" VALUE="0"/>
+        <PARAMETER NAME="C_RST_PRIORITY_B" VALUE="CE"/>
+        <PARAMETER NAME="C_RSTRAM_B" VALUE="0"/>
+        <PARAMETER NAME="C_INITB_VAL" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_ENB" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_REGCEB" VALUE="0"/>
+        <PARAMETER NAME="C_USE_BYTE_WEB" VALUE="0"/>
+        <PARAMETER NAME="C_WEB_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="C_WRITE_MODE_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="C_WRITE_WIDTH_B" VALUE="24"/>
+        <PARAMETER NAME="C_READ_WIDTH_B" VALUE="24"/>
+        <PARAMETER NAME="C_WRITE_DEPTH_B" VALUE="522"/>
+        <PARAMETER NAME="C_READ_DEPTH_B" VALUE="522"/>
+        <PARAMETER NAME="C_ADDRB_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MEM_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_MUX_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_MUX_PIPELINE_STAGES" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_INPUT_REGS_A" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_SOFTECC_OUTPUT_REGS_B" VALUE="0"/>
+        <PARAMETER NAME="C_USE_SOFTECC" VALUE="0"/>
+        <PARAMETER NAME="C_USE_ECC" VALUE="0"/>
+        <PARAMETER NAME="C_EN_ECC_PIPE" VALUE="0"/>
+        <PARAMETER NAME="C_HAS_INJECTERR" VALUE="0"/>
+        <PARAMETER NAME="C_SIM_COLLISION_CHECK" VALUE="ALL"/>
+        <PARAMETER NAME="C_COMMON_CLK" VALUE="1"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_COLL" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_USE_URAM" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRA_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_RDADDRB_CHG" VALUE="0"/>
+        <PARAMETER NAME="C_EN_DEEPSLEEP_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SHUTDOWN_PIN" VALUE="0"/>
+        <PARAMETER NAME="C_EN_SAFETY_CKT" VALUE="0"/>
+        <PARAMETER NAME="C_DISABLE_WARN_BHV_RANGE" VALUE="0"/>
+        <PARAMETER NAME="C_COUNT_36K_BRAM" VALUE="1"/>
+        <PARAMETER NAME="C_COUNT_18K_BRAM" VALUE="0"/>
+        <PARAMETER NAME="C_EST_POWER_SUMMARY" VALUE="Estimated Power for IP     :     5.6227 mW"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_blk_mem_gen_1_0"/>
+        <PARAMETER NAME="Interface_Type" VALUE="Native"/>
+        <PARAMETER NAME="AXI_Type" VALUE="AXI4_Full"/>
+        <PARAMETER NAME="AXI_Slave_Type" VALUE="Memory_Slave"/>
+        <PARAMETER NAME="Use_AXI_ID" VALUE="false"/>
+        <PARAMETER NAME="AXI_ID_Width" VALUE="4"/>
+        <PARAMETER NAME="Memory_Type" VALUE="True_Dual_Port_RAM"/>
+        <PARAMETER NAME="PRIM_type_to_Implement" VALUE="BRAM"/>
+        <PARAMETER NAME="Enable_32bit_Address" VALUE="false"/>
+        <PARAMETER NAME="ecctype" VALUE="No_ECC"/>
+        <PARAMETER NAME="ECC" VALUE="false"/>
+        <PARAMETER NAME="softecc" VALUE="false"/>
+        <PARAMETER NAME="EN_SLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_DEEPSLEEP_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_SHUTDOWN_PIN" VALUE="false"/>
+        <PARAMETER NAME="EN_ECC_PIPE" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_A" VALUE="false"/>
+        <PARAMETER NAME="RD_ADDR_CHNG_B" VALUE="false"/>
+        <PARAMETER NAME="Use_Error_Injection_Pins" VALUE="false"/>
+        <PARAMETER NAME="Error_Injection_Type" VALUE="Single_Bit_Error_Injection"/>
+        <PARAMETER NAME="Use_Byte_Write_Enable" VALUE="false"/>
+        <PARAMETER NAME="Byte_Size" VALUE="9"/>
+        <PARAMETER NAME="Algorithm" VALUE="Minimum_Area"/>
+        <PARAMETER NAME="Primitive" VALUE="8kx2"/>
+        <PARAMETER NAME="Assume_Synchronous_Clk" VALUE="true"/>
+        <PARAMETER NAME="Write_Width_A" VALUE="24"/>
+        <PARAMETER NAME="Write_Depth_A" VALUE="522"/>
+        <PARAMETER NAME="Read_Width_A" VALUE="24"/>
+        <PARAMETER NAME="Operating_Mode_A" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_A" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Write_Width_B" VALUE="24"/>
+        <PARAMETER NAME="Read_Width_B" VALUE="24"/>
+        <PARAMETER NAME="Operating_Mode_B" VALUE="WRITE_FIRST"/>
+        <PARAMETER NAME="Enable_B" VALUE="Always_Enabled"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortA_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Primitives" VALUE="false"/>
+        <PARAMETER NAME="Register_PortB_Output_of_Memory_Core" VALUE="false"/>
+        <PARAMETER NAME="Use_REGCEB_Pin" VALUE="false"/>
+        <PARAMETER NAME="register_porta_input_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="register_portb_output_of_softecc" VALUE="false"/>
+        <PARAMETER NAME="Pipeline_Stages" VALUE="0"/>
+        <PARAMETER NAME="Load_Init_File" VALUE="false"/>
+        <PARAMETER NAME="Coe_File" VALUE="no_coe_file_loaded"/>
+        <PARAMETER NAME="Fill_Remaining_Memory_Locations" VALUE="true"/>
+        <PARAMETER NAME="Remaining_Memory_Locations" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTA_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_A" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_A" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_A" VALUE="0"/>
+        <PARAMETER NAME="Use_RSTB_Pin" VALUE="false"/>
+        <PARAMETER NAME="Reset_Memory_Latch_B" VALUE="false"/>
+        <PARAMETER NAME="Reset_Priority_B" VALUE="CE"/>
+        <PARAMETER NAME="Output_Reset_Value_B" VALUE="0"/>
+        <PARAMETER NAME="Reset_Type" VALUE="SYNC"/>
+        <PARAMETER NAME="Additional_Inputs_for_Power_Estimation" VALUE="false"/>
+        <PARAMETER NAME="Port_A_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_A_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_B_Clock" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Write_Rate" VALUE="50"/>
+        <PARAMETER NAME="Port_A_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Port_B_Enable_Rate" VALUE="100"/>
+        <PARAMETER NAME="Collision_Warnings" VALUE="ALL"/>
+        <PARAMETER NAME="Disable_Collision_Warnings" VALUE="false"/>
+        <PARAMETER NAME="Disable_Out_of_Range_Warnings" VALUE="false"/>
+        <PARAMETER NAME="use_bram_block" VALUE="Stand_Alone"/>
+        <PARAMETER NAME="MEM_FILE" VALUE="NONE"/>
+        <PARAMETER NAME="CTRL_ECC_ALGO" VALUE="NONE"/>
+        <PARAMETER NAME="EN_SAFETY_CKT" VALUE="false"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clka" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="wea" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamWA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RamWA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="addra" RIGHT="0" SIGIS="undef" SIGNAME="MemDebugMux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MemDebugMux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="dina" RIGHT="0" SIGIS="undef" SIGNAME="RamDataMux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamDataMux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="douta" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux2to1_0" PORT="B"/>
+            <CONNECTION INSTANCE="Mux4to1_0" PORT="RamA"/>
+            <CONNECTION INSTANCE="xlslice_12" PORT="Din"/>
+            <CONNECTION INSTANCE="PCAddressMux_0" PORT="stack"/>
+            <CONNECTION INSTANCE="debugmux_0" PORT="MemA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clkb" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="web" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamWB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="RamWB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="9" NAME="addrb" RIGHT="0" SIGIS="undef" SIGNAME="RamAddBMux_0_Add">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamAddBMux_0" PORT="Add"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="dinb" RIGHT="0" SIGIS="undef" SIGNAME="RamDataMux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamDataMux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="doutb" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_doutb">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Mux4to1_0" PORT="RamB"/>
+            <CONNECTION INSTANCE="ALUMuxB_0" PORT="RamB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTA" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addra"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clka"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dina"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="douta"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="wea"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="BRAM_PORTB" TYPE="TARGET" VLNV="xilinx.com:interface:bram:1.0">
+          <PARAMETER NAME="MEM_SIZE" VALUE="8192"/>
+          <PARAMETER NAME="MEM_WIDTH" VALUE="32"/>
+          <PARAMETER NAME="MEM_ECC" VALUE="NONE"/>
+          <PARAMETER NAME="MASTER_TYPE" VALUE="OTHER"/>
+          <PARAMETER NAME="READ_WRITE_MODE" VALUE="READ_WRITE"/>
+          <PORTMAPS>
+            <PORTMAP LOGICAL="ADDR" PHYSICAL="addrb"/>
+            <PORTMAP LOGICAL="CLK" PHYSICAL="clkb"/>
+            <PORTMAP LOGICAL="DIN" PHYSICAL="dinb"/>
+            <PORTMAP LOGICAL="DOUT" PHYSICAL="doutb"/>
+            <PORTMAP LOGICAL="WE" PHYSICAL="web"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+      </BUSINTERFACES>
+    </MODULE>
+    <MODULE FULLNAME="/clockdivider18_0" HWVERSION="1.0" INSTANCE="clockdivider18_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="clockdivider18" VLNV="xilinx.com:module_ref:clockdivider18:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_clockdivider18_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="clk_in" SIGIS="undef" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_Rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="clk_out" SIGIS="undef" SIGNAME="clockdivider18_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/debugmux_0" HWVERSION="1.0" INSTANCE="debugmux_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="debugmux" VLNV="xilinx.com:module_ref:debugmux:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_debugmux_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="RegA" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="RegB" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="MemA" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="Exec" RIGHT="0" SIGIS="undef" SIGNAME="shiftregister_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shiftregister_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="Sel" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Sel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="debugmux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_11" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_10" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_9" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_8" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_7" PORT="Din"/>
+            <CONNECTION INSTANCE="xlslice_6" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/decoder_0" HWVERSION="1.0" INSTANCE="decoder_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="decoder" VLNV="xilinx.com:module_ref:decoder:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_decoder_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_6" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din2" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_7_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_7" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din3" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_8_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_8" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din4" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_9_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_9" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din5" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_10_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_10" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="Din6" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_11_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_11" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="clockdivider18_0_clk_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="clockdivider18_0" PORT="clk_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Cathode" RIGHT="0" SIGIS="undef" SIGNAME="decoder_0_Cathode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Cathode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="Anode" RIGHT="0" SIGIS="undef" SIGNAME="decoder_0_Anode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Anode"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/divider_0" HWVERSION="1.0" INSTANCE="divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="divider" VLNV="xilinx.com:module_ref:divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="ExecReg_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ExecReg_0" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="divEn" SIGIS="undef" SIGNAME="FSMController_0_DivEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="DivEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="done" SIGIS="undef" SIGNAME="divider_0_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Result" RIGHT="0" SIGIS="undef" SIGNAME="divider_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="DIV"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="divider_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_DIV"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/ps2Controller_0" HWVERSION="1.0" INSTANCE="ps2Controller_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ps2Controller" VLNV="xilinx.com:module_ref:ps2Controller:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_ps2Controller_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" NAME="reset" SIGIS="rst" SIGNAME="External_Ports_Rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="ps2_clk" SIGIS="clk" SIGNAME="External_Ports_PS2_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PS2_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Int0" SIGIS="undef" SIGNAME="ps2Controller_0_Int0">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="INT0"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Int1" SIGIS="undef" SIGNAME="ps2Controller_0_Int1">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="INT1"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Int2" SIGIS="undef" SIGNAME="ps2Controller_0_Int2">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="INT2"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Int3" SIGIS="undef" SIGNAME="ps2Controller_0_Int3">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="InterruptHandler_0" PORT="INT3"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ps2_data" SIGIS="undef" SIGNAME="External_Ports_PS2_DATA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PS2_DATA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="WriteEn" SIGIS="undef" SIGNAME="ps2Controller_0_WriteEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="PS2Timeout_0" PORT="WriteEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="validkey" SIGIS="undef" SIGNAME="ps2Controller_0_validkey">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="shiftregister_0" PORT="En"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="out_data" RIGHT="0" SIGIS="undef" SIGNAME="ps2Controller_0_out_data">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="inttest"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="7" NAME="keycode" RIGHT="0" SIGIS="undef" SIGNAME="ps2Controller_0_keycode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ScanToAscii_0" PORT="scancode"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/shiftregister_0" HWVERSION="1.0" INSTANCE="shiftregister_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="shiftregister" VLNV="xilinx.com:module_ref:shiftregister:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_shiftregister_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="3" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="ScanToAscii_0_ascii">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ScanToAscii_0" PORT="ascii"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="shiftregister_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_0" PORT="dina"/>
+            <CONNECTION INSTANCE="debugmux_0" PORT="Exec"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Rst" SIGIS="rst" SIGNAME="External_Ports_Rst">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Rst"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_PS2_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PS2_CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="En" SIGIS="undef" SIGNAME="ps2Controller_0_validkey">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ps2Controller_0" PORT="validkey"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlconcat_0" HWVERSION="2.1" INSTANCE="xlconcat_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlconcat" VLNV="xilinx.com:ip:xlconcat:2.1">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="IN0_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN1_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN2_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN3_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN4_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN5_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN6_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN7_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN8_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN9_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN10_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN11_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN12_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN13_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN14_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN15_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN16_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN17_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN18_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN19_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN20_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN21_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN22_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN23_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN24_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN25_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN26_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN27_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN28_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN29_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN30_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="IN31_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="dout_width" VALUE="2"/>
+        <PARAMETER NAME="NUM_PORTS" VALUE="2"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlconcat_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="0" NAME="In0" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlslice_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="0" NAME="In1" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_ALUSELB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="ALUSELB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="dout" RIGHT="0" SIGIS="undef" SIGNAME="xlconcat_0_dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALUMuxB_0" PORT="Sel"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_0" HWVERSION="1.0" INSTANCE="xlslice_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="2"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="0"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_0_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="1"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="1" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="AMB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="xlconcat_0" PORT="In0"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_1" HWVERSION="1.0" INSTANCE="xlslice_1" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="19"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="18"/>
+        <PARAMETER NAME="DIN_TO" VALUE="9"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_1_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="10"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="18" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Immediate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Immediate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="9" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_1_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamAddBMux_0" PORT="Immed189"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_10" HWVERSION="1.0" INSTANCE="xlslice_10" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="19"/>
+        <PARAMETER NAME="DIN_TO" VALUE="16"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_6_4"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="debugmux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debugmux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_10_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="Din5"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_11" HWVERSION="1.0" INSTANCE="xlslice_11" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="23"/>
+        <PARAMETER NAME="DIN_TO" VALUE="20"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_6_5"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="debugmux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debugmux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_11_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="Din6"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_12" HWVERSION="1.0" INSTANCE="xlslice_12" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_12_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="blk_mem_gen_1_douta">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="blk_mem_gen_1" PORT="douta"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_12_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="BranchUnit_0" PORT="CCRStack"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_2" HWVERSION="1.0" INSTANCE="xlslice_2" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="19"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="13"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_2_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="14"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="18" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Immediate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Immediate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="13" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_2_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamAddAMux_0" PORT="Immed13"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_3" HWVERSION="1.0" INSTANCE="xlslice_3" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="19"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="8"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_3_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="9"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="18" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Immediate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Immediate"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="8" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_3_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="RamAddAMux_0" PORT="Immed8"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_6" HWVERSION="1.0" INSTANCE="xlslice_6" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="3"/>
+        <PARAMETER NAME="DIN_TO" VALUE="0"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_6_0"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="debugmux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debugmux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_6_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_7" HWVERSION="1.0" INSTANCE="xlslice_7" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="7"/>
+        <PARAMETER NAME="DIN_TO" VALUE="4"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_6_1"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="debugmux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debugmux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_7_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="Din2"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_8" HWVERSION="1.0" INSTANCE="xlslice_8" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="11"/>
+        <PARAMETER NAME="DIN_TO" VALUE="8"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_6_2"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="debugmux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debugmux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_8_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="Din3"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/xlslice_9" HWVERSION="1.0" INSTANCE="xlslice_9" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="xlslice" VLNV="xilinx.com:ip:xlslice:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="DIN_WIDTH" VALUE="24"/>
+        <PARAMETER NAME="DIN_FROM" VALUE="15"/>
+        <PARAMETER NAME="DIN_TO" VALUE="12"/>
+        <PARAMETER NAME="Component_Name" VALUE="CISC24HW_xlslice_6_3"/>
+        <PARAMETER NAME="DOUT_WIDTH" VALUE="4"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="Din" RIGHT="0" SIGIS="undef" SIGNAME="debugmux_0_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="debugmux_0" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="Dout" RIGHT="0" SIGIS="undef" SIGNAME="xlslice_9_Dout">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="decoder_0" PORT="Din4"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

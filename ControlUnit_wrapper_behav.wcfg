@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ControlUnit_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="ControlUnit_wrapper" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1033750000fs"></ZoomStartTime>
+      <ZoomEndTime time="1125050001fs"></ZoomEndTime>
+      <Cursor1Time time="1135000000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="146"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="26" />
+   <wvobject fp_name="/ControlUnit_wrapper/ALUSelB" type="logic">
+      <obj_property name="ElementShortName">ALUSelB</obj_property>
+      <obj_property name="ObjectShortName">ALUSelB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/AccumEn" type="logic">
+      <obj_property name="ElementShortName">AccumEn</obj_property>
+      <obj_property name="ObjectShortName">AccumEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/DivEn" type="logic">
+      <obj_property name="ElementShortName">DivEn</obj_property>
+      <obj_property name="ObjectShortName">DivEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/Done" type="logic">
+      <obj_property name="ElementShortName">Done</obj_property>
+      <obj_property name="ObjectShortName">Done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/ExecEn" type="logic">
+      <obj_property name="ElementShortName">ExecEn</obj_property>
+      <obj_property name="ObjectShortName">ExecEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/IRWRite" type="logic">
+      <obj_property name="ElementShortName">IRWRite</obj_property>
+      <obj_property name="ObjectShortName">IRWRite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/Instruction" type="array">
+      <obj_property name="ElementShortName">Instruction[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/ControlUnit_i/FSMController_0/U0/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/IMMED" type="array">
+      <obj_property name="ElementShortName">IMMED[18:0]</obj_property>
+      <obj_property name="ObjectShortName">IMMED[18:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/OPCODE" type="array">
+      <obj_property name="ElementShortName">OPCODE[4:0]</obj_property>
+      <obj_property name="ObjectShortName">OPCODE[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/SRCA" type="array">
+      <obj_property name="ElementShortName">SRCA[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SRCA[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/SRCB" type="array">
+      <obj_property name="ElementShortName">SRCB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">SRCB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/LPROM" type="logic">
+      <obj_property name="ElementShortName">LPROM</obj_property>
+      <obj_property name="ObjectShortName">LPROM</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/MMSel" type="logic">
+      <obj_property name="ElementShortName">MMSel</obj_property>
+      <obj_property name="ObjectShortName">MMSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/PCEN" type="logic">
+      <obj_property name="ElementShortName">PCEN</obj_property>
+      <obj_property name="ObjectShortName">PCEN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/PCINC" type="logic">
+      <obj_property name="ElementShortName">PCINC</obj_property>
+      <obj_property name="ObjectShortName">PCINC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/RamAddSelA" type="array">
+      <obj_property name="ElementShortName">RamAddSelA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RamAddSelA[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/RamAddSelB" type="array">
+      <obj_property name="ElementShortName">RamAddSelB[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RamAddSelB[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/RamWB" type="logic">
+      <obj_property name="ElementShortName">RamWB</obj_property>
+      <obj_property name="ObjectShortName">RamWB</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/RamWa" type="logic">
+      <obj_property name="ElementShortName">RamWa</obj_property>
+      <obj_property name="ObjectShortName">RamWa</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/RegEn" type="logic">
+      <obj_property name="ElementShortName">RegEn</obj_property>
+      <obj_property name="ObjectShortName">RegEn</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/RegRead" type="logic">
+      <obj_property name="ElementShortName">RegRead</obj_property>
+      <obj_property name="ObjectShortName">RegRead</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/RegWA" type="logic">
+      <obj_property name="ElementShortName">RegWA</obj_property>
+      <obj_property name="ObjectShortName">RegWA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/RegWriteSel" type="array">
+      <obj_property name="ElementShortName">RegWriteSel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RegWriteSel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ControlUnit_wrapper/SBSel" type="array">
+      <obj_property name="ElementShortName">SBSel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">SBSel[1:0]</obj_property>
+   </wvobject>
+</wave_config>

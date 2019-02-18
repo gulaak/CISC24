@@ -1,0 +1,63 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port IRWRite -pg 1 -y -250 -defaultsOSRD
+preplace port Done -pg 1 -y 180 -defaultsOSRD
+preplace port MMSel -pg 1 -y 80 -defaultsOSRD
+preplace port PCEN -pg 1 -y -150 -defaultsOSRD
+preplace port RegWA -pg 1 -y 190 -defaultsOSRD
+preplace port RamWB -pg 1 -y 170 -defaultsOSRD
+preplace port LPROM -pg 1 -y -90 -defaultsOSRD
+preplace port RegRead -pg 1 -y 220 -defaultsOSRD
+preplace port ALUSelB -pg 1 -y -70 -defaultsOSRD
+preplace port PCINC -pg 1 -y -40 -defaultsOSRD
+preplace port CLK -pg 1 -y 140 -defaultsOSRD
+preplace port DivEn -pg 1 -y 240 -defaultsOSRD
+preplace port ExecEn -pg 1 -y -20 -defaultsOSRD
+preplace port AccumEn -pg 1 -y 150 -defaultsOSRD
+preplace port RamWa -pg 1 -y -130 -defaultsOSRD
+preplace port RegEn -pg 1 -y -190 -defaultsOSRD
+preplace portBus SBSel -pg 1 -y 110 -defaultsOSRD
+preplace portBus RamAddSelA -pg 1 -y 50 -defaultsOSRD
+preplace portBus IMMED -pg 1 -y -110 -defaultsOSRD
+preplace portBus RamAddSelB -pg 1 -y 20 -defaultsOSRD
+preplace portBus RegWriteSel -pg 1 -y 130 -defaultsOSRD
+preplace portBus Instruction -pg 1 -y 10 -defaultsOSRD
+preplace portBus OPCODE -pg 1 -y 0 -defaultsOSRD
+preplace portBus SRCA -pg 1 -y -170 -defaultsOSRD
+preplace portBus SRCB -pg 1 -y -220 -defaultsOSRD
+preplace inst FSMController_0 -pg 1 -lvl 3 -y 30 -defaultsOSRD
+preplace inst DecodeUnit_0 -pg 1 -lvl 2 -y 40 -defaultsOSRD
+preplace netloc FSMController_0_AccumEn 1 3 1 610
+preplace netloc FSMController_0_RamWB 1 3 1 490
+preplace netloc FSMController_0_RegEn 1 3 1 510
+preplace netloc FSMController_0_SBSel 1 3 1 590
+preplace netloc CLK_1 1 0 3 N 140 -410 170 100
+preplace netloc DecodeUnit_0_Opcode 1 2 2 110 410 600
+preplace netloc DecodeUnit_0_Halt 1 2 1 120
+preplace netloc FSMController_0_RegRead 1 3 1 640
+preplace netloc FSMController_0_Lprom 1 3 1 480
+preplace netloc DecodeUnit_0_AMA 1 2 1 60
+preplace netloc Instruction_1 1 0 2 N 10 -420
+preplace netloc FSMController_0_DivEn 1 3 1 630
+preplace netloc FSMController_0_IRWrite 1 1 3 -400J 440 NJ 440 550
+preplace netloc DecodeUnit_0_AMB 1 2 1 80
+preplace netloc Done_1 1 0 3 NJ 180 N 180 130
+preplace netloc FSMController_0_MMSel 1 3 1 480
+preplace netloc FSMController_0_RamAddSelA 1 3 1 530
+preplace netloc DecodeUnit_0_SrcA 1 2 2 70 420 580J
+preplace netloc FSMController_0_RegWA 1 3 1 620
+preplace netloc FSMController_0_RamAddSelB 1 3 1 520
+preplace netloc DecodeUnit_0_SrcB 1 2 2 50J 430 560
+preplace netloc FSMController_0_ExecEn 1 3 1 500
+preplace netloc FSMController_0_ALUSELB 1 3 1 520
+preplace netloc FSMController_0_PCINC 1 3 1 480
+preplace netloc FSMController_0_RegWriteSel 1 3 1 540
+preplace netloc FSMController_0_PCEN 1 3 1 N
+preplace netloc FSMController_0_RamWA 1 3 1 600
+preplace netloc DecodeUnit_0_Immediate 1 2 2 90J 400 570
+levelinfo -pg 1 -600 -440 -120 310 680 -top -340 -bot 790
+",
+}
+0

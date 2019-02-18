@@ -1,0 +1,6 @@
+xpm_memory.sv,systemverilog,xil_defaultlib,../../../../../../../../Xilinx/Vivado/2017.4/data/ip/xpm/xpm_memory/hdl/xpm_memory.sv,
+xpm_VCOMP.vhd,vhdl,xpm,../../../../../../../../Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd,
+ControlUnit_FSMController_0_0.vhd,vhdl,xil_defaultlib,../../../bd/ControlUnit/ip/ControlUnit_FSMController_0_0/sim/ControlUnit_FSMController_0_0.vhd,
+ControlUnit_DecodeUnit_0_0.vhd,vhdl,xil_defaultlib,../../../bd/ControlUnit/ip/ControlUnit_DecodeUnit_0_0/sim/ControlUnit_DecodeUnit_0_0.vhd,
+ControlUnit.vhd,vhdl,xil_defaultlib,../../../bd/ControlUnit/sim/ControlUnit.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

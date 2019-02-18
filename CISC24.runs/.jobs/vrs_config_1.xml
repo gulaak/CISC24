@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="CISC24_blk_mem_gen_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_blk_mem_gen_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_FSMController_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_FSMController_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_blk_mem_gen_1_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_blk_mem_gen_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_MUXALU_0_2_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_MUXALU_0_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_Mux2to1_1_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_Mux2to1_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_DecodeUnit_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_DecodeUnit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_Mux2to1_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_Mux2to1_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_PCounter_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_PCounter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_RegisterBank_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_RegisterBank_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_AccumReg_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_AccumReg_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_RegSelMux_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_RegSelMux_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_Logic_Unit_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_Logic_Unit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_Demux1to2_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_Demux1to2_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_WriteRamMux_0_1_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_WriteRamMux_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_ALU_Shift_Unit_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_ALU_Shift_Unit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_Arith_Unit_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_Arith_Unit_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_ExecReg_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_ExecReg_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="CISC24_WriteRamMux_0_0_synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24_WriteRamMux_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/Users/Aiden/Desktop/CISC24/CISC24.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="CISC24_blk_mem_gen_0_0_synth_1"/>
+		<Parent Id="CISC24_FSMController_0_0_synth_1"/>
+		<Parent Id="CISC24_blk_mem_gen_1_0_synth_1"/>
+		<Parent Id="CISC24_MUXALU_0_2_synth_1"/>
+		<Parent Id="CISC24_Mux2to1_1_0_synth_1"/>
+		<Parent Id="CISC24_DecodeUnit_0_0_synth_1"/>
+		<Parent Id="CISC24_Mux2to1_0_0_synth_1"/>
+		<Parent Id="CISC24_PCounter_0_0_synth_1"/>
+		<Parent Id="CISC24_RegisterBank_0_0_synth_1"/>
+		<Parent Id="CISC24_AccumReg_0_0_synth_1"/>
+		<Parent Id="CISC24_RegSelMux_0_0_synth_1"/>
+		<Parent Id="CISC24_Logic_Unit_0_0_synth_1"/>
+		<Parent Id="CISC24_Demux1to2_0_0_synth_1"/>
+		<Parent Id="CISC24_WriteRamMux_0_1_synth_1"/>
+		<Parent Id="CISC24_ALU_Shift_Unit_0_0_synth_1"/>
+		<Parent Id="CISC24_Arith_Unit_0_0_synth_1"/>
+		<Parent Id="CISC24_ExecReg_0_0_synth_1"/>
+		<Parent Id="CISC24_WriteRamMux_0_0_synth_1"/>
+	</Run>
+</Runs>
+

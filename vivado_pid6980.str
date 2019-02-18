@@ -1,0 +1,1206 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 6980
+License: Customer
+
+Current time: 	Fri Apr 27 23:26:41 EDT 2018
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 1
+Available disk space: 165 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Aiden
+User home directory: C:/Users/Aiden
+User working directory: F:/CISC24
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Aiden/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Aiden/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Aiden/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	F:/CISC24/vivado.log
+Vivado journal file location: 	F:/CISC24/vivado.jou
+Engine tmp dir: 	F:/CISC24/.Xil/Vivado-6980-DESKTOP-T2T1KVN
+
+GUI allocated memory:	266 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 722 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// bs (cj):  Open Project : addNotify
+// Opening Vivado Project: F:\CISC24\CISC24.xpr. Version: Vivado v2017.4 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// Tcl Message: open_project F:/CISC24/CISC24.xpr 
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// [GUI Memory]: 40 MB (+39776kb) [00:00:04]
+// [Engine Memory]: 526 MB (+399690kb) [00:00:04]
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 61 MB (+19088kb) [00:00:06]
+// [Engine Memory]: 616 MB (+67532kb) [00:00:06]
+// [GUI Memory]: 68 MB (+4271kb) [00:00:07]
+// [Engine Memory]: 649 MB (+1787kb) [00:00:07]
+// [GUI Memory]: 77 MB (+6423kb) [00:00:07]
+// [Engine Memory]: 687 MB (+5782kb) [00:00:07]
+// [GUI Memory]: 87 MB (+6628kb) [00:00:09]
+// [Engine Memory]: 722 MB (+924kb) [00:00:09]
+// Tcl Message: open_project F:/CISC24/CISC24.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 722 MB. GUI used memory: 65 MB. Current time: 4/27/18 11:26:42 PM EDT
+// Tcl Message: open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:06 . Memory (MB): peak = 903.434 ; gain = 186.777 
+// Project name: CISC24; location: F:/CISC24; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 94 MB (+2219kb) [00:00:21]
+// [GUI Memory]: 103 MB (+4482kb) [00:00:29]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// HMemoryUtils.trashcanNow. Engine heap size: 772 MB. GUI used memory: 64 MB. Current time: 4/27/18 11:29:15 PM EDT
+// [Engine Memory]: 772 MB (+14726kb) [00:02:43]
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sim_1 
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 110 MB (+1520kb) [00:03:13]
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// Elapsed time: 182 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd)]", 1); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd)]", 3); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), ALUMuxB_0 : CISC24HW_ALUMuxB_0_0 (Module Reference Wrapper)]", 4); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), ALUMuxB_0 : CISC24HW_ALUMuxB_0_0 (Module Reference Wrapper)]", 4); // B (D, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 788 MB. GUI used memory: 64 MB. Current time: 4/27/18 11:29:49 PM EDT
+// PAPropertyPanels.initPanels (ScanToAscii.vhd) elapsed time: 0.3s
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ScanToAscii(Dataflow) (ScanToAscii.vhd)]", 57, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, Divider_Clk(Behavioral) (Divider_Clk.vhd)]", 56, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("ScanToAscii.vhd", 286, 254); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 207, 235); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 218, 231); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 147, 237); // cd (w, cj)
+// Elapsed time: 16 seconds
+selectCodeEditor("ScanToAscii.vhd", 244, 276); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 225, 270); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 139, 263); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 132, 180); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 203, 153); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 200, 191); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 303, 193); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 457, 162); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 142, 338); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 84, 288); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 109, 78); // cd (w, cj)
+// [GUI Memory]: 116 MB (+772kb) [00:04:12]
+selectCodeEditor("ScanToAscii.vhd", 237, 363, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ac (ai, Popup.HeavyWeightWindow)
+selectCodeEditor("ScanToAscii.vhd", 112, 419); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 129, 413); // cd (w, cj)
+// WARNING: HSwingWorker (Monitor File Timestamp Swing Worker) is taking too long to process. Increasing delay to 2000 ms.
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("ScanToAscii.vhd", 136, 380); // cd (w, cj)
+// TclEventType: DG_GRAPH_GENERATED
+// Elapsed time: 16 seconds
+selectCodeEditor("ScanToAscii.vhd", 185, 165); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 112, 86); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 287, 313); // cd (w, cj)
+selectCodeEditor("ScanToAscii.vhd", 162, 185, false, false, false, true, false); // cd (w, cj) - Popup Trigger
+selectMenuItem(RDIResource.HInputHandler_TOGGLE_LINE_COMMENTS, "Toggle Line Comments"); // ac (ai, Popup.HeavyWeightWindow)
+selectCodeEditor("ScanToAscii.vhd", 406, 249); // cd (w, cj)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cj)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [Engine Memory]: 815 MB (+4174kb) [00:06:19]
+// HMemoryUtils.trashcanNow. Engine heap size: 819 MB. GUI used memory: 68 MB. Current time: 4/27/18 11:32:55 PM EDT
+// TclEventType: DG_GRAPH_GENERATED
+// [GUI Memory]: 122 MB (+10kb) [00:24:40]
+// Elapsed time: 1292 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), FSMController_0 : CISC24HW_FSMController_0_0 (Module Reference Wrapper)]", 13); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), FSMController_0 : CISC24HW_FSMController_0_0 (Module Reference Wrapper), CISC24HW_FSMController_0_0(CISC24HW_FSMController_0_0_arch) (CISC24HW_FSMController_0_0.vhd), U0 : FSMController(Behavioral) (FSMController.vhd)]", 15, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), FSMController_0 : CISC24HW_FSMController_0_0 (Module Reference Wrapper), CISC24HW_FSMController_0_0(CISC24HW_FSMController_0_0_arch) (CISC24HW_FSMController_0_0.vhd), U0 : FSMController(Behavioral) (FSMController.vhd)]", 15, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 15 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), FSMController_0 : CISC24HW_FSMController_0_0 (Module Reference Wrapper)]", 13); // B (D, cj)
+// Elapsed time: 17 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), ps2Controller_0 : CISC24HW_ps2Controller_0_0 (Module Reference Wrapper)]", 37); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), ps2Controller_0 : CISC24HW_ps2Controller_0_0 (Module Reference Wrapper), CISC24HW_ps2Controller_0_0(CISC24HW_ps2Controller_0_0_arch) (CISC24HW_ps2Controller_0_0.vhd), U0 : ps2Controller(Behavioral) (ps2Controller.vhd)]", 39, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), ps2Controller_0 : CISC24HW_ps2Controller_0_0 (Module Reference Wrapper), CISC24HW_ps2Controller_0_0(CISC24HW_ps2Controller_0_0_arch) (CISC24HW_ps2Controller_0_0.vhd), U0 : ps2Controller(Behavioral) (ps2Controller.vhd)]", 39, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), ps2Controller_0 : CISC24HW_ps2Controller_0_0 (Module Reference Wrapper), CISC24HW_ps2Controller_0_0(CISC24HW_ps2Controller_0_0_arch) (CISC24HW_ps2Controller_0_0.vhd), U0 : ps2Controller(Behavioral) (ps2Controller.vhd)]", 39, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("ps2Controller.vhd", 188, 133); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 265, 144); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 200, 160); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 183, 306); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 190, 296); // cd (w, cj)
+// Elapsed time: 54 seconds
+selectCodeEditor("ps2Controller.vhd", 119, 60); // cd (w, cj)
+typeControlKey((HResource) null, "ps2Controller.vhd", 'c'); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 152, 274); // cd (w, cj)
+typeControlKey((HResource) null, "ps2Controller.vhd", 'v'); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 157, 90); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 389, 123); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 167, 91); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 189, 121); // cd (w, cj)
+// [GUI Memory]: 131 MB (+3177kb) [00:28:39]
+selectCodeEditor("ps2Controller.vhd", 317, 285); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 331, 249); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 239, 311); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 242, 196); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 225, 190); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 495, 243); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 362, 330); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 292, 104); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 288, 93); // cd (w, cj)
+selectCodeEditor("ps2Controller.vhd", 438, 273); // cd (w, cj)
+selectButton(RDIResourceCommand.RDICommands_SAVE_FILE, (String) null); // B (f, cj)
+// TclEventType: REPORT_IP_STATUS_STALE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// [GUI Memory]: 139 MB (+1434kb) [00:29:09]
+selectButton(PAResourceOtoP.PlanAheadTab_REFRESH_CHANGED_MODULES, "Refresh Changed Modules"); // h (cZ, cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// bs (cj):  Refresh Changed Modules : addNotify
+// Tcl Message: update_module_reference CISC24HW_ps2Controller_0_0 
+                                                                                                                                                                                                    /Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd(972): WARNING: directive wired_three_state expects one argument (VHDL-1382)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing module CISC24HW_RamDataMux_0_0 (VERI-9002)
+INFO: analyzing module CISC24HW_RamDataMux_0_0_RamDataMux (VERI-9002)
+INFO: analyzing module glbl (VERI-9002)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_RamDataMux_0_0/CISC24HW_RamDataMux_0_0_sim_netlist.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_RamDataMux_0_0_RamDataMux (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_ramdatamux_0_0_ramdw_ps2controller_0_0_ps2controller (VHDL-9006)
+INFO: analyzing entity CISC24HW_ps2Controller_0_0 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_ps2controller_0_0 (VHDL-9006)
+-- Analyzing VHDL file "F:/CISC24/CISC24.srcs/sources_1/imports/Desktop/ps2Controller.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity ps2Controller (VHDL-1012)
+INFO: analyzing architecture Behavioral of entity ps2controller (VHDL-9006)
+Listing tops:
+VeriTop library:xil_defaultlib mod:CISC24HW_ps2Controller_0_0
+VeriTop library:xil_defaultlib mod:glbl
+VHDL top: library:xil_defaultlib entity:cisc24hw_ps2controller_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_ps2controller_0_0 arch:
+VHDL top: library:xil_defaultlib entity:ps2controller arch:
+VHDL top: library:xil_defaultlib entity:ps2controller arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ps2Controller_0_0/CISC24HW_ps2Controller_0_0_sim_netlist.v(17): INFO: compiling module CISC24HW_ps2Controller_0_0_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ps2Controller_0_0/CISC24HW_ps2Controller_0_0_sim_netlist.v(440): INFO: compiling module glbl_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ps2Controller_0_0/CISC24HW_ps2Controller_0_0_sim_netlist.vhdl(498): INFO: executing CISC24HW_ps2Controller_0_0(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ps2Controller_0_0/CISC24HW_ps2Controller_0_0_sim_netlist.vhdl(17): INFO: executing CISC24HW_ps2Controller_0_0_ps2Controller_default(STRUCTURE) (VHDL-1067)
+F:/CISC24/CISC24.srcs/sources_1/imports/Desktop/ps2Controller.vhd(16): INFO: executing ps2Controller(Behavioral) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                       /Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd(972): WARNING: directive wired_three_state expects one argument (VHDL-1382)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing module CISC24HW_ALUMuxB_0_0 (VERI-9002)
+INFO: analyzing module CISC24HW_ALUMuxB_0_0_ALUMuxB (VERI-9002)
+INFO: analyzing module glbl (VERI-9002)
+-- Analyzing VHDL file "F:/CISC24/CISC24.srcs/sources_1/new/ALUMuxB.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity ALUMuxB (VHDL-1012)
+INFO: analyzing architecture Behavioral of entity alumuxb (VHDL-9006)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ALUMuxB_0_0/CISC24HW_ALUMuatamux (VHDL-9006)
+INFO: analyzing entity CISC24HW_RamDataMux_0_0 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_ramdatamux_0_0 (VHDL-9006)
+-- Analyzing VHDL file "F:/CISC24/CISC24.srcs/sources_1/new/RamDataMux.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity RamDataMux (VHDL-1012)
+INFO: analyzing architecture Behavioral of entity ramdatamux (VHDL-9006)
+Listing tops:
+VeriTop library:xil_defaultlib mod:CISC24HW_RamDataMux_0_0
+VeriTop library:xil_defaultlib mod:glbl
+VHDL top: library:xil_defaultlib entity:cisc24hw_ramdatamux_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_ramdatamux_0_0 arch:
+VHDL top: library:xil_defaultlib entity:ramdatamux arch:
+VHDL top: library:xil_defaultlib entity:ramdatamux arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_RamDataMux_0_0/CISC24HW_RamDataMux_0_0_sim_netlist.v(17): INFO: compiling module CISC24HW_RamDataMux_0_0_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_RamDataMux_0_0/CISC24HW_RamDataMux_0_0_sim_netlist.v(268): INFO: compiling module glbl_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_RamDataMux_0_0/CISC24HW_RamDataMux_0_0_sim_netlist.vhdl(310): INFO: executing CISC24HW_RamDataMux_0_0(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_RamDataMux_0_0/CISC24HW_RamDataMux_0_0_sim_netlist.vhdl(17): INFO: executing CISC24HW_RamDataMux_0_0_RamDataMux_default(STRUCTURE) (VHDL-1067)
+F:/CISC24/CISC24.srcs/sources_1/new/RamDataMux.vhd(34): INFO: executing RamDataMux(Behavioral) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                                                                                                                                  24hw_muxalu_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(876): WARNING: cisc24hw_memdebugmux_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(884): WARNING: cisc24hw_multiplier_vhdl_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(891): WARNING: cisc24hw_mux2to1_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(898): WARNING: cisc24hw_mux2to1_1_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(905): WARNING: cisc24hw_mux2to1_0_1 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(914): WARNING: cisc24hw_mux4to1_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(923): WARNING: cisc24hw_pcaddressmux_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(932): WARNING: cisc24hw_pcounter_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(943): WARNING: cisc24hw_ramaddamux_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(953): WARNING: cisc24hw_ramaddbmux_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(962): WARNING: cisc24hw_ramdatamux_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(970): WARNING: cisc24hw_regdebugmux_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(977): WARNING: cisc24hw_regselmux_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(986): WARNING: cisc24hw_registerbank_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1001): WARNING: cisc24hw_blk_mem_gen_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1008): WARNING: cisc24hw_blk_mem_gen_1_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1021): WARNING: cisc24hw_clockdivider18_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1027): WARNING: cisc24hw_debugmux_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1041): WARNING: cisc24hw_decoder_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1053): WARNING: cisc24hw_divider_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1063): WARNING: cisc24hw_ps2controller_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1075): WARNING: cisc24hw_xlconcat_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1081): WARNING: cisc24hw_xlslice_0_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1086): WARNING: cisc24hw_xlslice_1_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1091): WARNING: cisc24hw_xlslice_6_4 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1096): WARNING: cisc24hw_xlslice_6_5 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1101): WARNING: cisc24hw_xlslice_12_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1106): WARNING: cisc24hw_xlslice_2_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1111): WARNING: cisc24hw_xlslice_3_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1116): WARNING: cisc24hw_xlslice_6_0 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1121): WARNING: cisc24hw_xlslice_6_1 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1126): WARNING: cisc24hw_xlslice_6_2 remains a black-box since it has no binding entity (VHDL-1250)
+F:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/sim/CISC24HW.vhd(1131): WARNING: cisc24hw_xlslice_6_3 remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                                                           xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_BranchUnit_0_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_BranchUnit_0_0_arch of entity cisc24hw_branchunit_0_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_branchunit_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_branchunit_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_BranchUnit_0_0/synth/CISC24HW_BranchUnit_0_0.vhd(56): INFO: executing CISC24HW_BranchUnit_0_0xB_0_0_sim_netlist.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_ALUMuxB_0_0_ALUMuxB (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_alumuxb_0_0_alumuxb (VHDL-9006)
+INFO: analyzing entity CISC24HW_ALUMuxB_0_0 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_alumuxb_0_0 (VHDL-9006)
+Listing tops:
+VeriTop library:xil_defaultlib mod:CISC24HW_ALUMuxB_0_0
+VeriTop library:xil_defaultlib mod:glbl
+VHDL top: library:xil_defaultlib entity:alumuxb arch:
+VHDL top: library:xil_defaultlib entity:alumuxb arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_alumuxb_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_alumuxb_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ALUMuxB_0_0/CISC24HW_ALUMuxB_0_0_sim_netlist.v(17): INFO: compiling module CISC24HW_ALUMuxB_0_0_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ALUMuxB_0_0/CISC24HW_ALUMuxB_0_0_sim_netlist.v(278): INFO: compiling module glbl_default (VERI-1018)
+F:/CISC24/CISC24.srcs/sources_1/new/ALUMuxB.vhd(34): INFO: executing ALUMuxB(Behavioral) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ALUMuxB_0_0/CISC24HW_ALUMuxB_0_0_sim_netlist.vhdl(319): INFO: executing CISC24HW_ALUMuxB_0_0(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ALUMuxB_0_0/CISC24HW_ALUMuxB_0_0_sim_netlist.vhdl(17): INFO: executing CISC24HW_ALUMuxB_0_0_ALUMuxB_default(STRUCTURE) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     (Чвхи   ╟ьхи   8%ьхи   ю8ьхи   HLьхи   п_ьхи   Xsьхи   Ю├ьхи   h ьхи   П╜ьхи   xаьхи    уьхи   ┬Хьхи   Эьхи   ≤ыхи    #ыхи   ╗6ыхи   0Jыхи   ╦]ыхи   @qыхи   х└ыхи   P≤ыхи   ь╚ыхи   `©ыхи   Хрыхи   pФыхи   ЬЫыхи   ─зхи   !зхи   ░4зхи   Hзхи   ═[зхи   (oзхи   ╟┌зхи   8√зхи   ю╘зхи   H╫зхи   ппзхи   XДзхи   ЮВзхи   hшхи   Пшхи   x2шхи    Fшхи   ┬Yшхи   mшхи   ≤─шхи    ■шхи   ╗╖шхи   0╩шхи   ╦ншхи   @Бшхи   хУшхи   P	эхи   ьэхи   `0эхи   ХCэхи   pWэхи   Ьjэхи   ─~эхи   ▓эхи   ░╔эхи   ╧эхи   ═лэхи   (Юэхи   ╟Сэхи   8щхи   ющхи   H.щхи   пAщхи   XUщхи   Юhщхи   h|щхи   П▐щхи   xёщхи    ╥щхи   ┬йщхи   чщхи   ≤Ящхи    чхи   ╗чхи   0,чхи   ╦?чхи   @Sчхи   хfчхи   Pzчхи   ь█чхи   `║чхи   Х╢чхи   pхчхи   Ьшчхи   ─Очхи   ъхи   ░ъхи   *ъхи   ═=ъхи   (Qъхи   ╟dъхи   8xъхи   ю▀ъхи   H÷ъхи   п╡ъхи   Xфъхи   Юыъхи   hМъхи   П Юхи   xЮхи    (Юхи   ┬;Юхи   OЮхи   ≤bЮхи    vЮхи   ╗┴Юхи   0²Юхи   ╦╟Юхи   @дЮхи   хвЮхи   PКЮхи   ьЧЮхи   `Ахи   Х%Ахи   p9Ахи   ЬLАхи   ─`Ахи   tАхи   ░┤Ахи   ⌡Ахи   ═╝Ахи   (бАхи   ╟уАхи   8ИАхи   юЭАхи   HБхи   п#Бхи   X7Бхи   ЮJБхи   h^Бхи   ПqБхи   x┘Бхи    ≥Бхи   ┬╛Бхи   юБхи   ≤сБхи    ГБхи   ╗ЗБхи   0Цхи   ╦!Цхи   @5Цхи   хHЦхи   P\Цхи   ьoЦхи   `┐Цхи   Х√Цхи   p╙Цхи   Ь╫Цхи   ─яЦхи   ЕЦхи   ░ЬЦхи   Дхи   ═Дхи   (3Дхи   ╟FДхи   8ZДхи   юmДхи   H│Дхи   п■Дхи   X╗Дхи   Ю╩Дхи   hоДхи   ПБДхи   xЖДхи    
+Ехи   ┬Ехи   1Ехи   ≤DЕхи    XЕхи   ╗kЕхи   0Ехи   ╦▓Ехи   @╕Ехи   х╧Ехи   PмЕхи   ьЮЕхи   `ТЕхи   ХФхи   pФхи   Ь.Фхи   ─BФхи   VФхи   ░iФхи   }Фхи   ═░Фхи   (╓Фхи   ╟╥Фхи   8кФхи   ючФхи   HРФхи   пГхи   XГхи   Ю,Гхи   h@Гхи   ПSГхи   xgГхи    {Гхи   ┬▌Гхи   ╒Гхи   ≤╣Гхи    иГхи   ╗эГхи   0ПГхи   ╦Ххи   @Ххи   х*Ххи   P>Ххи   ьQХхи   `eХхи   ХxХхи   p▄Ххи   Ь÷Ххи   ─ЁХхи   гХхи   ░зХхи   НХхи   ═Ихи   (Ихи   ╟(Ихи   8<Ихи   юOИхи   HcИхи   пvИхи   X┼Ихи   Ю²Ихи   h╠Ихи   ПдИхи   xьИхи    ЛИхи   ┬ЪИхи   Йхи   ≤&Йхи    :Йхи   ╗MЙхи   0aЙхи   ╦tЙхи   @┬Йхи   х⌡Йхи   P╞Йхи   ьбЙхи   `жЙхи   ХИЙхи   pЩЙхи   ЬКхи   ─$Кхи   8Кхи   ░KКхи   _Кхи   ═rКхи   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd(972): WARNING: directive wired_three_state expects one argument (VHDL-1382)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_BranchUnit_0_0/sim/CISC24HW_BranchUnit_0_0.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_BranchUnit_0_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_BranchUnit_0_0_arch of entity cisc24hw_branchunit_0_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_branchunit_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_branchunit_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_BranchUnit_0_0/sim/CISC24HW_BranchUnit_0_0.vhd(56): INFO: executing CISC24HW_BranchUnit_0_0(CISC24HW_BranchUnit_0_0_arch) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_BranchUnit_0_0/sim/CISC24HW_BranchUnit_0_0.vhd(95): WARNING: branchunit remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                        (xии   ╟▀ии   8÷ии   ю╡ии   Hфии   пыии   XМии   Ю ии   hии   П'ии   x;ии    Oии   ┬bии   vии   ≤┴ии    ²ии   ╗╟ии   0дии   ╦вии   @Кии   хЧии   Pии   ь%ии   `9ии   ХLии   p`ии   Ьsии   ─┤ии   ⌡ии   ░╝ии   бии   ═уии   (Иии   ╟Эии   8ии   ю#ии   H7ии   пJии   X^ии   Юqии   h┘ии   П≤ии   x╛ии   $RDI_DA @°     ┬         n E  юии   ┬сии   Гии   ≤Зии    ии   ╗!ии   05ии   ╦Hии   @\ии   хoии   P┐ии   ь√ии   `╙ии   Х╫ии   pяии   ЬДии   ─Ьии   ии   ░ии   3ии   ═Fии   (Zии   ╟mии   8│ии   ю■ии   H╗ии   п╩ии   Xоии   ЮБии   hЖии   П	ии   xии    1ии   ┬Dии   Xии   ≤kии    ии   ╗▓ии   0╕ии   ╦╧ии   @мии   хЮии   PТии   ьии   `ии   Х.ии   pBии   ЬUии   ─iии   }ии   ░░ии   ╓ии   ═╥ии   (кии   ╟чии   8Рии   юии   Hии   п,ии   X@ии   ЮSии   hgии   Пzии   x▌ии    ╒ии   ┬╣ии   иии   ≤эии    Пии   ╗ ии   0 ии   ╦* ии   @> ии   хQ ии   Pe ии   ьx ии   `▄ ии   Х÷ ии   pЁ ии   Ьф ии   ─з ии   Н ии   ░!ии   !ии   ═(!ии   (<!ии   ╟O!ии   8c!ии   юv!ии   H┼!ии   п²!ии   X╠!ии   Юд!ии   hь!ии   ПК!ии   xЪ!ии    "ии   ┬&"ии   :"ии   ≤M"ии    a"ии   ╗t"ии   0┬"ии   ╦⌡"ии   @╞"ии   хб"ии   Pж"ии   ьИ"ии   `Щ"ии   Х#ии   p$#ии   Ь7#ии   ─K#ии   _#ии   ░r#ии   ├#ии   ═≥#ии   (╜#ии   ╟ю#ии   8т#ии   юГ#ии   HШ#ии   п$ии   X"$ии   Ю5$ии   hI$ии   П\$ии   xp$ии    └$ии   ┬≈$ии   ╚$ии   ≤╬$ии    р$ии   ╗Е$ии   0Ы$ии   ╦%ии   @ %ии   х3%ии   PG%ии   ьZ%ии   `n%ии   Х│%ии   p∙%ии   Ь╗%ии   ─╪%ии   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_DecodeUnit_0_0/synth/CISC24HW_DecodeUnit_0_0.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_DecodeUnit_0_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_DecodeUnit_0_0_arch of entity cisc24hw_decodeunit_0_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_decodeunit_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_decodeunit_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_DecodeUnit_0_0/synth/CISC24HW_DecodeUnit_0_0.vhd(56): INFO: executing CISC24HW_DecodeUnit_0_0(CISC24HW_DecodeUnit_0_0_arch) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_DecodeUnit_0_0/synth/CISC24HW_DecodeUnit_0_0.vhd(101): WARNING: decodeunit remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                              bugMux_0_0/CISC24HW_MemDebugMux_0_0_sim_netlist.v(17): INFO: compiling module CISC24HW_MemDebugMux_0_0_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_MemDebugMux_0_0/CISC24HW_MemDebugMux_0_0_sim_netlist.v(139): INFO: compiling module glbl_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_MemDebugMux_0_0/CISC24HW_MemDebugMux_0_0_sim_netlist.vhdl(145): INFO: executing CISC24HW_MemDebugMux_0_0(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_MemDebugMux_0_0/CISC24HW_MemDebugMux_0_0_sim_netlist.vhdl(17): INFO: executing CISC24HW_MemDebugMux_0_0_MemDebugMux_default(STRUCTURE) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                                                      ├[ии   ░≥[ии   ╜[ии   ═ю[ии   (т[ии   ╟Г[ии   8Ш[ии   ю\ии   H"\ии   п5\ии   XI\ии   Ю\\ии   hp\ии   П┐\ии   x≈\ии    ╚\ии   ┬╬\ии   р\ии   ≤Е\ии    Ы\ии   ╗]ии   0 ]ии   ╦3]ии   @G]ии   хZ]ии   Pn]ии   ь│]ии   `∙]ии   Х╗]ии   p╪]ии   Ьо]ии   ─Ц]ии   В]ии   ░
+^ии   ^ии   ═1^ии   (E^ии   ╟X^ии   8l^ии   ю^ии   H⌠^ии   п╕^ии   X╨^ии   Юм^ии   hА^ии   ПТ^ии   x_ии    _ии   ┬/_ии   C_ии   ≤V_ии    j_ии   ╗}_ии   0▒_ии   ╦╓_ии   @╦_ии   хк_ии   Pъ_ии   ьР_ии   ``ии   Х`ии   p-`ии   Ь@`ии   ─T`ии   h`ии   ░{`ии   ▐`ии   ═╒`ии   (╤`ии   ╟и`ии   8щ`ии   юП`ии   Haии   пaии   X+aии   Ю>aии   hRaии   Пeaии   xyaии    █aии   ┬═aии   ╢aии   ≤гaии    шaии   ╗Нaии   0bии   ╦bии   @)bии   х<bии   PPbии   ьcbии   `wbии   Х┼bии   p·bии   Ь╠bии   ─еbии   ыbии   ░Лbии    cии   ═cии   ('cии   ╟:cии   8Ncии   юacии   Hucии   п┬cии   X°cии   Ю╞cии   hцcии   Пжcии   xЙcии    Чcии   ┬dии   %dии   ≤8dии    Ldии   ╗_dии   0sdии   ╦├dии   @ dии   х╜dии   Pаdии   ьтdии   `Хdии   ХШdии   peии   Ь"eии   ─6eии   Jeии   ░]eии   qeии   ═└eии   (≤eии   ╟╚eии   8©eии   юрeии   HФeии   пЫeии   Xfии   Ю fии   h4fии   ПGfии   x[fии    ofии   ┬┌fии   √fии   ≤╘fии    ╫fии   ╗пfии   0Дfии   ╦Вfии   @gии   хgии   P2gии   ьEgии   `Ygии   Хlgии   p─gии   Ь⌠gии   ─╖gии   ╩gии   ░нgии   Бgии   ═Уgии   (	hии   ╟hии   80hии   юChии   HWhии   пjhии   X~hии   Ю▒hии   h╔hии   П╦hии   xлhии    Юhии   ┬Сhии   iии   ≤iии    .iии   ╗Aiии   0Uiии   ╦hiии   @|iии   х▐iии   Pёiии   ь╤iии   `йiии   Хщiии   pЯiии   Ьjии   ─jии   ,jии   ░?jии   Sjии   ═fjии   (zjии   ╟█jии   8║jии   ю╢jии   Hхjии   пшjии   XОjии   Юkии   hkии   П)kии   x=kии    Qkии   ┬dkии   xkии   ≤▀kии    ÷kии   ╗╡kии   0фkии   ╦ыkии   @Мkии   х lии   Plии   ь'lии   `;lии   ХNlии   pblии   Ьulии   ─┴lии   ²lии   ░╟lии   дlии   ═вlии   (Кlии   ╟Чlии   8mии   ю%mии   H9mии   пLmии   X`mии   Юsmии   h┤mии   П mии   x╝mии    бmии   ┬уmии   Иmии   ≤Эmии    nии   ╗#nии   07nии   ╦Jnии   @^nии   хqnии   P┘nии   ь≤nии   `╛nии   Х©nии   pсnии   ЬФnии   ─Зnии   oии   ░!oии   5oии   ═Hoии   (\oии   ╟ooии   8┐oии   ю√oии   H╙oии   п╫oии   Xяoии   ЮДoии   hЬoии   Пpии   xpии    3pии   ┬Fpии   Zpии   ≤mpии    │pии   ╗■pии   0╗pии   ╦╩pии   @оpии   хБpии   PЖpии   ь	qии   `qии   Х0qии   pDqии   ЬWqии   ─kqии   qии   ░▓qии   ╕qии   ═╧qии   (мqии   ╟Юqии   8Тqии   юrии   Hrии   п.rии   XBrии   ЮUrии   hirии   П|rии   x░rии    ╓rии   ┬╥rии   кrии   ≤чrии    Рrии   ╗sии   0sии   ╦,sии   @@sии   хSsии   Pgsии   ьzsии   `▌sии   Х║sии   p╣sии   Ьхsии   ─эsии   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd(972): WARNING: directive wired_three_state expects one argument (VHDL-1382)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Demux1to2_0_0/sim/CISC24HW_Demux1to2_0_0.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Demux1to2_0_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_Demux1to2_0_0_arch of entity cisc24hw_demux1to2_0_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_demux1to2_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_demux1to2_0_0 arch:
+END of tops
+fsrcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ExecReg_0_0/synth/CISC24HW_ExecReg_0_0.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_ExecReg_0_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_ExecReg_0_0_arch of entity cisc24hw_execreg_0_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_execreg_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_execreg_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ExecReg_0_0/synth/CISC24HW_ExecReg_0_0.vhd(56): INFO: executing CISC24HW_ExecReg_0_0(CISC24HW_ExecReg_0_0_arch) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_ExecReg_0_0/synth/CISC24HW_ExecReg_0_0.vhd(95): WARNING: execreg remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                         
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Demux1to2_0_0/synth/CISC24HW_Demux1to2_0_0.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Demux1to2_0_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_Demux1to2_0_0_arch of entity cisc24hw_demux1to2_0_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_demux1to2_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_demux1to2_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Demux1to2_0_0/synth/CISC24HW_Demux1to2_0_0.vhd(56): INFO: executing CISC24HW_Demux1to2_0_0(CISC24HW_Demux1to2_0_0_arch) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Demux1to2_0_0/synth/CISC24HW_Demux1to2_0_0.vhd(83): WARNING: demux1to2 remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                             SC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Multiplier_VHDL_0_0/CISC24HW_Multiplier_VHDL_0_0_sim_netlist.v(17): INFO: compiling module CISC24HW_Multiplier_VHDL_0_0_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Multiplier_VHDL_0_0/CISC24HW_Multiplier_VHDL_0_0_sim_netlist.v(724): INFO: compiling module glbl_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Multiplier_VHDL_0_0/CISC24HW_Multiplier_VHDL_0_0_sim_netlist.vhdl(972): INFO: executing CISC24HW_Multiplier_VHDL_0_0(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Multiplier_VHDL_0_0/CISC24HW_Multiplier_VHDL_0_0_sim_netlist.vhdl(17): INFO: executing CISC24HW_Multiplier_VHDL_0_0_Multiplier_VHDL_default(STRUCTURE) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                              ХОЦии   pДии   ЬДии   ─*Дии   >Дии   ░QДии   eДии   ═xДии   (▄Дии   ╟÷Дии   8ЁДии   юфДии   HзДии   пМДии   XЕии   ЮЕии   h(Еии   П;Еии   xOЕии    cЕии   ┬vЕии   ┼Еии   ≤²Еии    ╠Еии   ╗дЕии   0ьЕии   ╦КЕии   @ЪЕии   хФии   P&Фии   ь9Фии   `MФии   Х`Фии   ptФии   Ь┤Фии   ─⌡Фии   ╞Фии   ░бФии   жФии   ═ИФии   (ЩФии   ╟Гии   8$Гии   ю7Гии   HKГии   п^Гии   XrГии   Ю┘Гии   h≥Гии   П╛Гии   xюГии    тГии   ┬ГГии   ШГии   ≤Хии    "Хии   ╗5Хии   0IХии   ╦\Хии   @pХии   х┐Хии   P≈Хии   ь╙Хии   `╬Хии   ХяХии   pЕХии   ЬЬХии   ─Иии    Иии   ░3Иии   GИии   ═ZИии   (nИии   ╟│Иии   8∙Иии   ю╗Иии   H╪Иии   поИии   XЦИии   ЮЖИии   h
+Йии   ПЙии   x1Йии    EЙии   ┬XЙии   lЙии   ≤Йии    ⌠Йии   ╗╕Йии   0╨Йии   ╦мЙии   @АЙии   хТЙии   PКии   ьКии   `/Кии   ХBКии   pVКии   ЬiКии   ─}Кии   ▒Кии   ░╓Кии   ╦Кии   ═кКии   (ъКии   ╟РКии   8Лии   юЛии   H-Лии   п@Лии   XTЛии   ЮgЛии   h{Лии   П▌Лии   x╒Лии    ╤Лии   ┬иЛии   щЛии   ≤ПЛии    Мии   ╗Мии   0+Мии   ╦>Мии   @RМии   хeМии   PyМии   ь▄Мии   `═Мии   ХЁМии   pгМии   ЬзМии   ─НМии   Нии   ░Нии   )Нии   ═<Нии   (PНии   ╟cНии   8wНии   ю┼Нии   H·Нии   п╠Нии   XеНии   ЮьНии   hЛНии   ПЪНии   xОии    'Оии   ┬:Оии   NОии   ≤aОии    uОии   ╗┬Оии   0°Оии   ╦╞Оии   @цОии   хжОии   PЙОии   ьЩОии   `Пии   Х$Пии   p8Пии   ЬKПии   ─_Пии   sПии   ░├Пии    Пии   ═╜Пии   (аПии   ╟тПии   8ХПии   юШПии   HЯии   п"Яии   X6Яии   ЮIЯии   h]Яии   ПpЯии   x└Яии    ≤Яии   ┬╚Яии   ©Яии   ≤рЯии    ФЯии   ╗ЫЯии   0Рии   ╦ Рии   @4Рии   хGРии   P[Рии   ьnРии   `┌Рии   Х∙Рии   p╘Рии   Ь╪Рии   ─пРии   ДРии   ░ВРии   Сии   ═Сии   (2Сии   ╟EСии   8YСии   юlСии   H─Сии   п⌠Сии   X╖Сии   Ю╨Сии   hнСии   ПАСии   xУСии    	Тии   ┬Тии   0Тии   ≤CТии    WТии   ╗jТии   0~Тии   ╦▒Тии   @╔Тии   х╦Тии   PлТии   ьъТии   `СТии   ХУии   pУии   Ь-Уии   ─AУии   UУии   ░hУии   |Уии   ═▐Уии   (ёУии   ╟╤Уии   8йУии   ющУии   HЯУии   пЖии   XЖии   Ю+Жии   h?Жии   ПRЖии   xfЖии    zЖии   ┬█Жии   ║Жии   ≤╢Жии    хЖии   ╗шЖии   0ОЖии   ╦Вии   @Вии   х)Вии   P=Вии   ьPВии   `dВии   ХwВии   p▀Вии   Ь·Вии   ─╡Вии   фВии   ░ыВии   МВии   ═ Ьии   (Ьии   ╟'Ьии   8;Ьии   юNЬии   HbЬии   пuЬии   X┴Ьии   Ю°Ьии   h╟Ьии   ПцЬии   xвЬии    КЬии   ┬ЧЬии   Ыии   ≤%Ыии    9Ыии   ╗LЫии   0`Ыии   ╦sЫии   @┤Ыии   х Ыии   P╝Ыии   ьаЫии   `уЫии   ХХЫии   pЭЫии   ЬЗии   ─#Зии   7Зии   ░JЗии   ^Зии   ═qЗии   (┘Зии   ╟≤Зии   8╛Зии   ю©Зии   HсЗии   пФЗии   XЗЗии   ЮШии   h!Шии   П4Шии   xHШии    \Шии   ┬oШии   ┐Шии   ≤√Шии    ╙Шии   ╗╫Шии   0яШии   ╦ДШии   @ЬШии   хЭии   PЭии   ь2Эии   `FЭии   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_0/synth/CISC24HW_Mux2to1_0_0.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Mux2to1_0_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_Mux2to1_0_0_arch of entity cisc24hw_mux2to1_0_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_0/synth/CISC24HW_Mux2to1_0_0.vhd(56): INFO: executing CISC24HW_Mux2to1_0_0(CISC24HW_Mux2to1_0_0_arch) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_0/synth/CISC24HW_Mux2to1_0_0.vhd(83): WARNING: mux2to1 remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                         ХK(йи   p_(йи   Ьr(йи   ─├(йи    (йи   ░╜(йи   а(йи   ═т(йи   (Х(йи   ╟Ш(йи   8)йи   ю")йи   H6)йи   пI)йи   X])йи   Юp)йи   h└)йи   П≈)йи   x╚)йи    ©)йи   ┬р)йи   Ф)йи   ≤Ы)йи    *йи   ╗ *йи   04*йи   ╦G*йи   @[*йи   хn*йи   P┌*йи   ь∙*йи   `╘*йи   Х╪*йи   pп*йи   ЬЦ*йи   ─В*йи   +йи   ░+йи   2+йи   ═E+йи   (Y+йи   ╟l+йи   8─+йи   ю⌠+йи   H╖+йи   п╨+йи   Xн+йи   ЮА+йи   hУ+йи   П,йи   x,йи    0,йи   ┬C,йи   W,йи   ≤j,йи    ~,йи   ╗▒,йи   0╔,йи   ╦╦,йи   @л,йи   хъ,йи   PС,йи   ь-йи   `-йи   Х--йи   pA-йи   ЬT-йи   ─h-йи   |-йи   ░▐-йи   ё-йи   ═╤-йи   (й-йи   ╟щ-йи   8Я-йи   ю.йи   H.йи   п+.йи   X?.йи   ЮR.йи   hf.йи   Пy.йи   x█.йи    ║.йи   ┬╢.йи   х.йи   ≤ш.йи    О.йи   ╗/йи   0/йи   ╦)/йи   @=/йи   хP/йи   Pd/йи   ьw/йи   `▀/йи   Х·/йи   p╡/йи   Ье/йи   ─ы/йи   М/йи   ░ 0йи   0йи   ═'0йи   (;0йи   ╟N0йи   8b0йи   юu0йи   H┴0йи   п°0йи   X╟0йи   Юц0йи   hв0йи   ПЙ0йи   xЧ0йи    1йи   ┬%1йи   91йи   ≤L1йи    `1йи   ╗s1йи   0┤1йи   ╦ 1йи   @╝1йи   ха1йи   Pу1йи   ьХ1йи   `Э1йи   Х2йи   p#2йи   Ь62йи   ─J2йи   ^2йи   ░q2йи   ┘2йи   ═≤2йи   (╛2йи   ╟©2йи   8с2йи   юФ2йи   HЗ2йи   п3йи   X!3йи   Ю43йи   hH3йи   П[3йи   xo3йи    ┐3йи   ┬√3йи   ╙3йи   ≤╫3йи    я3йи   ╗Д3йи   0Ь3йи   ╦4йи   @4йи   х24йи   PF4йи   ьY4йи   `m4йи   Х─4йи   p■4йи   Ь╖4йи   ─╩4йи   о4йи   ░Б4йи   Ж4йи   ═	5йи   (5йи   ╟05йи   8D5йи   юW5йи   Hk5йи   п~5йи   X▓5йи   Ю╔5йи   h╧5йи   Пл5йи   xЮ5йи    Т5йи   ┬6йи   6йи   ≤.6йи    B6йи   ╗U6йи   0i6йи   ╦|6йи   @░6йи   хё6йи   P╥6йи   ьй6йи   `ч6йи   ХЯ6йи   p7йи   Ь7йи   ─,7йи   @7йи   ░S7йи   g7йи   ═z7йи   (▌7йи   ╟║7йи   8╣7йи   юх7йи   Hэ7йи   пО7йи   X8йи   Ю8йи   h*8йи   П=8йи   xQ8йи    e8йи   ┬x8йи   ▄8йи   ≤÷8йи    Ё8йи   ╗ф8йи   0з8йи   ╦М8йи   @9йи   х9йи   P(9йи   ь;9йи   `O9йи   Хb9йи   pv9йи   Ь┴9йи   ─²9йи   ╠9йи   ░д9йи   ь9йи   ═К9йи   (Ъ9йи   ╟:йи   8&:йи   ю9:йи   HM:йи   п`:йи   Xt:йи   Ю┤:йи   h⌡:йи   П╝:йи   xб:йи    ж:йи   ┬И:йи   Щ:йи   ≤;йи    $;йи   ╗7;йи   0K;йи   ╦^;йи   @r;йи   х┘;йи   P≥;йи   ь╛;йи   `ю;йи   Хс;йи   pГ;йи   ЬЗ;йи   ─<йи   "<йи   ░5<йи   I<йи   ═\<йи   (p<йи   ╟┐<йи   8≈<йи   ю╙<йи   H╬<йи   пя<йи   XЕ<йи   ЮЬ<йи   h=йи   П=йи   x3=йи    G=йи   ┬Z=йи   n=йи   ≤│=йи    ∙=йи   ╗╗=йи   0╪=йи   ╦о=йи   @Ц=йи   хЖ=йи   P
+>йи   ь>йи   `1>йи   ХD>йи   pX>йи   Ьk>йи   ─>йи   ⌠>йи   ░╕>йи   ╨>йи   ═м>йи   (А>йи   ╟Т>йи   8?йи   ю?йи   H/?йи   пB?йи   XV?йи   Юi?йи   h}?йи   П░?йи   x╓?йи    ╦?йи   ┬к?йи   ъ?йи   ≤Р?йи    @йи   ╗@йи   0-@йи   ╦@@йи   @T@йи   хg@йи   P{@йи   ь▌@йи   `╒@йи   Х╣@йи   pи@йи   Ьэ@йи   ─П@йи   Aйи   ░Aйи   +Aйи   ═>Aйи   (RAйи   ╟eAйи   8yAйи   ю▄Aйи   H═Aйи   пЁAйи   XгAйи   ЮзAйи   hНAйи   ПBйи   xBйи    )Bйи   ┬<Bйи   PBйи   ≤cBйи    wBйи   ╗┼Bйи   0·Bйи   ╦╠Bйи   @еBйи   хьBйи   PЛBйи   ьЪBйи   `Cйи   Х&Cйи   p:Cйи   ЬMCйи   ─aCйи   uCйи   ░┬Cйи   °Cйи   ═╞Cйи   (цCйи   ╟жCйи   8ЙCйи   юЩCйи   HDйи   п$Dйи   X8Dйи   ЮKDйи   h_Dйи   ПrDйи   x├Dйи     Dйи   ┬╜Dйи   аDйи   ≤тDйи    ХDйи   ╗ШDйи   0Eйи   ╦"Eйи   @6Eйи   хIEйи   P]Eйи   ьpEйи   `└Eйи   Х≈Eйи   p╚Eйи   Ь╬Eйи   ─рEйи   ФEйи   ░ЫEйи   Fйи   ═ Fйи   (4Fйи   ╟GFйи   8[Fйи   юnFйи   H┌Fйи   п∙Fйи   X╘Fйи   Ю╪Fйи   hпFйи   ПЦFйи   xВFйи    Gйи   ┬Gйи   2Gйи   ≤EGйи    YGйи   ╗lGйи   0─Gйи   ╦⌠Gйи   @╖Gйи   х╨Gйи   PнGйи   ьАGйи   `УGйи   ХHйи   pHйи   Ь/Hйи   ─CHйи   WHйи   ░jHйи   ~Hйи   ═▒Hйи   (╔Hйи   ╟╦Hйи   8лHйи   юъHйи   HСHйи   пIйи   XIйи   Ю-Iйи   hAIйи   ПTIйи   xhIйи    |Iйи   ┬▐Iйи   ёIйи   ≤╤Iйи    йIйи   ╗щIйи   0ЯIйи   ╦Jйи   @Jйи   х+Jйи   P?Jйи   ьRJйи   `fJйи   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd(972): WARNING: directive wired_three_state expects one argument (VHDL-1382)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing module CISC24HW_Mux2to1_0_0 (VERI-9002)
+INFO: analyzing module CISC24HW_Mux2to1_0_0_Mux2to1 (VERI-9002)
+INFO: analyzing module glbl (VERI-9002)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_0/CISC24HW_Mux2to1_0_0_sim_netlist.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Mux2to1_0_0_Mux2to1 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_mux2to1_0_0_mux2to1 (VHDL-9006)
+INFO: analyzing entity CISC24HW_Mux2to1_0_0 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_mux2to1_0_0 (VHDL-9006)
+Listing tops:
+VeriTop library:xil_defaultlib mod:CISC24HW_Mux2to1_0_0
+VeriTop library:xil_defaultlib mod:glbl
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_0/CISC24HW_Mux2to1_0_0_sim_netlist.v(17): INFO: compiling module CISC24HW_Mux2to1_0_0_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_0/CISC24HW_Mux2to1_0_0_sim_netlist.v(252): INFO: compiling module glbl_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_0/CISC24HW_Mux2to1_0_0_sim_netlist.vhdl(300): INFO: executing CISC24HW_Mux2to1_0_0(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_0/CISC24HW_Mux2to1_0_0_sim_netlist.vhdl(17): INFO: executing CISC24HW_Mux2to1_0_0_Mux2to1_default(STRUCTURE) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                                                                                                                                                              хYlйи   Pmlйи   ь─lйи   `■lйи   Х╖lйи   p╩lйи   Ьнlйи   ─Бlйи   Жlйи   ░	mйи   mйи   ═0mйи   (Dmйи   ╟Wmйи   8kmйи   ю~mйи   H▓mйи   п╔mйи   X╧mйи   Юлmйи   hЮmйи   ПСmйи   xnйи    nйи   ┬.nйи   Bnйи   ≤Unйи    inйи   ╗|nйи   0░nйи   ╦ёnйи   @╥nйи   хйnйи   Pчnйи   ьЯnйи   `oйи   Хoйи   p,oйи   Ь?oйи   ─Soйи   goйи   ░zoйи   ▌oйи   ═║oйи   (╣oйи   ╟хoйи   8эoйи   юОoйи   Hpйи   пpйи   X*pйи   Ю=pйи   hQpйи   Пdpйи   xxpйи    ▄pйи   ┬÷pйи   Ёpйи   ≤фpйи    зpйи   ╗Мpйи   0qйи   ╦qйи   @(qйи   х;qйи   POqйи   ьbqйи   `vqйи   Х┴qйи   p²qйи   Ь╟qйи   ─дqйи   ьqйи   ░Кqйи   Ъqйи   ═rйи   (&rйи   ╟9rйи   8Mrйи   ю`rйи   Htrйи   п┤rйи   X⌡rйи   Ю╝rйи   hбrйи   Пуrйи   xИrйи    Щrйи   ┬sйи   $sйи   ≤7sйи    Ksйи   ╗^sйи   0rsйи   ╦┘sйи   @≥sйи   х╛sйи   Pюsйи   ьсsйи   `Гsйи   ХЗsйи   ptйи   Ь!tйи   ─5tйи   Itйи   ░\tйи   ptйи   ═┐tйи   (≈tйи   ╟╙tйи   8╬tйи   юяtйи   HЕtйи   пЬtйи   Xuйи   Юuйи   h3uйи   ПFuйи   xZuйи    nuйи   ┬│uйи   ∙uйи   ≤╗uйи    ╪uйи   ╗оuйи   0Цuйи   ╦Жuйи   @
+vйи   хvйи   P1vйи   ьDvйи   `Xvйи   Хkvйи   pvйи   Ь▓vйи   ─╕vйи   ╨vйи   ░мvйи   Аvйи   ═Тvйи   (wйи   ╟wйи   8/wйи   юBwйи   HVwйи   пiwйи   X}wйи   Ю░wйи   h╓wйи   П╥wйи   xкwйи    ъwйи   ┬Рwйи   xйи   ≤xйи    -xйи   ╗@xйи   0Txйи   ╦gxйи   @{xйи   х▌xйи   P╒xйи   ь╣xйи   `иxйи   Хэxйи   pПxйи   Ьyйи   ─yйи   +yйи   ░>yйи   Ryйи   ═eyйи   (yyйи   ╟▄yйи   8═yйи   юЁyйи   Hгyйи   пзyйи   XНyйи   Юzйи   hzйи   П(zйи   x<zйи    Pzйи   ┬czйи   wzйи   ≤┼zйи    ·zйи   ╗╠zйи   0еzйи   ╦ьzйи   @Лzйи   хЪzйи   P{йи   ь&{йи   `:{йи   ХM{йи   pa{йи   Ьt{йи   ─┬{йи   °{йи   ░╞{йи   ц{йи   ═ж{йи   (Й{йи   ╟Щ{йи   8|йи   ю$|йи   H8|йи   пK|йи   X_|йи   Юr|йи   h├|йи   П≥|йи   x╜|йи    а|йи   ┬т|йи   Х|йи   ≤Ш|йи    }йи   ╗"}йи   06}йи   ╦I}йи   @]}йи   хp}йи   P└}йи   ь≈}йи   `╚}йи   Х╬}йи   pр}йи   ЬЕ}йи   ─Ы}йи   ~йи   ░ ~йи   4~йи   ═G~йи   ([~йи   ╟n~йи   8┌~йи   ю∙~йи   H╘~йи   п╪~йи   Xп~йи   ЮЦ~йи   hВ~йи   П
+йи   xйи    2йи   ┬Eйи   Yйи   ≤lйи    ─йи   ╗⌠йи   0╖йи   ╦╨йи   @нйи   хАйи   PУйи   ь─йи   `─йи   Х/─йи   pC─йи   ЬV─йи   ─j─йи   ~─йи   ░▒─йи   ╔─йи   ═╦─йи   (л─йи   ╟ъ─йи   8С─йи   ю│йи   H│йи   п-│йи   XA│йи   ЮT│йи   hh│йи   П{│йи   x▐│йи    ё│йи   ┬╤│йи   й│йи   ≤щ│йи    Я│йи   ╗┌йи   0┌йи   ╦+┌йи   @?┌йи   хR┌йи   Pf┌йи   ьy┌йи   `█┌йи   Х═┌йи   p╢┌йи   Ьг┌йи   ─ш┌йи   О┌йи   ░┐йи   ┐йи   ═)┐йи   (=┐йи   ╟P┐йи   8d┐йи   юw┐йи   H▀┐йи   п·┐йи   X╡┐йи   Юе┐йи   hы┐йи   ПЛ┐йи   x └йи    └йи   ┬'└йи   ;└йи   ≤N└йи    b└йи   ╗u└йи   0┴└йи   ╦°└йи   @╟└йи   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_1/synth/CISC24HW_Mux2to1_0_1.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Mux2to1_0_1 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_Mux2to1_0_1_arch of entity cisc24hw_mux2to1_0_1 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_0_1 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_0_1 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_1/synth/CISC24HW_Mux2to1_0_1.vhd(56): INFO: executing CISC24HW_Mux2to1_0_1(CISC24HW_Mux2to1_0_1_arch) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_1/synth/CISC24HW_Mux2to1_0_1.vhd(83): WARNING: mux2to1 remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                         х╣╟йи   Pи╟йи   ьэ╟йи   `П╟йи   Х╠йи   p╠йи   Ь*╠йи   ─>╠йи   R╠йи   ░e╠йи   y╠йи   ═▄╠йи   (═╠йи   ╟Ё╠йи   8г╠йи   юз╠йи   HН╠йи   п╡йи   X╡йи   Ю(╡йи   h<╡йи   ПO╡йи   xc╡йи    w╡йи   ┬┼╡йи   ·╡йи   ≤╠╡йи    е╡йи   ╗ь╡йи   0Л╡йи   ╦Ъ╡йи   @Ёйи   х&Ёйи   P:Ёйи   ьMЁйи   `aЁйи   ХtЁйи   p┬Ёйи   Ь⌡Ёйи   ─╞Ёйи   цЁйи   ░жЁйи   ЙЁйи   ═ЩЁйи   (╢йи   ╟$╢йи   88╢йи   юK╢йи   H_╢йи   пr╢йи   X├╢йи   Ю≥╢йи   h╜╢йи   Пю╢йи   xт╢йи    Х╢йи   ┬Ш╢йи   ╣йи   ≤"╣йи    6╣йи   ╗I╣йи   0]╣йи   ╦p╣йи   @└╣йи   х≈╣йи   P╚╣йи   ь╬╣йи   `р╣йи   ХЕ╣йи   pЫ╣йи   Ь╤йи   ─ ╤йи   4╤йи   ░G╤йи   [╤йи   ═n╤йи   (┌╤йи   ╟∙╤йи   8╘╤йи   ю╪╤йи   Hп╤йи   пЦ╤йи   XВ╤йи   Ю
+╥йи   h╥йи   П1╥йи   xE╥йи    Y╥йи   ┬l╥йи   ─╥йи   ≤⌠╥йи    ╖╥йи   ╗╨╥йи   0н╥йи   ╦А╥йи   @У╥йи   х╦йи   P╦йи   ь/╦йи   `C╦йи   ХV╦йи   pj╦йи   Ь}╦йи   ─▒╦йи   ╔╦йи   ░╦╦йи   л╦йи   ═ъ╦йи   (С╦йи   ╟╧йи   8╧йи   ю-╧йи   HA╧йи   пT╧йи   Xh╧йи   Ю{╧йи   h▐╧йи   П╒╧йи   x╤╧йи    й╧йи   ┬щ╧йи   Я╧йи   ≤╨йи    ╨йи   ╗+╨йи   0?╨йи   ╦R╨йи   @f╨йи   хy╨йи   P█╨йи   ь═╨йи   `╢╨йи   Хг╨йи   pш╨йи   ЬН╨йи   ─╩йи   ╩йи   ░)╩йи   =╩йи   ═P╩йи   (d╩йи   ╟w╩йи   8▀╩йи   ю·╩йи   H╡╩йи   пе╩йи   Xы╩йи   ЮЛ╩йи   h ╪йи   П╪йи   x'╪йи    ;╪йи   ┬N╪йи   b╪йи   ≤u╪йи    ┴╪йи   ╗°╪йи   0╟╪йи   ╦ц╪йи   @в╪йи   хЙ╪йи   PЧ╪йи   ь╫йи   `%╫йи   Х8╫йи   pL╫йи   Ь_╫йи   ─s╫йи   ┤╫йи   ░ ╫йи   ╝╫йи   ═а╫йи   (у╫йи   ╟Х╫йи   8Э╫йи   ю╬йи   H#╬йи   п6╬йи   XJ╬йи   Ю]╬йи   hq╬йи   П└╬йи   x≤╬йи    ╛╬йи   ┬©╬йи   с╬йи   ≤Ф╬йи    З╬йи   ╗©йи   0!©йи   ╦4©йи   @H©йи   х[©йи   Po©йи   ь┌©йи   `√©йи   Х╘©йи   p╫©йи   Ьп©йи   ─Д©йи   Ь©йи   ░юйи   юйи   ═2юйи   (Fюйи   ╟Yюйи   8mюйи   ю─юйи   H■юйи   п╖юйи   X╩юйи   Юнюйи   hБюйи   ПУюйи   x	айи    айи   ┬0айи   Dайи   ≤Wайи    kайи   ╗~айи   0▓айи   ╦╔айи   @╧айи   хлайи   PЮайи   ьСайи   `бйи   Хбйи   p.бйи   ЬAбйи   ─Uбйи   iбйи   ░|бйи   ░бйи   ═ёбйи   (╥бйи   ╟йбйи   8чбйи   юЯбйи   Hцйи   пцйи   X,цйи   Ю?цйи   hSцйи   Пfцйи   xzцйи    ▌цйи   ┬║цйи   ╣цйи   ≤хцйи    эцйи   ╗Оцйи   0дйи   ╦дйи   @*дйи   х=дйи   PQдйи   ьdдйи   `xдйи   Х▀дйи   p÷дйи   Ь╡дйи   ─фдйи   здйи   ░Мдйи   ейи   ═ейи   ((ейи   ╟;ейи   8Oейи   юbейи   Hvейи   п┴ейи   X²ейи   Ю╟ейи   hдейи   Пвейи   xКейи    Ъейи   ┬фйи   &фйи   ≤9фйи    Mфйи   ╗`фйи   0tфйи   ╦┤фйи   @⌡фйи   х╝фйи   Pбфйи   ьуфйи   `Ифйи   ХЭфйи   pгйи   Ь#гйи   ─7гйи   Kгйи   ░^гйи   rгйи   ═┘гйи   (≥гйи   ╟╛гйи   8югйи   юсгйи   HГгйи   пЗгйи   Xхйи   Ю!хйи   h5хйи   ПHхйи   x\хйи    pхйи   ┬┐хйи   ≈хйи   ≤╙хйи    ╬хйи   ╗яхйи   0Ехйи   ╦Ьхйи   @ийи   хийи   P3ийи   ьFийи   `Zийи   Хmийи   p│ийи   Ь■ийи   ─╗ийи   ╪ийи   ░оийи   Цийи   ═Жийи   (
+ййи   ╟ййи   81ййи   юDййи   HXййи   пkййи   Xййи   Ю▓ййи   h╕ййи   П╧ййи   xмййи    Аййи   ┬Тййи   кйи   ≤кйи    /кйи   ╗Bкйи   0Vкйи   ╦iкйи   @}кйи   х░кйи   P╓кйи   ь╥кйи   `ккйи   Хчкйи   pРкйи   Ьлйи   ─лйи   -лйи   ░@лйи   Tлйи   ═gлйи   ({лйи   ╟▌лйи   8╒лйи   ю╣лйи   Hилйи   пэлйи   XПлйи   Юмйи   hмйи   П*мйи   x>мйи    Rмйи   ┬eмйи   yмйи   ≤▄мйи    ═мйи   ╗Ёмйи   0гмйи   ╦змйи   @Нмйи   хнйи   Pнйи   ь(нйи   `<нйи   ХOнйи   pcнйи   Ьvнйи   ─┼нйи   ·нйи   ░╠нйи   енйи   ═ьнйи   (Лнйи   ╟Ънйи   8ойи   ю&ойи   H:ойи   пMойи   Xaойи   Юtойи   h┬ойи   П⌡ойи   x╞ойи    цойи   ┬жойи   Йойи   ≤Щойи    пйи   ╗$пйи   08пйи   ╦Kпйи   @_пйи   хrпйи   P├пйи   ь≥пйи   `╜пйи   Хюпйи   pтпйи   ЬГпйи   ─Шпйи   яйи   ░"яйи   6яйи   ═Iяйи   (]яйи   ╟pяйи   8└яйи   ю≈яйи   H╚яйи   п╬яйи   Xряйи   ЮЕяйи   hЫяйи   Прйи   x рйи    4рйи   ┬Gрйи   [рйи   ≤nрйи    ┌рйи   ╗∙рйи   0╘рйи   ╦╪рйи   @прйи   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd(972): WARNING: directive wired_three_state expects one argument (VHDL-1382)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing module CISC24HW_Mux2to1_0_1 (VERI-9002)
+INFO: analyzing module CISC24HW_Mux2to1_0_1_Mux2to1 (VERI-9002)
+INFO: analyzing module glbl (VERI-9002)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_1/CISC24HW_Mux2to1_0_1_sim_netlist.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Mux2to1_0_1_Mux2to1 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_mux2to1_0_1_mux2to1 (VHDL-9006)
+INFO: analyzing entity CISC24HW_Mux2to1_0_1 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_mux2to1_0_1 (VHDL-9006)
+Listing tops:
+VeriTop library:xil_defaultlib mod:CISC24HW_Mux2to1_0_1
+VeriTop library:xil_defaultlib mod:glbl
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_0_1 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_0_1 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_1/CISC24HW_Mux2to1_0_1_sim_netlist.v(17): INFO: compiling module CISC24HW_Mux2to1_0_1_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_1/CISC24HW_Mux2to1_0_1_sim_netlist.v(252): INFO: compiling module glbl_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_1/CISC24HW_Mux2to1_0_1_sim_netlist.vhdl(300): INFO: executing CISC24HW_Mux2to1_0_1(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_0_1/CISC24HW_Mux2to1_0_1_sim_netlist.vhdl(17): INFO: executing CISC24HW_Mux2to1_0_1_Mux2to1_default(STRUCTURE) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                                                                                                                                                              ╗цТйи   0вТйи   ╦ЙТйи   @ЧТйи   хУйи   P%Уйи   ь8Уйи   `LУйи   Х_Уйи   psУйи   Ь├Уйи   ─ Уйи   ╝Уйи   ░аУйи   уУйи   ═ХУйи   (ЭУйи   ╟Жйи   8#Жйи   ю6Жйи   HJЖйи   п]Жйи   XqЖйи   Ю└Жйи   h≤Жйи   П╚Жйи   x©Жйи    сЖйи   ┬ФЖйи   ЗЖйи   ≤Вйи    !Вйи   ╗4Вйи   0HВйи   ╦[Вйи   @oВйи   х┌Вйи   P√Вйи   ь╘Вйи   `╫Вйи   ХпВйи   pДВйи   ЬВВйи   ─Ьйи   Ьйи   ░2Ьйи   FЬйи   ═YЬйи   (mЬйи   ╟─Ьйи   8■Ьйи   ю╖Ьйи   H╩Ьйи   пнЬйи   XБЬйи   ЮУЬйи   h	Ыйи   ПЫйи   x0Ыйи    DЫйи   ┬WЫйи   kЫйи   ≤~Ыйи    ▓Ыйи   ╗╔Ыйи   0╧Ыйи   ╦лЫйи   @ЮЫйи   хСЫйи   PЗйи   ьЗйи   `.Зйи   ХAЗйи   pUЗйи   ЬhЗйи   ─|Зйи   ░Зйи   ░ёЗйи   ╥Зйи   ═йЗйи   (чЗйи   ╟ЯЗйи   8Шйи   юШйи   H,Шйи   п?Шйи   XSШйи   ЮfШйи   hzШйи   П█Шйи   x║Шйи    ╣Шйи   ┬хШйи   эШйи   ≤ОШйи    Эйи   ╗Эйи   0*Эйи   ╦=Эйи   @QЭйи   хdЭйи   PxЭйи   ь▀Эйи   `÷Эйи   Х╡Эйи   pфЭйи   ЬыЭйи   ─МЭйи   Щйи   ░Щйи   (Щйи   ═;Щйи   (OЩйи   ╟bЩйи   8vЩйи   ю┴Щйи   H²Щйи   п╟Щйи   XдЩйи   ЮвЩйи   hКЩйи   ПЧЩйи   xЧйи    &Чйи   ┬9Чйи   MЧйи   ≤`Чйи    tЧйи   ╗┤Чйи   0⌡Чйи   ╦╝Чйи   @бЧйи   хуЧйи   PИЧйи   ьЭЧйи   `Ъйи   Х#Ъйи   p7Ъйи   ЬJЪйи   ─^Ъйи   rЪйи   ░┘Ъйи   ≥Ъйи   ═╛Ъйи   (юЪйи   ╟сЪйи   8ГЪйи   юЗЪйи   H ки   п! ки   X5 ки   ЮH ки   h\ ки   Пo ки   x┐ ки    ≈ ки   ┬╙ ки   ╬ ки   ≤я ки    Е ки   ╗Ь ки   0ки   ╦ки   @3ки   хFки   PZки   ьmки   `│ки   Х■ки   p╗ки   Ь╩ки   ─оки   Цки   ░Жки   
+ки   ═ки   (1ки   ╟Dки   8Xки   юkки   Hки   п▓ки   X╕ки   Ю╧ки   hмки   ПЮки   xТки    ки   ┬ки   /ки   ≤Bки    Vки   ╗iки   0}ки   ╦░ки   @╓ки   х╥ки   Pкки   ьчки   `Рки   Хки   pки   Ь,ки   ─@ки   Tки   ░gки   {ки   ═▌ки   (╒ки   ╟╣ки   8ики   юэки   HПки   пки   Xки   Ю*ки   h>ки   ПQки   xeки    yки   ┬▄ки   ═ки   ≤Ёки    гки   ╗зки   0Нки   ╦ки   @ки   х(ки   P<ки   ьOки   `cки   Хvки   p┼ки   Ь²ки   ─╠ки   еки   ░ьки   Лки   ═Ъки   (ки   ╟&ки   8:ки   юMки   Haки   пtки   X┬ки   Ю⌡ки   h╞ки   Пбки   xжки    Йки   ┬Щки   ки   ≤$ки    8ки   ╗Kки   0_ки   ╦rки   @├ки   х≥ки   P╜ки   ьюки   `тки   ХГки   pШки   Ь	ки   ─"	ки   6	ки   ░I	ки   ]	ки   ═p	ки   (└	ки   ╟≈	ки   8╚	ки   ю╬	ки   Hр	ки   пЕ	ки   XЫ	ки   Ю
+ки   h 
+ки   П3
+ки   xG
+ки    [
+ки   ┬n
+ки   ┌
+ки   ≤∙
+ки    ╘
+ки   ╗╪
+ки   0п
+ки   ╦Ц
+ки   @В
+ки   х
+ки   Pки   ь1ки   `Eки   ХXки   plки   Ьки   ─⌠ки   ╖ки   ░╨ки   нки   ═Аки   (Уки   ╟ки   8ки   ю/ки   HCки   пVки   Xjки   Ю}ки   h▒ки   П╓ки   x╦ки    лки   ┬ъки   Ски   ≤ки    ки   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_1_0/synth/CISC24HW_Mux2to1_1_0.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Mux2to1_1_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_Mux2to1_1_0_arch of entity cisc24hw_mux2to1_1_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_1_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_1_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_1_0/synth/CISC24HW_Mux2to1_1_0.vhd(56): INFO: executing CISC24HW_Mux2to1_1_0(CISC24HW_Mux2to1_1_0_arch) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_1_0/synth/CISC24HW_Mux2to1_1_0.vhd(83): WARNING: mux2to1 remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                         ╗9ки   039ки   ╦F9ки   @Z9ки   хm9ки   P│9ки   ь■9ки   `╗9ки   Х╩9ки   pо9ки   ЬБ9ки   ─Ж9ки   
+:ки   ░:ки   1:ки   ═D:ки   (X:ки   ╟k:ки   8:ки   ю▓:ки   H╕:ки   п╧:ки   Xм:ки   ЮЮ:ки   hТ:ки   П;ки   x;ки    /;ки   ┬B;ки   V;ки   ≤i;ки    };ки   ╗░;ки   0╓;ки   ╦╥;ки   @к;ки   хч;ки   PР;ки   ь<ки   `<ки   Х,<ки   p@<ки   ЬS<ки   ─g<ки   {<ки   ░▌<ки   ╒<ки   ═╣<ки   (и<ки   ╟э<ки   8П<ки   ю=ки   H=ки   п*=ки   X>=ки   ЮQ=ки   he=ки   Пx=ки   x▄=ки    ═=ки   ┬Ё=ки   г=ки   ≤з=ки    Н=ки   ╗>ки   0>ки   ╦(>ки   @<>ки   хO>ки   Pc>ки   ьv>ки   `┼>ки   Х²>ки   p╠>ки   Ьд>ки   ─ь>ки   Л>ки   ░Ъ>ки   ?ки   ═&?ки   (:?ки   ╟M?ки   8a?ки   юt?ки   H┬?ки   п⌡?ки   X╞?ки   Юб?ки   hж?ки   ПИ?ки   xЩ?ки    @ки   ┬$@ки   8@ки   ≤K@ки    _@ки   ╗r@ки   0├@ки   ╦≥@ки   @╜@ки   хю@ки   Pт@ки   ьГ@ки   `Ш@ки   ХAки   p"Aки   Ь5Aки   ─IAки   ]Aки   ░pAки   └Aки   ═≈Aки   (╚Aки   ╟╬Aки   8рAки   юЕAки   HЫAки   пBки   X Bки   Ю3Bки   hGBки   ПZBки   xnBки    ┌Bки   ┬∙Bки   ╘Bки   ≤╪Bки    пBки   ╗ЦBки   0ВBки   ╦
+Cки   @Cки   х1Cки   PECки   ьXCки   `lCки   ХCки   p⌠Cки   Ь╕Cки   ─╨Cки   нCки   ░АCки   УCки   ═Dки   (Dки   ╟/Dки   8CDки   юVDки   HjDки   п}Dки   X▒Dки   Ю╓Dки   h╦Dки   ПкDки   xъDки    СDки   ┬Eки   Eки   ≤-Eки    AEки   ╗TEки   0hEки   ╦{Eки   @▐Eки   х╒Eки   P╤Eки   ьиEки   `щEки   ХПEки   pFки   ЬFки   ─+Fки   ?Fки   ░RFки   fFки   ═yFки   (█Fки   ╟═Fки   8╢Fки   югFки   HшFки   пНFки   XGки   ЮGки   h)Gки   П<Gки   xPGки    dGки   ┬wGки   ▀Gки   ≤·Gки    ╡Gки   ╗еGки   0ыGки   ╦ЛGки   @ Hки   хHки   P'Hки   ь:Hки   `NHки   ХaHки   puHки   Ь┬Hки   ─°Hки   ╟Hки   ░цHки   вHки   ═ЙHки   (ЧHки   ╟Iки   8%Iки   ю8Iки   HLIки   п_Iки   XsIки   Ю├Iки   h Iки   П╜Iки   xаIки    уIки   ┬ХIки   ЭIки   ≤Jки    #Jки   ╗6Jки   0JJки   ╦]Jки   @qJки   х└Jки   P≤Jки   ь╚Jки   `©Jки   ХрJки   pФJки   ЬЫJки   ─Kки   !Kки   ░4Kки   HKки   ═[Kки   (oKки   ╟┌Kки   8√Kки   ю╘Kки   H╫Kки   ппKки   XДKки   ЮВKки   hLки   ПLки   x2Lки    FLки   ┬YLки   mLки   ≤─Lки    ■Lки   ╗╖Lки   0╩Lки   ╦нLки   @БLки   хУLки   P	Mки   ьMки   `0Mки   ХCMки   pWMки   ЬjMки   ─~Mки   ▓Mки   ░╔Mки   ╧Mки   ═лMки   (ЮMки   ╟СMки   8Nки   юNки   H.Nки   пANки   XUNки   ЮhNки   h|Nки   П▐Nки   xёNки    ╥Nки   ┬йNки   чNки   ≤ЯNки    Oки   ╗Oки   0,Oки   ╦?Oки   @SOки   хfOки   PzOки   ь█Oки   `║Oки   Х╢Oки   pхOки   ЬшOки   ─ОOки   Pки   ░Pки   *Pки   ═=Pки   (QPки   ╟dPки   8xPки   ю▀Pки   H÷Pки   п╡Pки   XфPки   ЮыPки   hМPки   П Qки   xQки    (Qки   ┬;Qки   OQки   ≤bQки    vQки   ╗┴Qки   0²Qки   ╦╟Qки   @дQки   хвQки   PКQки   ьЧQки   `Rки   Х%Rки   p9Rки   ЬLRки   ─`Rки   tRки   ░┤Rки   ⌡Rки   ═╝Rки   (бRки   ╟уRки   8ИRки   юЭRки   HSки   п#Sки   X7Sки   ЮJSки   h^Sки   ПqSки   x┘Sки    ≥Sки   ┬╛Sки   юSки   ≤сSки    ГSки   ╗ЗSки   0Tки   ╦!Tки   @5Tки   хHTки   P\Tки   ьoTки   `┐Tки   Х√Tки   p╙Tки   Ь╫Tки   ─яTки   ЕTки   ░ЬTки   Uки   ═Uки   (3Uки   ╟FUки   8ZUки   юmUки   H│Uки   п■Uки   X╗Uки   Ю╩Uки   hоUки   ПБUки   xЖUки    
+Vки   ┬Vки   1Vки   ≤DVки    XVки   ╗kVки   0Vки   ╦▓Vки   @╕Vки   х╧Vки   PмVки   ьЮVки   `ТVки   ХWки   pWки   Ь.Wки   ─BWки   VWки   ░iWки   }Wки   ═░Wки   (╓Wки   ╟╥Wки   8кWки   ючWки   HРWки   пXки   XXки   Ю,Xки   h@Xки   ПSXки   xgXки    {Xки   ┬▌Xки   ╒Xки   ≤╣Xки    иXки   ╗эXки   0ПXки   ╦Yки   @Yки   х*Yки   P>Yки   ьQYки   `eYки   ХxYки   p▄Yки   Ь÷Yки   ─ЁYки   гYки   ░зYки   НYки   ═Zки   (Zки   ╟(Zки   8<Zки   юOZки   HcZки   пvZки   X┼Zки   Ю²Zки   h╠Zки   ПдZки   xьZки    ЛZки   ┬ЪZки   [ки   ≤&[ки    :[ки   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd(972): WARNING: directive wired_three_state expects one argument (VHDL-1382)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing module CISC24HW_Mux2to1_1_0 (VERI-9002)
+INFO: analyzing module CISC24HW_Mux2to1_1_0_Mux2to1 (VERI-9002)
+INFO: analyzing module glbl (VERI-9002)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_1_0/CISC24HW_Mux2to1_1_0_sim_netlist.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Mux2to1_1_0_Mux2to1 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_mux2to1_1_0_mux2to1 (VHDL-9006)
+INFO: analyzing entity CISC24HW_Mux2to1_1_0 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_mux2to1_1_0 (VHDL-9006)
+Listing tops:
+VeriTop library:xil_defaultlib mod:CISC24HW_Mux2to1_1_0
+VeriTop library:xil_defaultlib mod:glbl
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_1_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux2to1_1_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_1_0/CISC24HW_Mux2to1_1_0_sim_netlist.v(17): INFO: compiling module CISC24HW_Mux2to1_1_0_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_1_0/CISC24HW_Mux2to1_1_0_sim_netlist.v(252): INFO: compiling module glbl_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_1_0/CISC24HW_Mux2to1_1_0_sim_netlist.vhdl(300): INFO: executing CISC24HW_Mux2to1_1_0(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux2to1_1_0/CISC24HW_Mux2to1_1_0_sim_netlist.vhdl(17): INFO: executing CISC24HW_Mux2to1_1_0_Mux2to1_default(STRUCTURE) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                                                                                                                                                              $RDI_DA @°     ┬         n E  ю▀ки   ┬с▀ки   Г▀ки   ≤З▀ки    ▄ки   ╗!▄ки   05▄ки   ╦H▄ки   @\▄ки   хo▄ки   P┐▄ки   ь√▄ки   `╙▄ки   Х╫▄ки   pя▄ки   ЬД▄ки   ─Ь▄ки   █ки   ░█ки   3█ки   ═F█ки   (Z█ки   ╟m█ки   8│█ки   ю■█ки   H╗█ки   п╩█ки   Xо█ки   ЮБ█ки   hЖ█ки   П	▌ки   x▌ки    1▌ки   ┬D▌ки   X▌ки   ≤k▌ки    ▌ки   ╗▓▌ки   0╕▌ки   ╦╧▌ки   @м▌ки   хЮ▌ки   PТ▌ки   ь▐ки   `▐ки   Х.▐ки   pB▐ки   ЬU▐ки   ─i▐ки   }▐ки   ░░▐ки   ╓▐ки   ═╥▐ки   (к▐ки   ╟ч▐ки   8Р▐ки   ю░ки   H░ки   п,░ки   X@░ки   ЮS░ки   hg░ки   Пz░ки   x▌░ки    ╒░ки   ┬╣░ки   и░ки   ≤э░ки    П░ки   ╗▒ки   0▒ки   ╦*▒ки   @>▒ки   хQ▒ки   Pe▒ки   ьx▒ки   `▄▒ки   Х÷▒ки   pЁ▒ки   Ьф▒ки   ─з▒ки   Н▒ки   ░▓ки   ▓ки   ═(▓ки   (<▓ки   ╟O▓ки   8c▓ки   юv▓ки   H┼▓ки   п²▓ки   X╠▓ки   Юд▓ки   hь▓ки   ПК▓ки   xЪ▓ки    ⌠ки   ┬&⌠ки   :⌠ки   ≤M⌠ки    a⌠ки   ╗t⌠ки   0┬⌠ки   ╦⌡⌠ки   @╞⌠ки   хб⌠ки   Pж⌠ки   ьИ⌠ки   `Щ⌠ки   Х■ки   p$■ки   Ь7■ки   ─K■ки   _■ки   ░r■ки   ├■ки   ═≥■ки   (╜■ки   ╟ю■ки   8т■ки   юГ■ки   HШ■ки   п∙ки   X"∙ки   Ю5∙ки   hI∙ки   П\∙ки   xp∙ки    └∙ки   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux4to1_0_0/synth/CISC24HW_Mux4to1_0_0.vhd" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Mux4to1_0_0 (VHDL-1012)
+INFO: analyzing architecture CISC24HW_Mux4to1_0_0_arch of entity cisc24hw_mux4to1_0_0 (VHDL-9006)
+Listing tops:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux4to1_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux4to1_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux4to1_0_0/synth/CISC24HW_Mux4to1_0_0.vhd(56): INFO: executing CISC24HW_Mux4to1_0_0(CISC24HW_Mux4to1_0_0_arch) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux4to1_0_0/synth/CISC24HW_Mux4to1_0_0.vhd(87): WARNING: mux4to1 remains a black-box since it has no binding entity (VHDL-1250)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                         ┬┴аки   ²аки   ≤╟аки    даки   ╗ваки   0Каки   ╦Чаки   @бки   х%бки   P9бки   ьLбки   ``бки   Хsбки   p┤бки   Ь бки   ─╝бки   ббки   ░убки   Ибки   ═Эбки   (цки   ╟#цки   87цки   юJцки   H^цки   пqцки   X┘цки   Ю≤цки   h╛цки   П©цки   xсцки    Гцки   ┬Зцки   дки   ≤!дки    5дки   ╗Hдки   0\дки   ╦oдки   @┐дки   х√дки   P╙дки   ь╫дки   `ядки   ХДдки   pЬдки   Ьеки   ─еки   3еки   ░Fеки   Zеки   ═mеки   (│еки   ╟■еки   8╗еки   ю╩еки   Hоеки   пБеки   XЖеки   Ю	фки   hфки   П0фки   xDфки    Xфки   ┬kфки   фки   ≤▓фки    ╕фки   ╗╧фки   0мфки   ╦Юфки   @Тфки   хгки   Pгки   ь.гки   `Bгки   ХUгки   piгки   Ь|гки   ─░гки   ╓гки   ░╥гки   кгки   ═чгки   (Ргки   ╟хки   8хки   ю,хки   H@хки   пSхки   Xgхки   Юzхки   h▌хки   П║хки   x╣хки    ихки   ┬эхки   Пхки   ≤ики    ики   ╗*ики   0>ики   ╦Qики   @eики   хxики   P▄ики   ь÷ики   `Ёики   Хфики   pзики   ЬМики   ─йки   йки   ░(йки   <йки   ═Oйки   (cйки   ╟vйки   8┼йки   ю²йки   H╠йки   пдйки   Xьйки   ЮКйки   hЪйки   Пкки   x&кки    :кки   ┬Mкки   aкки   ≤tкки    ┬кки   ╗⌡кки   0╞кки   ╦бкки   @жкки   хИкки   PЩкки   ьлки   `$лки   Х7лки   pKлки   Ь^лки   ─rлки   ├лки   ░≥лки   ╜лки   ═юлки   (тлки   ╟Глки   8Шлки   юмки   H"мки   п5мки   XIмки   Ю\мки   hpмки   П┐мки   x≈мки    ╚мки   ┬╬мки   рмки   ≤Емки    Ымки   ╗нки   0 нки   ╦3нки   @Gнки   хZнки   Pnнки   ь│нки   `∙нки   Х╗нки   p╪нки   Ьонки   ─Цнки   Внки   ░
+оки   оки   ═1оки   (Eоки   ╟Xоки   8lоки   юоки   H⌠оки   п╕оки   X╨оки   Юмоки   hАоки   ПТоки   xпки    пки   ┬/пки   Cпки   ≤Vпки    jпки   ╗}пки   0▒пки   ╦╓пки   @╦пки   хкпки   Pъпки   ьРпки   `яки   Хяки   p-яки   Ь@яки   ─Tяки   hяки   ░{яки   ▐яки   ═╒яки   (╤яки   ╟ияки   8щяки   юПяки   Hрки   прки   X+рки   Ю>рки   hRрки   Пeрки   xyрки    █рки   ┬═рки   ╢рки   ≤грки    шрки   ╗Нрки   0ски   ╦ски   @)ски   х<ски   PPски   ьcски   `wски   Х┼ски   p·ски   Ь╠ски   ─ески   ыски   ░Лски    тки   ═тки   ('тки   ╟:тки   8Nтки   юaтки   Huтки   п┬тки   X°тки   Ю╞тки   hцтки   Пжтки   xЙтки    Чтки   ┬уки   %уки   ≤8уки    Lуки   ╗_уки   0sуки   ╦├уки   @ уки   х╜уки   Pауки   ьтуки   `Хуки   ХШуки   pжки   Ь"жки   ─6жки   Jжки   ░]жки   qжки   ═└жки   (≤жки   ╟╚жки   8©жки   юржки   HФжки   пЫжки   Xвки   Ю вки   h4вки   ПGвки   x[вки    oвки   ┬┌вки   √вки   ≤╘вки    ╫вки   ╗пвки   0Двки   ╦Ввки   @ьки   хьки   P2ьки   ьEьки   `Yьки   Хlьки   p─ьки   Ь⌠ьки   ─╖ьки   ╩ьки   ░ньки   Бьки   ═Уьки   (	ыки   ╟ыки   80ыки   юCыки   HWыки   пjыки   X~ыки   Ю▒ыки   h╔ыки   П╦ыки   xлыки    Юыки   ┬Сыки   зки   ≤зки    .зки   ╗Aзки   0Uзки   ╦hзки   @|зки   х▐зки   Pёзки   ь╤зки   `йзки   Хщзки   pЯзки   Ьшки   ─шки   ,шки   ░?шки   Sшки   ═fшки   (zшки   ╟█шки   8║шки   ю╢шки   Hхшки   пшшки   XОшки   Юэки   hэки   П)эки   x=эки    Qэки   ┬dэки   xэки   ≤▀эки    ÷эки   ╗╡эки   0фэки   ╦ыэки   @Мэки   х щки   Pщки   ь'щки   `;щки   ХNщки   pbщки   Ьuщки   ─┴щки   ²щки   ░╟щки   дщки   ═вщки   (Кщки   ╟Чщки   8чки   ю%чки   H9чки   пLчки   X`чки   Юsчки   h┤чки   П чки   x╝чки    бчки   ┬учки   Ички   ≤Эчки    ъки   ╗#ъки   07ъки   ╦Jъки   @^ъки   хqъки   P┘ъки   ь≤ъки   `╛ъки   Х©ъки   pсъки   ЬФъки   ─Зъки   Юки   ░!Юки   5Юки   ═HЮки   (\Юки   ╟oЮки   8┐Юки   ю√Юки   H╙Юки   п╫Юки   XяЮки   ЮДЮки   hЬЮки   ПАки   xАки    3Аки   ┬FАки   ZАки   ≤mАки    │Аки   ╗■Аки   0╗Аки   ╦╩Аки   @оАки   хБАки   PЖАки   ь	Бки   `Бки   Х0Бки   pDБки   ЬWБки   ─kБки   Бки   ░▓Бки   ╕Бки   ═╧Бки   (мБки   ╟ЮБки   8ТБки   юЦки   HЦки   п.Цки   XBЦки   ЮUЦки   hiЦки   П|Цки   x░Цки    ╓Цки   srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToSynopsys/attributes.vhd" into library synopsys (VHDL-9003)
+INFO: analyzing package ATTRIBUTES (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/std_logic_1164.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_1164 (VHDL-1014)
+INFO: analyzing package body std_logic_1164 (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_std.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_STD (VHDL-1014)
+INFO: analyzing package body NUMERIC_STD (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/distributable/numeric_bit.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package NUMERIC_BIT (VHDL-1014)
+INFO: analyzing package body NUMERIC_BIT (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_arith.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_arith (VHDL-1014)
+INFO: analyzing package body std_logic_arith (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_unsigned.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_UNSIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_UNSIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_signed.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_SIGNED (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_SIGNED (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package std_logic_misc (VHDL-1014)
+INFO: analyzing package body std_logic_misc (VHDL-1013)
+C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_misc.vhd(972): WARNING: directive wired_three_state expects one argument (VHDL-1382)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/synopsys/compileToIeee/std_logic_textio.vhd" into library ieee (VHDL-9003)
+INFO: analyzing package STD_LOGIC_TEXTIO (VHDL-1014)
+INFO: analyzing package body STD_LOGIC_TEXTIO (VHDL-1013)
+ERROR: cannot open vhdl file C:/Xilinx/Vivado/2017.4/data/vhdl/src/ieee/restricted/math_real.vhd (VHDL-1515)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unisims/unisim_retarget_VCOMP.vhd" into library unisim (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/unimacro/unimacro_VCOMP.vhd" into library unimacro (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing package body VCOMPONENTS (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/../../parts/xilinx/rtl/lib/vhdl/xst/src/mixed_lang_vltype.vhd" into library vl (VHDL-9003)
+INFO: analyzing package vl_types (VHDL-1014)
+INFO: analyzing package body vl_types (VHDL-1013)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/ip/xpm/xpm_VCOMP.vhd" into library xpm (VHDL-9003)
+INFO: analyzing package VCOMPONENTS (VHDL-1014)
+INFO: analyzing module CISC24HW_Mux4to1_0_0 (VERI-9002)
+INFO: analyzing module CISC24HW_Mux4to1_0_0_Mux4to1 (VERI-9002)
+INFO: analyzing module glbl (VERI-9002)
+-- Analyzing VHDL file "f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux4to1_0_0/CISC24HW_Mux4to1_0_0_sim_netlist.vhdl" into library xil_defaultlib (VHDL-9003)
+INFO: analyzing entity CISC24HW_Mux4to1_0_0_Mux4to1 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_mux4to1_0_0_mux4to1 (VHDL-9006)
+INFO: analyzing entity CISC24HW_Mux4to1_0_0 (VHDL-1012)
+INFO: analyzing architecture STRUCTURE of entity cisc24hw_mux4to1_0_0 (VHDL-9006)
+Listing tops:
+VeriTop library:xil_defaultlib mod:CISC24HW_Mux4to1_0_0
+VeriTop library:xil_defaultlib mod:glbl
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux4to1_0_0 arch:
+VHDL top: library:xil_defaultlib entity:cisc24hw_mux4to1_0_0 arch:
+END of tops
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux4to1_0_0/CISC24HW_Mux4to1_0_0_sim_netlist.v(17): INFO: compiling module CISC24HW_Mux4to1_0_0_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux4to1_0_0/CISC24HW_Mux4to1_0_0_sim_netlist.v(314): INFO: compiling module glbl_default (VERI-1018)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux4to1_0_0/CISC24HW_Mux4to1_0_0_sim_netlist.vhdl(349): INFO: executing CISC24HW_Mux4to1_0_0(STRUCTURE) (VHDL-1067)
+f:/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_Mux4to1_0_0/CISC24HW_Mux4to1_0_0_sim_netlist.vhdl(17): INFO: executing CISC24HW_Mux4to1_0_0_Mux4to1_default(STRUCTURE) (VHDL-1067)
+srcscan exits with return value 0
+                                                                                                                                                                                                                                                                                                                                                                                                                              ┬mли   │ли   ≤■ли    ╗ли   ╗╩ли   0оли   ╦Бли   @Жли   х	ли   Pли   ь0ли   `Dли   ХWли   pkли   Ь~ли   ─▓ли   ╕ли   ░╧ли   мли   ═Юли   (Тли   ╟ли   8ли   ю.ли   HBли   пUли   Xiли   Ю|ли   h░ли   Пёли   x╥ли    кли   ┬чли   Рли   ≤ли    ли   ╗,ли   0@ли   ╦Sли   @gли   хzли   P▌ли   ь║ли   `╣ли   Ххли   pэли   ЬОли   ─ли   ли   ░*ли   >ли   ═Qли   (eли   ╟xли   8▄ли   ю÷ли   HЁли   пфли   Xзли   ЮМли   hли   Пли   x(ли    <ли   ┬Oли   cли   ≤vли    ┼ли   ╗²ли   0╠ли   ╦дли   @ьли   хКли   PЪли   ьли   `&ли   Х9ли   pMли   Ь`ли   ─tли   ┬ли   ░⌡ли   ╞ли   ═бли   (жли   ╟Или   8Щли   ю ли   H$ ли   п7 ли   XK ли   Ю^ ли   hr ли   П┘ ли   x≥ ли    ╜ ли   ┬ю ли   т ли   ≤Г ли    Ш ли   ╗!ли   0"!ли   ╦5!ли   @I!ли   х\!ли   Pp!ли   ь┐!ли   `≈!ли   Х╙!ли   p╬!ли   Ья!ли   ─Е!ли   Ы!ли   ░"ли    "ли   ═3"ли   (G"ли   ╟Z"ли   8n"ли   ю│"ли   H∙"ли   п╗"ли   X╪"ли   Юо"ли   hЦ"ли   ПЖ"ли   x
+#ли    #ли   ┬1#ли   E#ли   ≤X#ли    l#ли   ╗#ли   0⌠#ли   ╦╕#ли   @╨#ли   хм#ли   PА#ли   ьТ#ли   `$ли   Х$ли   p/$ли   ЬB$ли   ─V$ли   j$ли   ░}$ли   ▒$ли   ═╓$ли   (╦$ли   ╟к$ли   8ъ$ли   юР$ли   H%ли   п%ли   X-%ли   Ю@%ли   hT%ли   Пg%ли   x{%ли    ▐%ли   ┬╒%ли   ╤%ли   ≤и%ли    щ%ли   ╗П%ли   0&ли   ╦&ли   @+&ли   х>&ли   PR&ли   ьe&ли   `y&ли   Х▄&ли   p═&ли   ЬЁ&ли   ─г&ли   ш&ли   ░Н&ли   'ли   ═'ли   ()'ли   ╟<'ли   8P'ли   юc'ли   Hw'ли   п┼'ли   X·'ли   Ю╠'ли   hе'ли   Пь'ли   xЛ'ли   portPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/clockdiv.vhd"/>
+          <Attr Name="ImportTime" Val="1519014064"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/debugmux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/sevenseg.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/sevenseg.vhd"/>
+          <Attr Name="ImportTime" Val="1519014176"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/MemDebugMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/RegDebugMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/BranchUnit.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/PCAddressMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/InterruptHandler.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/RamDataMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/AMAMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/ps2Controller.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="C:/Users/Aiden/Desktop/368_Lab3/368_Lab3.srcs/sources_1/imports/Desktop/ps2Controller.vhd"/>
+          <Attr Name="ImportTime" Val="1524589818"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/CISC24HW/CISC24HW.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_RamDataMux_0_0/CISC24HW_RamDataMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_RamDataMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_xlslice_6_5/CISC24HW_xlslice_6_5.xci">
+          <Proxy FileSetName="CISC24HW_xlslice_6_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_RegDebugMux_0_0/CISC24HW_RegDebugMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_RegDebugMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_MemDebugMux_0_0/CISC24HW_MemDebugMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_MemDebugMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_PCAddressMux_0_0/CISC24HW_PCAddressMux_0_0.xci">
+          <Proxy FileSetName="CISC

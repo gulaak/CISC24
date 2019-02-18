@@ -1,0 +1,10 @@
+vhdl xil_defaultlib  \
+"../../../bd/ALU/ip/ALU_ALU_Shift_Unit_0_0/sim/ALU_ALU_Shift_Unit_0_0.vhd" \
+"../../../bd/ALU/ip/ALU_Arith_Unit_0_0/sim/ALU_Arith_Unit_0_0.vhd" \
+"../../../bd/ALU/ip/ALU_Logic_Unit_0_0/sim/ALU_Logic_Unit_0_0.vhd" \
+"../../../bd/ALU/ip/ALU_MUXALU_0_0/sim/ALU_MUXALU_0_0.vhd" \
+"../../../bd/ALU/ip/ALU_Multiplier_VHDL_0_0/sim/ALU_Multiplier_VHDL_0_0.vhd" \
+"../../../bd/ALU/ip/ALU_divider_0_0/sim/ALU_divider_0_0.vhd" \
+"../../../bd/ALU/sim/ALU.vhd" \
+
+nosort

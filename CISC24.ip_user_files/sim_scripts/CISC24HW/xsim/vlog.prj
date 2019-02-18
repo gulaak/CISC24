@@ -1,0 +1,19 @@
+verilog xil_defaultlib  \
+"../../../bd/CISC24HW/ip/CISC24HW_blk_mem_gen_0_0/sim/CISC24HW_blk_mem_gen_0_0.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_blk_mem_gen_1_0/sim/CISC24HW_blk_mem_gen_1_0.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlconcat_0_0/sim/CISC24HW_xlconcat_0_0.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_0_0/sim/CISC24HW_xlslice_0_0.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_1_0/sim/CISC24HW_xlslice_1_0.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_2_0/sim/CISC24HW_xlslice_2_0.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_3_0/sim/CISC24HW_xlslice_3_0.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_6_0/sim/CISC24HW_xlslice_6_0.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_6_1/sim/CISC24HW_xlslice_6_1.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_6_2/sim/CISC24HW_xlslice_6_2.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_6_3/sim/CISC24HW_xlslice_6_3.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_6_4/sim/CISC24HW_xlslice_6_4.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_6_5/sim/CISC24HW_xlslice_6_5.v" \
+"../../../bd/CISC24HW/ip/CISC24HW_xlslice_12_0/sim/CISC24HW_xlslice_12_0.v" \
+
+verilog xil_defaultlib "glbl.v"
+
+nosort

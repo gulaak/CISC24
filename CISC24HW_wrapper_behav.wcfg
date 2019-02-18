@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="CISC24HW_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="CISC24HW_wrapper" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="2958366667fs"></ZoomStartTime>
+      <ZoomEndTime time="3118166668fs"></ZoomEndTime>
+      <Cursor1Time time="3048967000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="118"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="32" />
+   <wvobject fp_name="/CISC24HW_wrapper/DebugSel" type="logic">
+      <obj_property name="ElementShortName">DebugSel</obj_property>
+      <obj_property name="ObjectShortName">DebugSel</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/Rst" type="logic">
+      <obj_property name="ElementShortName">Rst</obj_property>
+      <obj_property name="ObjectShortName">Rst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/Sel" type="array">
+      <obj_property name="ElementShortName">Sel[2:0]</obj_property>
+      <obj_property name="ObjectShortName">Sel[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/DinSw" type="array">
+      <obj_property name="ElementShortName">DinSw[8:0]</obj_property>
+      <obj_property name="ObjectShortName">DinSw[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/RegSel" type="array">
+      <obj_property name="ElementShortName">RegSel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">RegSel[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/InterruptHandler_0/INT0" type="logic">
+      <obj_property name="ElementShortName">INT0</obj_property>
+      <obj_property name="ObjectShortName">INT0</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/InterruptHandler_0/INT1" type="logic">
+      <obj_property name="ElementShortName">INT1</obj_property>
+      <obj_property name="ObjectShortName">INT1</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/InterruptHandler_0/INT2" type="logic">
+      <obj_property name="ElementShortName">INT2</obj_property>
+      <obj_property name="ObjectShortName">INT2</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/InterruptHandler_0/INT3" type="logic">
+      <obj_property name="ElementShortName">INT3</obj_property>
+      <obj_property name="ObjectShortName">INT3</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CCR" type="array">
+      <obj_property name="ElementShortName">CCR[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CCR[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/RegisterBank_0/U0/AddB" type="array">
+      <obj_property name="ElementShortName">AddB[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AddB[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/RegisterBank_0/U0/WriteA" type="logic">
+      <obj_property name="ElementShortName">WriteA</obj_property>
+      <obj_property name="ObjectShortName">WriteA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/FSMController_0/U0/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/blk_mem_gen_0/addra" type="array">
+      <obj_property name="ElementShortName">addra[8:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[8:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/RegisterBank_0/U0/data" type="array">
+      <obj_property name="ElementShortName">data[0:7][23:0]</obj_property>
+      <obj_property name="ObjectShortName">data[0:7][23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/blk_mem_gen_0/douta" type="array">
+      <obj_property name="ElementShortName">douta[23:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/RegisterBank_0/U0/AddA" type="array">
+      <obj_property name="ElementShortName">AddA[2:0]</obj_property>
+      <obj_property name="ObjectShortName">AddA[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/RegisterBank_0/U0/DoutA" type="array">
+      <obj_property name="ElementShortName">DoutA[23:0]</obj_property>
+      <obj_property name="ObjectShortName">DoutA[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/blk_mem_gen_1/addra" type="array">
+      <obj_property name="ElementShortName">addra[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addra[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/blk_mem_gen_1/douta" type="array">
+      <obj_property name="ElementShortName">douta[23:0]</obj_property>
+      <obj_property name="ObjectShortName">douta[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/blk_mem_gen_1/addrb" type="array">
+      <obj_property name="ElementShortName">addrb[9:0]</obj_property>
+      <obj_property name="ObjectShortName">addrb[9:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/blk_mem_gen_1/doutb" type="array">
+      <obj_property name="ElementShortName">doutb[23:0]</obj_property>
+      <obj_property name="ObjectShortName">doutb[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/RegisterBank_0/U0/DoutB" type="array">
+      <obj_property name="ElementShortName">DoutB[23:0]</obj_property>
+      <obj_property name="ObjectShortName">DoutB[23:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/FSMController_0/RamWA" type="logic">
+      <obj_property name="ElementShortName">RamWA</obj_property>
+      <obj_property name="ObjectShortName">RamWA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/FSMController_0/RegWA" type="logic">
+      <obj_property name="ElementShortName">RegWA</obj_property>
+      <obj_property name="ObjectShortName">RegWA</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/FSMController_0/U0/PCINC" type="logic">
+      <obj_property name="ElementShortName">PCINC</obj_property>
+      <obj_property name="ObjectShortName">PCINC</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/FSMController_0/U0/PCEN" type="logic">
+      <obj_property name="ElementShortName">PCEN</obj_property>
+      <obj_property name="ObjectShortName">PCEN</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/FSMController_0/U0/IRWrite" type="logic">
+      <obj_property name="ElementShortName">IRWrite</obj_property>
+      <obj_property name="ObjectShortName">IRWrite</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/BranchUnit_0/CCRStack" type="array">
+      <obj_property name="ElementShortName">CCRStack[3:0]</obj_property>
+      <obj_property name="ObjectShortName">CCRStack[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/BranchUnit_0/U0/data" type="array">
+      <obj_property name="ElementShortName">data[3:0]</obj_property>
+      <obj_property name="ObjectShortName">data[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/CISC24HW_wrapper/CISC24HW_i/BranchUnit_0/U0/CCRLoad" type="logic">
+      <obj_property name="ElementShortName">CCRLoad</obj_property>
+      <obj_property name="ObjectShortName">CCRLoad</obj_property>
+   </wvobject>
+</wave_config>

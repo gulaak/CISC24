@@ -1,0 +1,126 @@
+Vivado Simulator 2017.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2017.4/bin/unwrapped/win64.o/xelab.exe -wto 71f8400b339e4e2d9b46937fa712c29c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L blk_mem_gen_v8_4_1 -L xlconcat_v2_1_1 -L xlslice_v1_0_1 -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot CISC24HW_wrapper_behav xil_defaultlib.CISC24HW_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1783] select index 30 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2419]
+WARNING: [VRFC 10-1783] select index 62 into current_contents is out of bounds [/wrk/2017.4/nightly/2017_12_15_2086221/packages/customer/vivado/data/ip/xilinx/blk_mem_gen_v8_4/simulation/blk_mem_gen_v8_4.v:2420]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package unisim.vcomponents
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling package vl.vl_types
+Compiling module xil_defaultlib.glbl
+Compiling architecture behavioral of entity xil_defaultlib.ALUMuxB [alumuxb_default]
+Compiling architecture cisc24hw_alumuxb_0_0_arch of entity xil_defaultlib.CISC24HW_ALUMuxB_0_0 [cisc24hw_alumuxb_0_0_default]
+Compiling architecture combinational of entity xil_defaultlib.ALU_Shift_Unit [alu_shift_unit_default]
+Compiling architecture cisc24hw_alu_shift_unit_0_0_arch of entity xil_defaultlib.CISC24HW_ALU_Shift_Unit_0_0 [cisc24hw_alu_shift_unit_0_0_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.AMAMux [amamux_default]
+Compiling architecture cisc24hw_amamux_0_0_arch of entity xil_defaultlib.CISC24HW_AMAMux_0_0 [cisc24hw_amamux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.AccumReg [accumreg_default]
+Compiling architecture cisc24hw_accumreg_0_0_arch of entity xil_defaultlib.CISC24HW_AccumReg_0_0 [cisc24hw_accumreg_0_0_default]
+Compiling architecture combinational of entity xil_defaultlib.Arith_Unit [arith_unit_default]
+Compiling architecture cisc24hw_arith_unit_0_0_arch of entity xil_defaultlib.CISC24HW_Arith_Unit_0_0 [cisc24hw_arith_unit_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.BranchUnit [branchunit_default]
+Compiling architecture cisc24hw_branchunit_0_0_arch of entity xil_defaultlib.CISC24HW_BranchUnit_0_0 [cisc24hw_branchunit_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DecodeUnit [decodeunit_default]
+Compiling architecture cisc24hw_decodeunit_0_0_arch of entity xil_defaultlib.CISC24HW_DecodeUnit_0_0 [cisc24hw_decodeunit_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Demux1to2 [demux1to2_default]
+Compiling architecture cisc24hw_demux1to2_0_0_arch of entity xil_defaultlib.CISC24HW_Demux1to2_0_0 [cisc24hw_demux1to2_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.DynamicMux [dynamicmux_default]
+Compiling architecture cisc24hw_dynamicmux_1_0_arch of entity xil_defaultlib.CISC24HW_DynamicMux_1_0 [cisc24hw_dynamicmux_1_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.ExecReg [execreg_default]
+Compiling architecture cisc24hw_execreg_0_0_arch of entity xil_defaultlib.CISC24HW_ExecReg_0_0 [cisc24hw_execreg_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.FSMController [fsmcontroller_default]
+Compiling architecture cisc24hw_fsmcontroller_0_0_arch of entity xil_defaultlib.CISC24HW_FSMController_0_0 [cisc24hw_fsmcontroller_0_0_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.InterruptHandler [interrupthandler_default]
+Compiling architecture cisc24hw_interrupthandler_0_0_arch of entity xil_defaultlib.CISC24HW_InterruptHandler_0_0 [cisc24hw_interrupthandler_0_0_de...]
+Compiling architecture combinational of entity xil_defaultlib.Logic_Unit [logic_unit_default]
+Compiling architecture cisc24hw_logic_unit_0_0_arch of entity xil_defaultlib.CISC24HW_Logic_Unit_0_0 [cisc24hw_logic_unit_0_0_default]
+Compiling architecture combinational of entity xil_defaultlib.MUXALU [muxalu_default]
+Compiling architecture cisc24hw_muxalu_0_0_arch of entity xil_defaultlib.CISC24HW_MUXALU_0_0 [cisc24hw_muxalu_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.MemDebugMux [memdebugmux_default]
+Compiling architecture cisc24hw_memdebugmux_0_0_arch of entity xil_defaultlib.CISC24HW_MemDebugMux_0_0 [cisc24hw_memdebugmux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.Multiplier_VHDL [multiplier_vhdl_default]
+Compiling architecture cisc24hw_multiplier_vhdl_0_0_arch of entity xil_defaultlib.CISC24HW_Multiplier_VHDL_0_0 [cisc24hw_multiplier_vhdl_0_0_def...]
+Compiling architecture behavioral of entity xil_defaultlib.Mux2to1 [mux2to1_default]
+Compiling architecture cisc24hw_mux2to1_0_0_arch of entity xil_defaultlib.CISC24HW_Mux2to1_0_0 [cisc24hw_mux2to1_0_0_default]
+Compiling architecture cisc24hw_mux2to1_1_0_arch of entity xil_defaultlib.CISC24HW_Mux2to1_1_0 [cisc24hw_mux2to1_1_0_default]
+Compiling architecture cisc24hw_mux2to1_0_1_arch of entity xil_defaultlib.CISC24HW_Mux2to1_0_1 [cisc24hw_mux2to1_0_1_default]
+Compiling architecture behavioral of entity xil_defaultlib.Mux4to1 [mux4to1_default]
+Compiling architecture cisc24hw_mux4to1_0_0_arch of entity xil_defaultlib.CISC24HW_Mux4to1_0_0 [cisc24hw_mux4to1_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.PCAddressMux [pcaddressmux_default]
+Compiling architecture cisc24hw_pcaddressmux_0_0_arch of entity xil_defaultlib.CISC24HW_PCAddressMux_0_0 [cisc24hw_pcaddressmux_0_0_defaul...]
+Compiling architecture behavioral of entity xil_defaultlib.PCounter [pcounter_default]
+Compiling architecture cisc24hw_pcounter_0_0_arch of entity xil_defaultlib.CISC24HW_PCounter_0_0 [cisc24hw_pcounter_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.PS2Timeout [ps2timeout_default]
+Compiling architecture cisc24hw_ps2timeout_0_0_arch of entity xil_defaultlib.CISC24HW_PS2Timeout_0_0 [cisc24hw_ps2timeout_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.RamAddAMux [ramaddamux_default]
+Compiling architecture cisc24hw_ramaddamux_0_0_arch of entity xil_defaultlib.CISC24HW_RamAddAMux_0_0 [cisc24hw_ramaddamux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.RamAddBMux [ramaddbmux_default]
+Compiling architecture cisc24hw_ramaddbmux_0_0_arch of entity xil_defaultlib.CISC24HW_RamAddBMux_0_0 [cisc24hw_ramaddbmux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.RamDataMux [ramdatamux_default]
+Compiling architecture cisc24hw_ramdatamux_0_0_arch of entity xil_defaultlib.CISC24HW_RamDataMux_0_0 [cisc24hw_ramdatamux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegDebugMux [regdebugmux_default]
+Compiling architecture cisc24hw_regdebugmux_0_0_arch of entity xil_defaultlib.CISC24HW_RegDebugMux_0_0 [cisc24hw_regdebugmux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegSelMux [regselmux_default]
+Compiling architecture cisc24hw_regselmux_0_0_arch of entity xil_defaultlib.CISC24HW_RegSelMux_0_0 [cisc24hw_regselmux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.RegisterBank [registerbank_default]
+Compiling architecture cisc24hw_registerbank_0_0_arch of entity xil_defaultlib.CISC24HW_RegisterBank_0_0 [cisc24hw_registerbank_0_0_defaul...]
+Compiling architecture dataflow of entity xil_defaultlib.ScanToAscii [scantoascii_default]
+Compiling architecture cisc24hw_scantoascii_0_0_arch of entity xil_defaultlib.CISC24HW_ScanToAscii_0_0 [cisc24hw_scantoascii_0_0_default]
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.CISC24HW_blk_mem_gen_0_0
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_output_stage(...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_1.blk_mem_gen_v8_4_1(C_FAMILY="art...
+Compiling module xil_defaultlib.CISC24HW_blk_mem_gen_1_0
+Compiling architecture behavioral of entity xil_defaultlib.clockdivider18 [clockdivider18_default]
+Compiling architecture cisc24hw_clockdivider18_0_0_arch of entity xil_defaultlib.CISC24HW_clockdivider18_0_0 [cisc24hw_clockdivider18_0_0_defa...]
+Compiling architecture behavioral of entity xil_defaultlib.debugmux [debugmux_default]
+Compiling architecture cisc24hw_debugmux_0_0_arch of entity xil_defaultlib.CISC24HW_debugmux_0_0 [cisc24hw_debugmux_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.decoder [decoder_default]
+Compiling architecture cisc24hw_decoder_0_0_arch of entity xil_defaultlib.CISC24HW_decoder_0_0 [cisc24hw_decoder_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.divider [divider_default]
+Compiling architecture cisc24hw_divider_0_0_arch of entity xil_defaultlib.CISC24HW_divider_0_0 [cisc24hw_divider_0_0_default]
+Compiling architecture behavioral of entity xil_defaultlib.ps2Controller [ps2controller_default]
+Compiling architecture cisc24hw_ps2controller_0_0_arch of entity xil_defaultlib.CISC24HW_ps2Controller_0_0 [cisc24hw_ps2controller_0_0_defau...]
+Compiling architecture behavioral of entity xil_defaultlib.shiftregister [shiftregister_default]
+Compiling architecture cisc24hw_shiftregister_0_0_arch of entity xil_defaultlib.CISC24HW_shiftregister_0_0 [cisc24hw_shiftregister_0_0_defau...]
+Compiling module xlconcat_v2_1_1.xlconcat_v2_1_1_xlconcat_default
+Compiling module xil_defaultlib.CISC24HW_xlconcat_0_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_0_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_1_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_6_4
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_6_5
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_12_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_2_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_3_0
+Compiling module xil_defaultlib.CISC24HW_xlslice_6_0
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_6_1
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_6_2
+Compiling module xlslice_v1_0_1.xlslice_v1_0_1_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.CISC24HW_xlslice_6_3
+Compiling architecture structure of entity xil_defaultlib.CISC24HW [cisc24hw_default]
+Compiling architecture structure of entity xil_defaultlib.cisc24hw_wrapper
+Built simulation snapshot CISC24HW_wrapper_behav

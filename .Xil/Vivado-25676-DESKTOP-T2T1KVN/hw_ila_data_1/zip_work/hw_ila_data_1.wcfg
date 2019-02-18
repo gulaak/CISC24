@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="F:/CISC24/CISC24.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="73748fs"></ZoomStartTime>
+      <ZoomEndTime time="1097748fs"></ZoomEndTime>
+      <Cursor1Time time="253000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="175"></NameColumnWidth>
+      <ValueColumnWidth column_width="77"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="23" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="CISC24HW_i/ALUMuxB_0_Dout" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/ALUMuxB_0_Dout[23:0]</obj_property>
+      <obj_property name="ObjectShortName">ALUMuxB_0_Dout[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_RegWriteSel" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_RegWriteSel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_RegWriteSel[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_ExecReg_0_DoutB" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_ExecReg_0_DoutB[23:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_ExecReg_0_DoutB[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/ExecReg_0_DoutA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/ExecReg_0_DoutA[23:0]</obj_property>
+      <obj_property name="ObjectShortName">ExecReg_0_DoutA[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_FSMController_0_RamAddSelA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_FSMController_0_RamAddSelA[1:0]</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_FSMController_0_RamAddSelA[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/RegSelMux_0_OutA" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/RegSelMux_0_OutA[23:0]</obj_property>
+      <obj_property name="ObjectShortName">RegSelMux_0_OutA[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/PCounter_0_Address" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/PCounter_0_Address[8:0]</obj_property>
+      <obj_property name="ObjectShortName">PCounter_0_Address[8:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/RegSelMux_0_OutB" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/RegSelMux_0_OutB[23:0]</obj_property>
+      <obj_property name="ObjectShortName">RegSelMux_0_OutB[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/MUXALU_0_ALU_OUT" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/MUXALU_0_ALU_OUT[23:0]</obj_property>
+      <obj_property name="ObjectShortName">MUXALU_0_ALU_OUT[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/Mux2to1_0_Dout" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/Mux2to1_0_Dout[23:0]</obj_property>
+      <obj_property name="ObjectShortName">Mux2to1_0_Dout[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_SBSel" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_SBSel[1:0]</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_SBSel[1:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/blk_mem_gen_0_douta" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/blk_mem_gen_0_douta[23:0]</obj_property>
+      <obj_property name="ObjectShortName">blk_mem_gen_0_douta[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_AccumEn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_AccumEn</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_AccumEn</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_ALUSELB" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_ALUSELB</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_ALUSELB</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_ExecEn" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_ExecEn</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_ExecEn</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_IRWrite" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_IRWrite</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_IRWrite</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_Lprom" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_Lprom</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_Lprom</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_PCEN" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_PCEN</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_PCEN</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_PCINC" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_PCINC</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_PCINC</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_RamWA" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_RamWA</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_RamWA</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_RegRead" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_RegRead</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_RegRead</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="CISC24HW_i/FSMController_0_RegWB" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">CISC24HW_i/FSMController_0_RegWB</obj_property>
+      <obj_property name="ObjectShortName">FSMController_0_RegWB</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="u_ila_0_FSMController_0_RegWA" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">u_ila_0_FSMController_0_RegWA</obj_property>
+      <obj_property name="ObjectShortName">u_ila_0_FSMController_0_RegWA</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

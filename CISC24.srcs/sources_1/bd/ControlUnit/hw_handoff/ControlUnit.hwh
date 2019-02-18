@@ -1,0 +1,333 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr  1 16:56:12 2018" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="ControlUnit" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="O" NAME="LPROM" SIGIS="data" SIGNAME="FSMController_0_Lprom">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="Lprom"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="RamWa" SIGIS="undef" SIGNAME="FSMController_0_RamWA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="RamWA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="SRCA" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_SrcA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DecodeUnit_0" PORT="SrcA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="2" NAME="SRCB" RIGHT="0" SIGIS="data" SIGNAME="DecodeUnit_0_SrcB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DecodeUnit_0" PORT="SrcB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="18" NAME="IMMED" RIGHT="0" SIGIS="data" SIGNAME="DecodeUnit_0_Immediate">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DecodeUnit_0" PORT="Immediate"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="4" NAME="OPCODE" RIGHT="0" SIGIS="data" SIGNAME="DecodeUnit_0_Opcode">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DecodeUnit_0" PORT="Opcode"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DecodeUnit_0" PORT="CLK"/>
+        <CONNECTION INSTANCE="FSMController_0" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="IRWRite" SIGIS="data" SIGNAME="FSMController_0_IRWrite">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="IRWrite"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="RamWB" SIGIS="undef" SIGNAME="FSMController_0_RamWB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="RamWB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="PCEN" SIGIS="data" SIGNAME="FSMController_0_PCEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="PCEN"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ALUSelB" SIGIS="data" SIGNAME="FSMController_0_ALUSELB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="ALUSELB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="RegWriteSel" RIGHT="0" SIGIS="data" SIGNAME="FSMController_0_RegWriteSel">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="RegWriteSel"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="ExecEn" SIGIS="undef" SIGNAME="FSMController_0_ExecEn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="ExecEn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="PCINC" SIGIS="undef" SIGNAME="FSMController_0_PCINC">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="PCINC"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="RamAddSelA" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamAddSelA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="RamAddSelA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="RamAddSelB" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamAddSelB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="RamAddSelB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="1" NAME="SBSel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_SBSel">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="SBSel"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="DivEn" SIGIS="data" SIGNAME="FSMController_0_DivEn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="DivEn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="RegWA" SIGIS="data" SIGNAME="FSMController_0_RegWA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="RegWA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="AccumEn" SIGIS="data" SIGNAME="FSMController_0_AccumEn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="AccumEn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="RegEn" SIGIS="undef" SIGNAME="FSMController_0_RegEn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="RegEn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="MMSel" SIGIS="undef" SIGNAME="FSMController_0_MMSel">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="MMSel"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="RegRead" SIGIS="undef" SIGNAME="FSMController_0_RegRead">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="RegRead"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="Done" SIGIS="undef" SIGNAME="External_Ports_Done">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="FSMController_0" PORT="Done"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="Instruction" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_Instruction">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="DecodeUnit_0" PORT="Instruction"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/DecodeUnit_0" HWVERSION="1.0" INSTANCE="DecodeUnit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="DecodeUnit" VLNV="xilinx.com:module_ref:DecodeUnit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ControlUnit_DecodeUnit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="IRWrite" SIGIS="undef" SIGNAME="FSMController_0_IRWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="IRWrite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Halt" SIGIS="undef" SIGNAME="DecodeUnit_0_Halt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Halt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="Instruction" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Instruction">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Instruction"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="18" NAME="Immediate" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Immediate">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="IMMED"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="SrcA" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_SrcA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SRCA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="2" NAME="SrcB" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_SrcB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SRCB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="Opcode" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="Opcode"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="OPCODE"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="AMA" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="AMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="AMB" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="FSMController_0" PORT="AMB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/FSMController_0" HWVERSION="1.0" INSTANCE="FSMController_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="FSMController" VLNV="xilinx.com:module_ref:FSMController:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ControlUnit_FSMController_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="Opcode" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_Opcode">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Opcode"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="AMA" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="AMA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="1" NAME="AMB" RIGHT="0" SIGIS="undef" SIGNAME="DecodeUnit_0_AMB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="AMB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Done" SIGIS="undef" SIGNAME="External_Ports_Done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="Lprom" SIGIS="undef" SIGNAME="FSMController_0_Lprom">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="LPROM"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RamWA" SIGIS="undef" SIGNAME="FSMController_0_RamWA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RamWa"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="IRWrite" SIGIS="undef" SIGNAME="FSMController_0_IRWrite">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="IRWrite"/>
+            <CONNECTION INSTANCE="External_Ports" PORT="IRWRite"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RamWB" SIGIS="undef" SIGNAME="FSMController_0_RamWB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RamWB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ALUSELB" SIGIS="undef" SIGNAME="FSMController_0_ALUSELB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ALUSelB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="Halt" SIGIS="undef" SIGNAME="DecodeUnit_0_Halt">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="DecodeUnit_0" PORT="Halt"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PCEN" SIGIS="undef" SIGNAME="FSMController_0_PCEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PCEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="PCINC" SIGIS="undef" SIGNAME="FSMController_0_PCINC">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="PCINC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="ExecEn" SIGIS="undef" SIGNAME="FSMController_0_ExecEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ExecEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="RegWriteSel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RegWriteSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RegWriteSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="MMSel" SIGIS="undef" SIGNAME="FSMController_0_MMSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="MMSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="RamAddSelA" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamAddSelA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RamAddSelA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="RamAddSelB" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_RamAddSelB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RamAddSelB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="1" NAME="SBSel" RIGHT="0" SIGIS="undef" SIGNAME="FSMController_0_SBSel">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="SBSel"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegEn" SIGIS="undef" SIGNAME="FSMController_0_RegEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RegEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="DivEn" SIGIS="undef" SIGNAME="FSMController_0_DivEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DivEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegWA" SIGIS="undef" SIGNAME="FSMController_0_RegWA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RegWA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegWB" SIGIS="undef"/>
+        <PORT DIR="O" NAME="AccumEn" SIGIS="undef" SIGNAME="FSMController_0_AccumEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AccumEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="RegRead" SIGIS="undef" SIGNAME="FSMController_0_RegRead">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="RegRead"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

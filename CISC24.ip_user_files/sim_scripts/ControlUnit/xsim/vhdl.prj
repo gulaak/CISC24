@@ -1,0 +1,6 @@
+vhdl xil_defaultlib  \
+"../../../bd/ControlUnit/ip/ControlUnit_FSMController_0_0/sim/ControlUnit_FSMController_0_0.vhd" \
+"../../../bd/ControlUnit/ip/ControlUnit_DecodeUnit_0_0/sim/ControlUnit_DecodeUnit_0_0.vhd" \
+"../../../bd/ControlUnit/sim/ControlUnit.vhd" \
+
+nosort

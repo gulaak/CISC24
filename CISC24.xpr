@@ -1,0 +1,2310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Product Version: Vivado v2017.4 (64-bit)              -->
+<!--                                                         -->
+<!-- Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.   -->
+
+<Project Version="7" Minor="35" Path="C:/Users/Aiden/Desktop/CISC24/CISC24.xpr">
+  <DefaultLaunch Dir="$PRUNDIR"/>
+  <Configuration>
+    <Option Name="Id" Val="71f8400b339e4e2d9b46937fa712c29c"/>
+    <Option Name="Part" Val="xc7a100tcsg324-1"/>
+    <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
+    <Option Name="CompiledLibDirXSim" Val=""/>
+    <Option Name="CompiledLibDirModelSim" Val="$PCACHEDIR/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="$PCACHEDIR/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="$PCACHEDIR/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirXcelium" Val="$PCACHEDIR/compile_simlib/xcelium"/>
+    <Option Name="CompiledLibDirVCS" Val="$PCACHEDIR/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="$PCACHEDIR/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="$PCACHEDIR/compile_simlib/activehdl"/>
+    <Option Name="TargetLanguage" Val="VHDL"/>
+    <Option Name="BoardPart" Val=""/>
+    <Option Name="ActiveSimSet" Val="sim_1"/>
+    <Option Name="DefaultLib" Val="xil_defaultlib"/>
+    <Option Name="ProjectType" Val="Default"/>
+    <Option Name="IPOutputRepo" Val="$PCACHEDIR/ip"/>
+    <Option Name="IPCachePermission" Val="read"/>
+    <Option Name="IPCachePermission" Val="write"/>
+    <Option Name="EnableCoreContainer" Val="FALSE"/>
+    <Option Name="CreateRefXciForCoreContainers" Val="FALSE"/>
+    <Option Name="IPUserFilesDir" Val="$PIPUSERFILESDIR"/>
+    <Option Name="IPStaticSourceDir" Val="$PIPUSERFILESDIR/ipstatic"/>
+    <Option Name="EnableBDX" Val="FALSE"/>
+    <Option Name="DSAVendor" Val="xilinx"/>
+    <Option Name="DSANumComputeUnits" Val="60"/>
+    <Option Name="WTXSimLaunchSim" Val="540"/>
+    <Option Name="WTModelSimLaunchSim" Val="0"/>
+    <Option Name="WTQuestaLaunchSim" Val="0"/>
+    <Option Name="WTIesLaunchSim" Val="0"/>
+    <Option Name="WTVcsLaunchSim" Val="0"/>
+    <Option Name="WTRivieraLaunchSim" Val="0"/>
+    <Option Name="WTActivehdlLaunchSim" Val="0"/>
+    <Option Name="WTXSimExportSim" Val="222"/>
+    <Option Name="WTModelSimExportSim" Val="222"/>
+    <Option Name="WTQuestaExportSim" Val="222"/>
+    <Option Name="WTIesExportSim" Val="222"/>
+    <Option Name="WTVcsExportSim" Val="222"/>
+    <Option Name="WTRivieraExportSim" Val="222"/>
+    <Option Name="WTActivehdlExportSim" Val="222"/>
+    <Option Name="GenerateIPUpgradeLog" Val="TRUE"/>
+    <Option Name="XSimRadix" Val="hex"/>
+    <Option Name="XSimTimeUnit" Val="ns"/>
+    <Option Name="XSimArrayDisplayLimit" Val="1024"/>
+    <Option Name="XSimTraceLimit" Val="65536"/>
+    <Option Name="SimTypes" Val="rtl"/>
+  </Configuration>
+  <FileSets Version="1" Minor="31">
+    <FileSet Name="sources_1" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sources_1/new/ALUMuxB.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_shift_unit.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../alu_shift_unit.vhd"/>
+          <Attr Name="ImportTime" Val="1520746277"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/AccumReg.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_arithmetic_unit.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../alu_arithmetic_unit.vhd"/>
+          <Attr Name="ImportTime" Val="1520746277"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/DecodeUnit.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Demux1to2.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/ExecReg.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/FSMController.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_logic_unit.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../alu_logic_unit.vhd"/>
+          <Attr Name="ImportTime" Val="1520747089"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_mux.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../alu_mux.vhd"/>
+          <Attr Name="ImportTime" Val="1520747358"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/multiply.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../multiplier/multiplier.srcs/sources_1/new/multiply.vhd"/>
+          <Attr Name="ImportTime" Val="1521340038"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Mux2to1.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Mux4to1.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/PCounter.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/RamAddAMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/RamAddBMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/RegSelMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/RegisterBank.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/divider.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../multiplier/multiplier.srcs/sources_1/new/divider.vhd"/>
+          <Attr Name="ImportTime" Val="1521341774"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/clockdiv.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/clockdiv.vhd"/>
+          <Attr Name="ImportTime" Val="1519014064"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/debugmux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/sevenseg.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/sevenseg.vhd"/>
+          <Attr Name="ImportTime" Val="1519014176"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/MemDebugMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/RegDebugMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/BranchUnit.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/PCAddressMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/InterruptHandler.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/RamDataMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/AMAMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/ps2Controller.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/imports/Desktop/ps2Controller.vhd"/>
+          <Attr Name="ImportTime" Val="1524589818"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Keyboard/ScanToAscii.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/imports/Lab 3 - Feb 16 - 2018/Keyboard/ScanToAscii.vhd"/>
+          <Attr Name="ImportTime" Val="1519181494"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/shiftregister.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/DynamicMux.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/Desktop/PS2Timeout.vhd">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../PS2Timeout.vhd"/>
+          <Attr Name="ImportTime" Val="1525190950"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/CISC24HW/CISC24HW.bd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_xlslice_6_0/CISC24HW_xlslice_6_0.xci">
+          <Proxy FileSetName="CISC24HW_xlslice_6_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_RamAddBMux_0_0/CISC24HW_RamAddBMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_RamAddBMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_RamAddAMux_0_0/CISC24HW_RamAddAMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_RamAddAMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_blk_mem_gen_1_0/CISC24HW_blk_mem_gen_1_0.xci">
+          <Proxy FileSetName="CISC24HW_blk_mem_gen_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_blk_mem_gen_0_0/CISC24HW_blk_mem_gen_0_0.xci">
+          <Proxy FileSetName="CISC24HW_blk_mem_gen_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_divider_0_0/CISC24HW_divider_0_0.xci">
+          <Proxy FileSetName="CISC24HW_divider_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_RegisterBank_0_0/CISC24HW_RegisterBank_0_0.xci">
+          <Proxy FileSetName="CISC24HW_RegisterBank_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_decoder_0_0/CISC24HW_decoder_0_0.xci">
+          <Proxy FileSetName="CISC24HW_decoder_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_RegSelMux_0_0/CISC24HW_RegSelMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_RegSelMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_debugmux_0_0/CISC24HW_debugmux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_debugmux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_clockdivider18_0_0/CISC24HW_clockdivider18_0_0.xci">
+          <Proxy FileSetName="CISC24HW_clockdivider18_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_xlslice_6_4/CISC24HW_xlslice_6_4.xci">
+          <Proxy FileSetName="CISC24HW_xlslice_6_4"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_PCAddressMux_0_0/CISC24HW_PCAddressMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_PCAddressMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_InterruptHandler_0_0/CISC24HW_InterruptHandler_0_0.xci">
+          <Proxy FileSetName="CISC24HW_InterruptHandler_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_RamDataMux_0_0/CISC24HW_RamDataMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_RamDataMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_AMAMux_0_0/CISC24HW_AMAMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_AMAMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_ps2Controller_0_0/CISC24HW_ps2Controller_0_0.xci">
+          <Proxy FileSetName="CISC24HW_ps2Controller_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_shiftregister_0_0/CISC24HW_shiftregister_0_0.xci">
+          <Proxy FileSetName="CISC24HW_shiftregister_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_BranchUnit_0_0/CISC24HW_BranchUnit_0_0.xci">
+          <Proxy FileSetName="CISC24HW_BranchUnit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_xlslice_6_1/CISC24HW_xlslice_6_1.xci">
+          <Proxy FileSetName="CISC24HW_xlslice_6_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_ScanToAscii_0_0/CISC24HW_ScanToAscii_0_0.xci">
+          <Proxy FileSetName="CISC24HW_ScanToAscii_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_DynamicMux_1_0/CISC24HW_DynamicMux_1_0.xci">
+          <Proxy FileSetName="CISC24HW_DynamicMux_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_xlslice_6_5/CISC24HW_xlslice_6_5.xci">
+          <Proxy FileSetName="CISC24HW_xlslice_6_5"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_xlslice_6_2/CISC24HW_xlslice_6_2.xci">
+          <Proxy FileSetName="CISC24HW_xlslice_6_2"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_xlslice_6_3/CISC24HW_xlslice_6_3.xci">
+          <Proxy FileSetName="CISC24HW_xlslice_6_3"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_MemDebugMux_0_0/CISC24HW_MemDebugMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_MemDebugMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_RegDebugMux_0_0/CISC24HW_RegDebugMux_0_0.xci">
+          <Proxy FileSetName="CISC24HW_RegDebugMux_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_Mux2to1_0_1/CISC24HW_Mux2to1_0_1.xci">
+          <Proxy FileSetName="CISC24HW_Mux2to1_0_1"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_PS2Timeout_0_0/CISC24HW_PS2Timeout_0_0.xci">
+          <Proxy FileSetName="CISC24HW_PS2Timeout_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_Mux2to1_0_0/CISC24HW_Mux2to1_0_0.xci">
+          <Proxy FileSetName="CISC24HW_Mux2to1_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_Demux1to2_0_0/CISC24HW_Demux1to2_0_0.xci">
+          <Proxy FileSetName="CISC24HW_Demux1to2_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_ALUMuxB_0_0/CISC24HW_ALUMuxB_0_0.xci">
+          <Proxy FileSetName="CISC24HW_ALUMuxB_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_AccumReg_0_0/CISC24HW_AccumReg_0_0.xci">
+          <Proxy FileSetName="CISC24HW_AccumReg_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_ExecReg_0_0/CISC24HW_ExecReg_0_0.xci">
+          <Proxy FileSetName="CISC24HW_ExecReg_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_DecodeUnit_0_0/CISC24HW_DecodeUnit_0_0.xci">
+          <Proxy FileSetName="CISC24HW_DecodeUnit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_Logic_Unit_0_0/CISC24HW_Logic_Unit_0_0.xci">
+          <Proxy FileSetName="CISC24HW_Logic_Unit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_Multiplier_VHDL_0_0/CISC24HW_Multiplier_VHDL_0_0.xci">
+          <Proxy FileSetName="CISC24HW_Multiplier_VHDL_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_Mux2to1_1_0/CISC24HW_Mux2to1_1_0.xci">
+          <Proxy FileSetName="CISC24HW_Mux2to1_1_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_FSMController_0_0/CISC24HW_FSMController_0_0.xci">
+          <Proxy FileSetName="CISC24HW_FSMController_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_ALU_Shift_Unit_0_0/CISC24HW_ALU_Shift_Unit_0_0.xci">
+          <Proxy FileSetName="CISC24HW_ALU_Shift_Unit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_Mux4to1_0_0/CISC24HW_Mux4to1_0_0.xci">
+          <Proxy FileSetName="CISC24HW_Mux4to1_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_MUXALU_0_0/CISC24HW_MUXALU_0_0.xci">
+          <Proxy FileSetName="CISC24HW_MUXALU_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_Arith_Unit_0_0/CISC24HW_Arith_Unit_0_0.xci">
+          <Proxy FileSetName="CISC24HW_Arith_Unit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="CISC24HW.bd" FileRelPathName="ip/CISC24HW_PCounter_0_0/CISC24HW_PCounter_0_0.xci">
+          <Proxy FileSetName="CISC24HW_PCounter_0_0"/>
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/CISC24HW/hdl/CISC24HW_wrapper.vhd">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/interruptcont/interruptcont.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/interruptcont/hdl/interruptcont_wrapper.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/WriteRamMux.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/blockram/hdl/blockram_wrapper.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/regselmux_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/ALU/ALU.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+        <CompFileExtendedInfo CompFileName="ALU.bd" FileRelPathName="ip/ALU_Logic_Unit_0_0/ALU_Logic_Unit_0_0.xci">
+          <Proxy FileSetName="ALU_Logic_Unit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ALU.bd" FileRelPathName="ip/ALU_MUXALU_0_0/ALU_MUXALU_0_0.xci">
+          <Proxy FileSetName="ALU_MUXALU_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ALU.bd" FileRelPathName="ip/ALU_Arith_Unit_0_0/ALU_Arith_Unit_0_0.xci">
+          <Proxy FileSetName="ALU_Arith_Unit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ALU.bd" FileRelPathName="ip/ALU_ALU_Shift_Unit_0_0/ALU_ALU_Shift_Unit_0_0.xci">
+          <Proxy FileSetName="ALU_ALU_Shift_Unit_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ALU.bd" FileRelPathName="ip/ALU_divider_0_0/ALU_divider_0_0.xci">
+          <Proxy FileSetName="ALU_divider_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="ALU.bd" FileRelPathName="ip/ALU_Multiplier_VHDL_0_0/ALU_Multiplier_VHDL_0_0.xci">
+          <Proxy FileSetName="ALU_Multiplier_VHDL_0_0"/>
+        </CompFileExtendedInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/ALU/hdl/ALU_wrapper.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/blockram/blockram.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/Divider_Clk.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/AutoIncMux.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/tristatebuffMM.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/tristatebuff.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/CISC24_blk_mem_gen_0_0.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/CISC24HW/ip/CISC24HW_blk_mem_gen_0_0/romint.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/ControlUnit/ControlUnit.bd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/ControlUnit/hdl/ControlUnit_wrapper.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/bd/CISC24HW/ip/CISC24HW_blk_mem_gen_0_0/test.coe">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/tilememory.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/tilememory.vhd"/>
+          <Attr Name="ImportTime" Val="1525406081"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/mux8to1.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/mux8to1.vhd"/>
+          <Attr Name="ImportTime" Val="1519264006"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/fontrom.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/ps2vga.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/ps2vga.vhd"/>
+          <Attr Name="ImportTime" Val="1524550211"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/imports/new/vgasync.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/vgasync.vhd"/>
+          <Attr Name="ImportTime" Val="1519172462"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/vga_controller.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sources_1/new/clock_divide.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="CISC24HW_wrapper"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+      <Filter Type="Constrs"/>
+      <File Path="$PSRCDIR/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../Nexys-4-DDR-Master.xdc"/>
+          <Attr Name="ImportTime" Val="1517418036"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/constrs_1/new/test.xdc">
+        <FileInfo>
+          <Attr Name="UserDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc"/>
+        <Option Name="ConstrsType" Val="XDC"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
+      <Filter Type="Srcs"/>
+      <File Path="$PSRCDIR/sim_1/new/alu_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/blockram_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/cisc_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/registerbank_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/divider_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/dividerclk_tb.vhd">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PPRDIR/CISC24HW_wrapper_behav.wcfg">
+        <FileInfo>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <Config>
+        <Option Name="DesignMode" Val="RTL"/>
+        <Option Name="TopModule" Val="CISC24HW_wrapper"/>
+        <Option Name="TopLib" Val="xil_defaultlib"/>
+        <Option Name="TransportPathDelay" Val="0"/>
+        <Option Name="TransportIntDelay" Val="0"/>
+        <Option Name="SrcSet" Val="sources_1"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/ControlUnit_wrapper_behav.wcfg"/>
+        <Option Name="XSimWcfgFile" Val="$PPRDIR/CISC24HW_wrapper_behav.wcfg"/>
+        <Option Name="NLNetlistMode" Val="funcsim"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_RegSelMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_RegSelMux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_RegSelMux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_Mux2to1_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_Mux2to1_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_Mux2to1_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_Mux4to1_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_Mux4to1_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_Mux4to1_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_Mux2to1_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_Mux2to1_1_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_Mux2to1_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_Multiplier_VHDL_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_Multiplier_VHDL_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_Multiplier_VHDL_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_Demux1to2_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_Demux1to2_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_Demux1to2_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_MUXALU_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_MUXALU_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_MUXALU_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_ALU_Shift_Unit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_ALU_Shift_Unit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_ALU_Shift_Unit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_blk_mem_gen_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_blk_mem_gen_1_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_blk_mem_gen_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_ALUMuxB_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_ALUMuxB_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_ALUMuxB_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_xlslice_6_5" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_xlslice_6_5">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_xlslice_6_5"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_xlslice_6_3" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_xlslice_6_3">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_xlslice_6_3"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_xlslice_6_4" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_xlslice_6_4">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_xlslice_6_4"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_xlslice_6_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_xlslice_6_1">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_xlslice_6_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_xlslice_6_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_xlslice_6_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_xlslice_6_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_xlslice_6_2" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_xlslice_6_2">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_xlslice_6_2"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_ExecReg_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_ExecReg_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_ExecReg_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_divider_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_divider_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_divider_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_AccumReg_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_AccumReg_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_AccumReg_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_Arith_Unit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_Arith_Unit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_Arith_Unit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_Logic_Unit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_Logic_Unit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_Logic_Unit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ALU_ALU_Shift_Unit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ALU_ALU_Shift_Unit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ALU_ALU_Shift_Unit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ALU_MUXALU_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ALU_MUXALU_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ALU_MUXALU_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ALU_divider_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ALU_divider_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ALU_divider_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ALU_Arith_Unit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ALU_Arith_Unit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ALU_Arith_Unit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ALU_Logic_Unit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ALU_Logic_Unit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ALU_Logic_Unit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="ALU_Multiplier_VHDL_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/ALU_Multiplier_VHDL_0_0">
+      <Config>
+        <Option Name="TopModule" Val="ALU_Multiplier_VHDL_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_Mux2to1_0_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_Mux2to1_0_1">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_Mux2to1_0_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_MemDebugMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_MemDebugMux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_MemDebugMux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_AMAMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_AMAMux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_AMAMux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_InterruptHandler_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_InterruptHandler_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_InterruptHandler_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_PCAddressMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_PCAddressMux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_PCAddressMux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_RamDataMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_RamDataMux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_RamDataMux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_RamAddBMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_RamAddBMux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_RamAddBMux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_RegisterBank_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_RegisterBank_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_RegisterBank_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_RamAddAMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_RamAddAMux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_RamAddAMux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_shiftregister_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_shiftregister_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_shiftregister_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_ScanToAscii_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_ScanToAscii_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_ScanToAscii_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_decoder_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_decoder_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_decoder_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_DynamicMux_1_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_DynamicMux_1_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_DynamicMux_1_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_ps2Controller_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_ps2Controller_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_ps2Controller_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_PCounter_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_PCounter_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_PCounter_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_blk_mem_gen_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_blk_mem_gen_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_blk_mem_gen_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_PS2Timeout_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_PS2Timeout_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_PS2Timeout_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_DecodeUnit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_DecodeUnit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_DecodeUnit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_BranchUnit_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_BranchUnit_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_BranchUnit_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_FSMController_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_FSMController_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_FSMController_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_clockdivider18_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_clockdivider18_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_clockdivider18_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_debugmux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_debugmux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_debugmux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="CISC24HW_RegDebugMux_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/CISC24HW_RegDebugMux_0_0">
+      <Config>
+        <Option Name="TopModule" Val="CISC24HW_RegDebugMux_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+  </FileSets>
+  <Simulators>
+    <Simulator Name="XSim">
+      <Option Name="Description" Val="Vivado Simulator"/>
+      <Option Name="CompiledLib" Val="0"/>
+    </Simulator>
+    <Simulator Name="ModelSim">
+      <Option Name="Description" Val="ModelSim Simulator"/>
+    </Simulator>
+    <Simulator Name="Questa">
+      <Option Name="Description" Val="Questa Advanced Simulator"/>
+    </Simulator>
+    <Simulator Name="Riviera">
+      <Option Name="Description" Val="Riviera-PRO Simulator"/>
+    </Simulator>
+    <Simulator Name="ActiveHDL">
+      <Option Name="Description" Val="Active-HDL Simulator"/>
+    </Simulator>
+  </Simulators>
+  <Runs Version="1" Minor="10">
+    <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RegSelMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_RegSelMux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RegSelMux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_RegSelMux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Mux2to1_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_Mux2to1_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Mux2to1_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_Mux2to1_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Mux4to1_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_Mux4to1_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Mux4to1_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_Mux4to1_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Mux2to1_1_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_Mux2to1_1_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Mux2to1_1_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_Mux2to1_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Multiplier_VHDL_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_Multiplier_VHDL_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Multiplier_VHDL_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_Multiplier_VHDL_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Demux1to2_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_Demux1to2_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Demux1to2_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_Demux1to2_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_MUXALU_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_MUXALU_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_MUXALU_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_MUXALU_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ALU_Shift_Unit_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_ALU_Shift_Unit_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ALU_Shift_Unit_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_ALU_Shift_Unit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_blk_mem_gen_1_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_blk_mem_gen_1_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_blk_mem_gen_1_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_blk_mem_gen_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ALUMuxB_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_ALUMuxB_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ALUMuxB_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_ALUMuxB_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_5_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_xlslice_6_5" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_5" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_xlslice_6_5_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_3_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_xlslice_6_3" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_3" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_xlslice_6_3_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_4_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_xlslice_6_4" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_4" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_xlslice_6_4_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_1_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_xlslice_6_1" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_xlslice_6_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_xlslice_6_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_xlslice_6_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_2_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_xlslice_6_2" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_2" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_xlslice_6_2_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ExecReg_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_ExecReg_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ExecReg_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_ExecReg_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_divider_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_divider_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_divider_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_divider_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_AccumReg_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_AccumReg_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_AccumReg_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_AccumReg_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Arith_Unit_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_Arith_Unit_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Arith_Unit_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_Arith_Unit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Logic_Unit_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_Logic_Unit_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Logic_Unit_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_Logic_Unit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_ALU_Shift_Unit_0_0_synth_1" Type="Ft3:Synth" SrcSet="ALU_ALU_Shift_Unit_0_0" Part="xc7a100tcsg324-1" ConstrsSet="ALU_ALU_Shift_Unit_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ALU_ALU_Shift_Unit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_MUXALU_0_0_synth_1" Type="Ft3:Synth" SrcSet="ALU_MUXALU_0_0" Part="xc7a100tcsg324-1" ConstrsSet="ALU_MUXALU_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ALU_MUXALU_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_divider_0_0_synth_1" Type="Ft3:Synth" SrcSet="ALU_divider_0_0" Part="xc7a100tcsg324-1" ConstrsSet="ALU_divider_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ALU_divider_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_Arith_Unit_0_0_synth_1" Type="Ft3:Synth" SrcSet="ALU_Arith_Unit_0_0" Part="xc7a100tcsg324-1" ConstrsSet="ALU_Arith_Unit_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ALU_Arith_Unit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_Logic_Unit_0_0_synth_1" Type="Ft3:Synth" SrcSet="ALU_Logic_Unit_0_0" Part="xc7a100tcsg324-1" ConstrsSet="ALU_Logic_Unit_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ALU_Logic_Unit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_Multiplier_VHDL_0_0_synth_1" Type="Ft3:Synth" SrcSet="ALU_Multiplier_VHDL_0_0" Part="xc7a100tcsg324-1" ConstrsSet="ALU_Multiplier_VHDL_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/ALU_Multiplier_VHDL_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Mux2to1_0_1_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_Mux2to1_0_1" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Mux2to1_0_1" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_Mux2to1_0_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_MemDebugMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_MemDebugMux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_MemDebugMux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_MemDebugMux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_AMAMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_AMAMux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_AMAMux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_AMAMux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_InterruptHandler_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_InterruptHandler_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_InterruptHandler_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_InterruptHandler_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_PCAddressMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_PCAddressMux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_PCAddressMux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_PCAddressMux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RamDataMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_RamDataMux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RamDataMux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_RamDataMux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RamAddBMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_RamAddBMux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RamAddBMux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_RamAddBMux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RegisterBank_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_RegisterBank_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RegisterBank_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_RegisterBank_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RamAddAMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_RamAddAMux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RamAddAMux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_RamAddAMux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_shiftregister_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_shiftregister_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_shiftregister_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_shiftregister_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ScanToAscii_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_ScanToAscii_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ScanToAscii_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_ScanToAscii_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_decoder_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_decoder_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_decoder_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_decoder_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_DynamicMux_1_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_DynamicMux_1_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_DynamicMux_1_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_DynamicMux_1_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ps2Controller_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_ps2Controller_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ps2Controller_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_ps2Controller_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_PCounter_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_PCounter_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_PCounter_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_PCounter_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_blk_mem_gen_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_blk_mem_gen_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_blk_mem_gen_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_blk_mem_gen_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_PS2Timeout_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_PS2Timeout_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_PS2Timeout_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_PS2Timeout_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_DecodeUnit_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_DecodeUnit_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_DecodeUnit_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_DecodeUnit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_BranchUnit_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_BranchUnit_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_BranchUnit_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_BranchUnit_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_FSMController_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_FSMController_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_FSMController_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_FSMController_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_clockdivider18_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_clockdivider18_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_clockdivider18_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_clockdivider18_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_debugmux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_debugmux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_debugmux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_debugmux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RegDebugMux_0_0_synth_1" Type="Ft3:Synth" SrcSet="CISC24HW_RegDebugMux_0_0" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RegDebugMux_0_0" Description="Vivado Synthesis Defaults" WriteIncrSynthDcp="false" Dir="$PRUNDIR/CISC24HW_RegDebugMux_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017"/>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="constrs_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" State="current" SynthRun="synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RegSelMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RegSelMux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_RegSelMux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Mux2to1_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Mux2to1_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_Mux2to1_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Mux4to1_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Mux4to1_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_Mux4to1_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Mux2to1_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Mux2to1_1_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_Mux2to1_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Multiplier_VHDL_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Multiplier_VHDL_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_Multiplier_VHDL_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Demux1to2_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Demux1to2_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_Demux1to2_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_MUXALU_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_MUXALU_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_MUXALU_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ALU_Shift_Unit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ALU_Shift_Unit_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_ALU_Shift_Unit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_blk_mem_gen_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_blk_mem_gen_1_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_blk_mem_gen_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ALUMuxB_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ALUMuxB_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_ALUMuxB_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_5_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_5" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_xlslice_6_5_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_3_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_3" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_xlslice_6_3_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_4_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_4" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_xlslice_6_4_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_xlslice_6_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_xlslice_6_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_xlslice_6_2_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_xlslice_6_2" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_xlslice_6_2_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ExecReg_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ExecReg_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_ExecReg_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_divider_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_divider_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_divider_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_AccumReg_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_AccumReg_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_AccumReg_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Arith_Unit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Arith_Unit_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_Arith_Unit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Logic_Unit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Logic_Unit_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_Logic_Unit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_ALU_Shift_Unit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="ALU_ALU_Shift_Unit_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ALU_ALU_Shift_Unit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_MUXALU_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="ALU_MUXALU_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ALU_MUXALU_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_divider_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="ALU_divider_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ALU_divider_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_Arith_Unit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="ALU_Arith_Unit_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ALU_Arith_Unit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_Logic_Unit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="ALU_Logic_Unit_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ALU_Logic_Unit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="ALU_Multiplier_VHDL_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="ALU_Multiplier_VHDL_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="ALU_Multiplier_VHDL_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_Mux2to1_0_1_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_Mux2to1_0_1" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_Mux2to1_0_1_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_MemDebugMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_MemDebugMux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_MemDebugMux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_AMAMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_AMAMux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_AMAMux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_InterruptHandler_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_InterruptHandler_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_InterruptHandler_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_PCAddressMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_PCAddressMux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_PCAddressMux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RamDataMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RamDataMux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_RamDataMux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RamAddBMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RamAddBMux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_RamAddBMux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RegisterBank_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RegisterBank_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_RegisterBank_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RamAddAMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RamAddAMux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_RamAddAMux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_shiftregister_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_shiftregister_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_shiftregister_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ScanToAscii_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ScanToAscii_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_ScanToAscii_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_decoder_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_decoder_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_decoder_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_DynamicMux_1_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_DynamicMux_1_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_DynamicMux_1_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_ps2Controller_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_ps2Controller_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_ps2Controller_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_PCounter_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_PCounter_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_PCounter_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_blk_mem_gen_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_blk_mem_gen_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_blk_mem_gen_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_PS2Timeout_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_PS2Timeout_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_PS2Timeout_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_DecodeUnit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_DecodeUnit_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_DecodeUnit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_BranchUnit_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_BranchUnit_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_BranchUnit_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_FSMController_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_FSMController_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_FSMController_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_clockdivider18_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_clockdivider18_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_clockdivider18_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_debugmux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_debugmux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_debugmux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+    <Run Id="CISC24HW_RegDebugMux_0_0_impl_1" Type="Ft2:EntireDesign" Part="xc7a100tcsg324-1" ConstrsSet="CISC24HW_RegDebugMux_0_0" Description="Default settings for Implementation." WriteIncrSynthDcp="false" SynthRun="CISC24HW_RegDebugMux_0_0_synth_1" IncludeInArchive="false">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2017"/>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2017"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+    </Run>
+  </Runs>
+  <Board/>
+</Project>

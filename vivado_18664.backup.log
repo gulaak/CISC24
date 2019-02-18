@@ -1,0 +1,78 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat May 12 19:24:39 2018
+# Process ID: 18664
+# Current directory: C:/Users/Aiden/Desktop/CISC24
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent19576 C:\Users\Aiden\Desktop\CISC24\CISC24.xpr
+# Log file: C:/Users/Aiden/Desktop/CISC24/vivado.log
+# Journal file: C:/Users/Aiden/Desktop/CISC24\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Aiden/Desktop/CISC24/CISC24.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'.
+open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 876.199 ; gain = 167.977
+update_compile_order -fileset sources_1
+open_bd_design {C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/CISC24HW.bd}
+Adding cell -- xilinx.com:module_ref:ALU_Shift_Unit:1.0 - ALU_Shift_Unit_0
+Adding cell -- xilinx.com:module_ref:Demux1to2:1.0 - Demux1to2_0
+Adding cell -- xilinx.com:module_ref:MUXALU:1.0 - MUXALU_0
+Adding cell -- xilinx.com:module_ref:Multiplier_VHDL:1.0 - Multiplier_VHDL_0
+Adding cell -- xilinx.com:module_ref:Mux2to1:1.0 - Mux2to1_0
+Adding cell -- xilinx.com:module_ref:Mux2to1:1.0 - Mux2to1_1
+Adding cell -- xilinx.com:module_ref:Mux4to1:1.0 - Mux4to1_0
+Adding cell -- xilinx.com:module_ref:RegSelMux:1.0 - RegSelMux_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_0
+Adding cell -- xilinx.com:ip:blk_mem_gen:8.4 - blk_mem_gen_1
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding cell -- xilinx.com:module_ref:ALUMuxB:1.0 - ALUMuxB_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_6
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_7
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_8
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_9
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_10
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_11
+Adding cell -- xilinx.com:module_ref:AccumReg:1.0 - AccumReg_0
+Adding cell -- xilinx.com:module_ref:ExecReg:1.0 - ExecReg_0
+Adding cell -- xilinx.com:module_ref:divider:1.0 - divider_0
+Adding cell -- xilinx.com:module_ref:Arith_Unit:1.0 - Arith_Unit_0
+Adding cell -- xilinx.com:module_ref:Logic_Unit:1.0 - Logic_Unit_0
+Adding cell -- xilinx.com:module_ref:Mux2to1:1.0 - Mux2to1_2
+Adding cell -- xilinx.com:module_ref:MemDebugMux:1.0 - MemDebugMux_0
+Adding cell -- xilinx.com:module_ref:AMAMux:1.0 - AMAMux_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_12
+Adding cell -- xilinx.com:module_ref:InterruptHandler:1.0 - InterruptHandler_0
+Adding cell -- xilinx.com:module_ref:RamAddAMux:1.0 - RamAddAMux_0
+Adding cell -- xilinx.com:module_ref:RamAddBMux:1.0 - RamAddBMux_0
+Adding cell -- xilinx.com:module_ref:PCAddressMux:1.0 - PCAddressMux_0
+Adding cell -- xilinx.com:module_ref:RegisterBank:1.0 - RegisterBank_0
+Adding cell -- xilinx.com:module_ref:RamDataMux:1.0 - RamDataMux_0
+Adding cell -- xilinx.com:module_ref:shiftregister:1.0 - shiftregister_0
+Adding cell -- xilinx.com:module_ref:ScanToAscii:1.0 - ScanToAscii_0
+Adding cell -- xilinx.com:module_ref:decoder:1.0 - decoder_0
+Adding cell -- xilinx.com:module_ref:DynamicMux:1.0 - DynamicMux_1
+Adding cell -- xilinx.com:module_ref:ps2Controller:1.0 - ps2Controller_0
+Adding cell -- xilinx.com:module_ref:PCounter:1.0 - PCounter_0
+Adding cell -- xilinx.com:module_ref:PS2Timeout:1.0 - PS2Timeout_0
+Adding cell -- xilinx.com:module_ref:DecodeUnit:1.0 - DecodeUnit_0
+Adding cell -- xilinx.com:module_ref:BranchUnit:1.0 - BranchUnit_0
+Adding cell -- xilinx.com:module_ref:FSMController:1.0 - FSMController_0
+Adding cell -- xilinx.com:module_ref:clockdivider18:1.0 - clockdivider18_0
+Adding cell -- xilinx.com:module_ref:debugmux:1.0 - debugmux_0
+Adding cell -- xilinx.com:module_ref:RegDebugMux:1.0 - RegDebugMux_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /clockdivider18_0/clk_out(undef) and /decoder_0/CLK(clk)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /CLK(clk) and /clockdivider18_0/clk_in(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /FSMController_0/ClrCCR(undef) and /BranchUnit_0/Rst(rst)
+Successfully read diagram <CISC24HW> from BD file <C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/CISC24HW.bd>
+open_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1016.871 ; gain = 88.453
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun May 13 01:08:43 2018...

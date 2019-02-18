@@ -1,0 +1,145 @@
+/*
+
+Xilinx Vivado v2017.4 (64-bit) [Major: 2017, Minor: 4]
+SW Build: 2086221 on Fri Dec 15 20:55:39 MST 2017
+IP Build: 2085800 on Fri Dec 15 22:25:07 MST 2017
+
+Process ID: 6508
+License: Customer
+
+Current time: 	Sun Feb 17 23:07:59 EST 2019
+Time zone: 	Eastern Standard Time (America/New_York)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 96
+Available screens: 2
+Available disk space: 45 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_112 64-bit
+Java home: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre
+JVM executable location: 	C:/Xilinx/Vivado/2017.4/tps/win64/jre/bin/java.exe
+
+User name: 	Aiden
+User home directory: C:/Users/Aiden
+User working directory: C:/Users/Aiden/Desktop/CISC24
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2017.4
+RDI_DATADIR: C:/Xilinx/Vivado/2017.4/data
+RDI_BINDIR: C:/Xilinx/Vivado/2017.4/bin
+
+Vivado preferences file location: C:/Users/Aiden/AppData/Roaming/Xilinx/Vivado/2017.4/vivado.xml
+Vivado preferences directory: C:/Users/Aiden/AppData/Roaming/Xilinx/Vivado/2017.4/
+Vivado layouts directory: C:/Users/Aiden/AppData/Roaming/Xilinx/Vivado/2017.4/layouts
+PlanAhead jar file location: 	C:/Xilinx/Vivado/2017.4/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Aiden/Desktop/CISC24/vivado.log
+Vivado journal file location: 	C:/Users/Aiden/Desktop/CISC24/vivado.jou
+Engine tmp dir: 	C:/Users/Aiden/Desktop/CISC24/.Xil/Vivado-6508-DESKTOP-T2T1KVN
+
+GUI allocated memory:	184 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 560 MB
+
+Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\Aiden\Desktop\CISC24\CISC24.xpr. Version: Vivado v2017.4 
+// bs (cj):  Open Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// [GUI Memory]: 60 MB (+60190kb) [00:00:06]
+// [Engine Memory]: 489 MB (+360966kb) [00:00:06]
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// HMemoryUtils.trashcanNow. Engine heap size: 568 MB. GUI used memory: 36 MB. Current time: 2/17/19 11:08:02 PM EST
+// TclEventType: FILE_SET_CHANGE
+// [Engine Memory]: 568 MB (+57791kb) [00:00:11]
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 72 MB (+9283kb) [00:00:13]
+// [Engine Memory]: 604 MB (+7625kb) [00:00:13]
+// [Engine Memory]: 668 MB (+35363kb) [00:00:15]
+// [GUI Memory]: 78 MB (+2873kb) [00:00:16]
+// Tcl Message: open_project C:/Users/Aiden/Desktop/CISC24/CISC24.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2017.4/data/ip'. 
+// [Engine Memory]: 736 MB (+36012kb) [00:00:17]
+// Tcl Message: open_project: Time (s): cpu = 00:00:13 ; elapsed = 00:00:11 . Memory (MB): peak = 865.797 ; gain = 161.508 
+// Project name: CISC24; location: C:/Users/Aiden/Desktop/CISC24; part: xc7a100tcsg324-1
+// [GUI Memory]: 85 MB (+3518kb) [00:00:18]
+dismissDialog("Open Project"); // bs (cj)
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_GENERATED
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// [GUI Memory]: 96 MB (+6748kb) [00:01:54]
+// [GUI Memory]: 101 MB (+299kb) [00:02:49]
+// TclEventType: DG_GRAPH_GENERATED
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 110 MB (+4089kb) [00:04:55]
+// [GUI Memory]: 117 MB (+1914kb) [00:11:27]
+// [GUI Memory]: 124 MB (+443kb) [00:29:22]
+// HMemoryUtils.trashcanNow. Engine heap size: 752 MB. GUI used memory: 62 MB. Current time: 2/17/19 11:38:02 PM EST
+// Elapsed time: 2004 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd)]", 1); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd)]", 2); // B (D, cj)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd)]", 3); // B (D, cj)
+// Elapsed time: 12 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), DynamicMux_1 : CISC24HW_DynamicMux_1_0 (Module Reference Wrapper)]", 12); // B (D, cj)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), DynamicMux_1 : CISC24HW_DynamicMux_1_0 (Module Reference Wrapper)]", 12); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), InterruptHandler_0 : CISC24HW_InterruptHandler_0_0 (Module Reference Wrapper)]", 15, true); // B (D, cj) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), InterruptHandler_0 : CISC24HW_InterruptHandler_0_0 (Module Reference Wrapper)]", 15, true, false, false, false, false, true); // B (D, cj) - Double Click - Node
+// Run Command: PAResourceCommand.PACommandNames_RECUSTOMIZE_CORE
+// HOptionPane Warning: ''CISC24HW_InterruptHandler_0_0.xci' IP is part of a block design. Please open the block design 'CISC24HW.bd' and customize the IP. (Re-customize IP)'
+selectButton("PAResourceQtoS.RecustomizeCore_THIS_IP_PART_OF_BLOCK_DESIGN_OK", "OK"); // JButton (A, G)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), InterruptHandler_0 : CISC24HW_InterruptHandler_0_0 (Module Reference Wrapper), CISC24HW_InterruptHandler_0_0(CISC24HW_InterruptHandler_0_0_arch) (CISC24HW_InterruptHandler_0_0.vhd), U0 : InterruptHandler(behavioral) (InterruptHandler.vhd)]", 17, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), InterruptHandler_0 : CISC24HW_InterruptHandler_0_0 (Module Reference Wrapper), CISC24HW_InterruptHandler_0_0(CISC24HW_InterruptHandler_0_0_arch) (CISC24HW_InterruptHandler_0_0.vhd), U0 : InterruptHandler(behavioral) (InterruptHandler.vhd)]", 17, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), InterruptHandler_0 : CISC24HW_InterruptHandler_0_0 (Module Reference Wrapper), CISC24HW_InterruptHandler_0_0(CISC24HW_InterruptHandler_0_0_arch) (CISC24HW_InterruptHandler_0_0.vhd), U0 : InterruptHandler(behavioral) (InterruptHandler.vhd)]", 17, false, false, false, false, false, true); // B (D, cj) - Double Click
+// Elapsed time: 17 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), InterruptHandler_0 : CISC24HW_InterruptHandler_0_0 (Module Reference Wrapper)]", 15); // B (D, cj)
+// Elapsed time: 25 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), RegisterBank_0 : CISC24HW_RegisterBank_0_0 (Module Reference Wrapper)]", 32); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), RegisterBank_0 : CISC24HW_RegisterBank_0_0 (Module Reference Wrapper), CISC24HW_RegisterBank_0_0(CISC24HW_RegisterBank_0_0_arch) (CISC24HW_RegisterBank_0_0.vhd), U0 : RegisterBank(Behavioral) (RegisterBank.vhd)]", 34, false); // B (D, cj)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), RegisterBank_0 : CISC24HW_RegisterBank_0_0 (Module Reference Wrapper), CISC24HW_RegisterBank_0_0(CISC24HW_RegisterBank_0_0_arch) (CISC24HW_RegisterBank_0_0.vhd), U0 : RegisterBank(Behavioral) (RegisterBank.vhd)]", 34, false, false, false, false, false, true); // B (D, cj) - Double Click
+selectCodeEditor("RegisterBank.vhd", 68, 147); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 428, 168); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 3, 148); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 421, 183); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 92, 153); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 385, 180); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 50, 162); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 394, 165); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 2, 284); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 316, 357); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 76, 379); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 444, 446); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 79, 383); // cd (w, cj)
+selectCodeEditor("RegisterBank.vhd", 392, 424); // cd (w, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 757 MB. GUI used memory: 64 MB. Current time: 2/17/19 11:48:22 PM EST
+// Elapsed time: 1339 seconds
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, CISC24HW_wrapper(STRUCTURE) (CISC24HW_wrapper.vhd), CISC24HW_i : CISC24HW (CISC24HW.bd), CISC24HW(STRUCTURE) (CISC24HW.vhd), RegisterBank_0 : CISC24HW_RegisterBank_0_0 (Module Reference Wrapper)]", 32); // B (D, cj)
+// HMemoryUtils.trashcanNow. Engine heap size: 757 MB. GUI used memory: 62 MB. Current time: 2/18/19 12:18:22 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 757 MB. GUI used memory: 62 MB. Current time: 2/18/19 12:48:23 AM EST
+// HMemoryUtils.trashcanNow. Engine heap size: 757 MB. GUI used memory: 62 MB. Current time: 2/18/19 1:18:23 AM EST

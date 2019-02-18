@@ -1,0 +1,3 @@
+ControlUnit_FSMController_0_0.vhd,vhdl,xil_defaultlib,../../../bd/ControlUnit/ip/ControlUnit_FSMController_0_0/sim/ControlUnit_FSMController_0_0.vhd,
+ControlUnit_DecodeUnit_0_0.vhd,vhdl,xil_defaultlib,../../../bd/ControlUnit/ip/ControlUnit_DecodeUnit_0_0/sim/ControlUnit_DecodeUnit_0_0.vhd,
+ControlUnit.vhd,vhdl,xil_defaultlib,../../../bd/ControlUnit/sim/ControlUnit.vhd,

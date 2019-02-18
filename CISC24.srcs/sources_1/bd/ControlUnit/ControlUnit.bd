@@ -1,0 +1,644 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<bd:repository xmlns:bd="http://www.xilinx.com/bd" bd:BoundaryCRC="0xC94FCA376124C8E4" bd:device="xc7a100tcsg324-1" bd:synthFlowMode="Hierarchical" bd:tool_version="2017.4" bd:top="ControlUnit" bd:version="1.00.a">
+
+  <spirit:component xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>ControlUnit</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:parameters>
+      <spirit:parameter>
+        <spirit:name>isTop</spirit:name>
+        <spirit:value spirit:format="bool" spirit:resolve="immediate">true</spirit:value>
+      </spirit:parameter>
+    </spirit:parameters>
+    <spirit:busInterfaces>
+      <spirit:busInterface>
+        <spirit:name>DATA.IRWRITE</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>IRWRite</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.SRCB</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>SRCB</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.IMMED</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>IMMED</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.OPCODE</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>OPCODE</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>CLK.CLK</spirit:name>
+        <spirit:displayName>Clk</spirit:displayName>
+        <spirit:description>Clock</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="clock" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="clock_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>CLK</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters>
+          <spirit:parameter>
+            <spirit:name>FREQ_HZ</spirit:name>
+            <spirit:value>100000000</spirit:value>
+          </spirit:parameter>
+        </spirit:parameters>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.LPROM</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>LPROM</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.PCEN</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>PCEN</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.ALUSELB</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>ALUSelB</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.REGWRITESEL</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>RegWriteSel</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.DIVEN</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>DivEn</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.REGWA</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>RegWA</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.ACCUMEN</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>AccumEn</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+      <spirit:busInterface>
+        <spirit:name>DATA.INSTRUCTION</spirit:name>
+        <spirit:displayName>Data</spirit:displayName>
+        <spirit:description>Data</spirit:description>
+        <spirit:busType spirit:library="signal" spirit:name="data" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:abstractionType spirit:library="signal" spirit:name="data_rtl" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:slave/>
+        <spirit:portMaps>
+          <spirit:portMap>
+            <spirit:logicalPort>
+              <spirit:name>DATA</spirit:name>
+            </spirit:logicalPort>
+            <spirit:physicalPort>
+              <spirit:name>Instruction</spirit:name>
+            </spirit:physicalPort>
+          </spirit:portMap>
+        </spirit:portMaps>
+        <spirit:parameters/>
+      </spirit:busInterface>
+    </spirit:busInterfaces>
+    <spirit:model>
+      <spirit:views>
+        <spirit:view>
+          <spirit:name>BlockDiagram</spirit:name>
+          <spirit:envIdentifier>:vivado.xilinx.com:</spirit:envIdentifier>
+          <spirit:hierarchyRef spirit:library="BlockDiagram" spirit:name="ControlUnit_imp" spirit:vendor="xilinx.com" spirit:version="1.00.a"/>
+        </spirit:view>
+      </spirit:views>
+      <spirit:ports>
+        <spirit:port>
+          <spirit:name>IRWRite</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SRCA</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>2</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SRCB</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>2</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>IMMED</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>18</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>OPCODE</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>4</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>CLK</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RamWa</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>LPROM</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RamWB</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PCEN</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>ALUSelB</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RegWriteSel</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>1</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>ExecEn</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>PCINC</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RamAddSelA</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>1</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RamAddSelB</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>1</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>SBSel</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+            <spirit:vector>
+              <spirit:left>1</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>DivEn</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RegWA</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>AccumEn</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RegEn</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>MMSel</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>RegRead</spirit:name>
+          <spirit:wire>
+            <spirit:direction>out</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Done</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+          </spirit:wire>
+        </spirit:port>
+        <spirit:port>
+          <spirit:name>Instruction</spirit:name>
+          <spirit:wire>
+            <spirit:direction>in</spirit:direction>
+            <spirit:vector>
+              <spirit:left>23</spirit:left>
+              <spirit:right>0</spirit:right>
+            </spirit:vector>
+          </spirit:wire>
+        </spirit:port>
+      </spirit:ports>
+    </spirit:model>
+  </spirit:component>
+
+  <spirit:design xmlns:spirit="http://www.spiritconsortium.org/XMLSchema/SPIRIT/1685-2009">
+    <spirit:vendor>xilinx.com</spirit:vendor>
+    <spirit:library>BlockDiagram</spirit:library>
+    <spirit:name>ControlUnit_imp</spirit:name>
+    <spirit:version>1.00.a</spirit:version>
+    <spirit:componentInstances>
+      <spirit:componentInstance>
+        <spirit:instanceName>DecodeUnit_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="DecodeUnit" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ControlUnit_DecodeUnit_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">DecodeUnit</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+      <spirit:componentInstance>
+        <spirit:instanceName>FSMController_0</spirit:instanceName>
+        <spirit:componentRef spirit:library="module_ref" spirit:name="FSMController" spirit:vendor="xilinx.com" spirit:version="1.0"/>
+        <spirit:configurableElementValues>
+          <spirit:configurableElementValue spirit:referenceId="bd:xciName">ControlUnit_FSMController_0_0</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceName">FSMController</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:subInstancePath"></spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:referenceType">hdl</spirit:configurableElementValue>
+          <spirit:configurableElementValue spirit:referenceId="bd:BoundaryCRC">0x0</spirit:configurableElementValue>
+        </spirit:configurableElementValues>
+      </spirit:componentInstance>
+    </spirit:componentInstances>
+    <spirit:adHocConnections>
+      <spirit:adHocConnection>
+        <spirit:name>DecodeUnit_0_Halt</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="Halt"/>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="Halt"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DecodeUnit_0_AMA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="AMA"/>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="AMA"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DecodeUnit_0_AMB</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="AMB"/>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="AMB"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_IRWrite</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="IRWrite"/>
+        <spirit:externalPortReference spirit:portRef="IRWRite"/>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="IRWrite"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DecodeUnit_0_SrcA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="SrcA"/>
+        <spirit:externalPortReference spirit:portRef="SRCA"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DecodeUnit_0_SrcB</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="SrcB"/>
+        <spirit:externalPortReference spirit:portRef="SRCB"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DecodeUnit_0_Immediate</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="Immediate"/>
+        <spirit:externalPortReference spirit:portRef="IMMED"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>DecodeUnit_0_Opcode</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="Opcode"/>
+        <spirit:externalPortReference spirit:portRef="OPCODE"/>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="Opcode"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>CLK_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="CLK"/>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="CLK"/>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="CLK"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_RamWA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="RamWA"/>
+        <spirit:externalPortReference spirit:portRef="RamWa"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_Lprom</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="Lprom"/>
+        <spirit:externalPortReference spirit:portRef="LPROM"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_RamWB</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="RamWB"/>
+        <spirit:externalPortReference spirit:portRef="RamWB"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_PCEN</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="PCEN"/>
+        <spirit:externalPortReference spirit:portRef="PCEN"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_ALUSELB</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="ALUSELB"/>
+        <spirit:externalPortReference spirit:portRef="ALUSelB"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_RegWriteSel</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="RegWriteSel"/>
+        <spirit:externalPortReference spirit:portRef="RegWriteSel"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_ExecEn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="ExecEn"/>
+        <spirit:externalPortReference spirit:portRef="ExecEn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_PCINC</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="PCINC"/>
+        <spirit:externalPortReference spirit:portRef="PCINC"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_RamAddSelA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="RamAddSelA"/>
+        <spirit:externalPortReference spirit:portRef="RamAddSelA"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_RamAddSelB</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="RamAddSelB"/>
+        <spirit:externalPortReference spirit:portRef="RamAddSelB"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_SBSel</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="SBSel"/>
+        <spirit:externalPortReference spirit:portRef="SBSel"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_DivEn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="DivEn"/>
+        <spirit:externalPortReference spirit:portRef="DivEn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_RegWA</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="RegWA"/>
+        <spirit:externalPortReference spirit:portRef="RegWA"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_AccumEn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="AccumEn"/>
+        <spirit:externalPortReference spirit:portRef="AccumEn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_RegEn</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="RegEn"/>
+        <spirit:externalPortReference spirit:portRef="RegEn"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_MMSel</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="MMSel"/>
+        <spirit:externalPortReference spirit:portRef="MMSel"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>FSMController_0_RegRead</spirit:name>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="RegRead"/>
+        <spirit:externalPortReference spirit:portRef="RegRead"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Done_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Done"/>
+        <spirit:internalPortReference spirit:componentRef="FSMController_0" spirit:portRef="Done"/>
+      </spirit:adHocConnection>
+      <spirit:adHocConnection>
+        <spirit:name>Instruction_1</spirit:name>
+        <spirit:externalPortReference spirit:portRef="Instruction"/>
+        <spirit:internalPortReference spirit:componentRef="DecodeUnit_0" spirit:portRef="Instruction"/>
+      </spirit:adHocConnection>
+    </spirit:adHocConnections>
+  </spirit:design>
+
+</bd:repository>

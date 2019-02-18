@@ -1,0 +1,6 @@
+srcscan starts
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/standard.vhd" into library std (VHDL-9003)
+INFO: analyzing package STANDARD (VHDL-1014)
+-- Analyzing VHDL file "C:/Xilinx/Vivado/2017.4/data/vhdl/src/std/textio.vhd" into library std (VHDL-9003)
+INFO: analyzing package TEXTIO (VHDL-1014)
+INFO: analyzing package body TEXTIO (VHDL-1013)

@@ -1,0 +1,136 @@
+{
+   ExpandedHierarchyInLayout: "",
+   commentid: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port Halt -pg 1 -y 1200 -defaultsOSRD
+preplace port RamWA -pg 1 -y 800 -defaultsOSRD
+preplace port PCEN -pg 1 -lvl 7:-140 -defaultsOSRD -top
+preplace port RamWB -pg 1 -y 740 -defaultsOSRD
+preplace port RegRead -pg 1 -y 280 -defaultsOSRD
+preplace port PCINC -pg 1 -lvl 7:-120 -defaultsOSRD -top
+preplace port CLK -pg 1 -y 590 -defaultsOSRD
+preplace port WriteA -pg 1 -lvl 7:-40 -defaultsOSRD -top
+preplace port WriteB -pg 1 -lvl 7:-20 -defaultsOSRD -top
+preplace port ExecEn -pg 1 -y 700 -defaultsOSRD
+preplace port IRWRITE -pg 1 -y 900 -defaultsOSRD
+preplace port AccumEn -pg 1 -y 860 -defaultsOSRD
+preplace port Rst -pg 1 -y 1960 -defaultsOSRD
+preplace port RegEn -pg 1 -y 300 -defaultsOSRD
+preplace portBus MemB -pg 1 -y 1120 -defaultsOSRD
+preplace portBus AMA -pg 1 -y 1870 -defaultsOSRD
+preplace portBus AMB -pg 1 -y 1890 -defaultsOSRD
+preplace portBus ALUSelB -pg 1 -y 1440 -defaultsOSRD
+preplace portBus CCR -pg 1 -y 2350 -defaultsOSRD
+preplace portBus RegWriteSel -pg 1 -lvl 7:-60 -defaultsOSRD -top
+preplace portBus OpCode -pg 1 -y 2440 -defaultsOSRD
+preplace portBus RegA -pg 1 -y 430 -defaultsOSRD
+preplace portBus RegB -pg 1 -y 450 -defaultsOSRD
+preplace portBus AddressA -pg 1 -y 780 -defaultsOSRD
+preplace portBus Instruction -pg 1 -y 1850 -defaultsOSRD
+preplace portBus PC -pg 1 -y 2030 -defaultsOSRD
+preplace portBus SRCA -pg 1 -y 1140 -defaultsOSRD
+preplace portBus AddressB -pg 1 -y 980 -defaultsOSRD
+preplace portBus MemA -pg 1 -y 680 -defaultsOSRD
+preplace portBus SRCB -pg 1 -y 1160 -defaultsOSRD
+preplace inst RamAddBMux_0 -pg 1 -lvl 7 -y 1140 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 7 -y 1700 -defaultsOSRD
+preplace inst Demux1to2_0 -pg 1 -lvl 4 -y 740 -defaultsOSRD
+preplace inst xlslice_1 -pg 1 -lvl 4 -y 1190 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 4 -y 1280 -defaultsOSRD
+preplace inst Mux2to1_0 -pg 1 -lvl 7 -y 1430 -defaultsOSRD
+preplace inst Mux2to1_1 -pg 1 -lvl 3 -y 830 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 4 -y 1370 -defaultsOSRD
+preplace inst PCounter_0 -pg 1 -lvl 7 -y 2120 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 6 -y 500 -defaultsOSRD
+preplace inst Mux2to1_2 -pg 1 -lvl 5 -y 560 -defaultsOSRD
+preplace inst ALUMuxB_0 -pg 1 -lvl 7 -y 1580 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 8 -y 1540 -defaultsOSRD
+preplace inst ALU_Shift_Unit_0 -pg 1 -lvl 7 -y 2570 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 8 -y 1860 -defaultsOSRD
+preplace inst blk_mem_gen_1 -pg 1 -lvl 8 -y 990 -defaultsOSRD
+preplace inst ExecReg_0 -pg 1 -lvl 8 -y 1690 -defaultsOSRD
+preplace inst MUXALU_0 -pg 1 -lvl 8 -y 2440 -defaultsOSRD
+preplace inst RamAddAMux_0 -pg 1 -lvl 6 -y 1420 -defaultsOSRD
+preplace inst Logic_Unit_0 -pg 1 -lvl 7 -y 2440 -defaultsOSRD
+preplace inst Arith_Unit_0 -pg 1 -lvl 7 -y 2300 -defaultsOSRD
+preplace inst divider_0 -pg 1 -lvl 7 -y 2840 -defaultsOSRD
+preplace inst Multiplier_VHDL_0 -pg 1 -lvl 7 -y 2700 -defaultsOSRD
+preplace inst Mux4to1_0 -pg 1 -lvl 2 -y 830 -defaultsOSRD
+preplace inst FSMController_0 -pg 1 -lvl 1 -y 580 -defaultsOSRD
+preplace inst DecodeUnit_0 -pg 1 -lvl 7 -y 1900 -defaultsOSRD
+preplace inst RegSelMux_0 -pg 1 -lvl 7 -y 690 -defaultsOSRD
+preplace inst RegisterBank_0 -pg 1 -lvl 7 -y 440 -defaultsOSRD
+preplace inst AccumReg_0 -pg 1 -lvl 2 -y 1050 -defaultsOSRD
+preplace netloc xlslice_2_Dout 1 4 2 NJ 1280 2190
+preplace netloc FSMController_0_SBSel 1 1 1 570
+preplace netloc FSMController_0_MMSel 1 1 2 NJ 700 1220
+preplace netloc Rst_1 1 0 8 -60J 1940 560J 1940 NJ 1940 NJ 1940 NJ 1940 N 1940 2770 1760 3250
+preplace netloc Mux2to1_0_Dout 1 7 1 3270
+preplace netloc FSMController_0_DivEn 1 1 6 550J 950 NJ 950 NJ 950 NJ 950 N 950 2570
+preplace netloc ALU_Shift_Unit_0_RESULT 1 7 1 3250
+preplace netloc RegSelMux_0_OutA 1 6 2 2800 310 3150
+preplace netloc xlconcat_0_dout 1 6 3 2800J 1500 3210J 1480 3760
+preplace netloc DecodeUnit_0_AMA 1 0 9 -60J 940 NJ 940 NJ 940 1510 940 NJ 940 N 940 2670 1340 3200 1950 3760J
+preplace netloc RegSelMux_0_OutB 1 6 2 2770 260 3160
+preplace netloc AutoIncMux_0_B 1 4 4 N 730 N 730 2710 770 3340
+preplace netloc FSMController_0_RegRead 1 1 8 600J 420 NJ 420 NJ 420 NJ 420 NJ 420 2670J 240 NJ 240 3770J
+preplace netloc MUXALU_0_CCR_OUT 1 8 1 3770J
+preplace netloc xlslice_3_Dout 1 4 2 NJ 1370 2160
+preplace netloc FSMController_0_IRWrite 1 1 8 NJ 360 NJ 360 NJ 360 NJ 360 N 360 2660 810 NJ 810 3740
+preplace netloc divider_0_CCR 1 7 1 3360
+preplace netloc divider_0_Result 1 7 1 3310
+preplace netloc FSMController_0_Lprom 1 1 7 560J 290 NJ 290 NJ 290 NJ 290 NJ 290 NJ 290 3280
+preplace netloc CLK_1 1 0 8 -90 930 570 930 NJ 930 NJ 930 NJ 930 N 930 2740 920 3330
+preplace netloc FSMController_0_RegWA 1 1 6 560J 380 NJ 380 NJ 380 NJ 380 N 380 2640
+preplace netloc Multiplier_VHDL_0_Result 1 7 1 3280
+preplace netloc FSMController_0_RegWB 1 1 6 610J 430 NJ 430 NJ 430 NJ 430 N 430 2610
+preplace netloc xlslice_4_Dout 1 6 3 2620 210 N 210 3760
+preplace netloc xlslice_1_Dout 1 4 3 1860J 1150 NJ 1150 2730J
+preplace netloc blk_mem_gen_1_douta 1 1 8 630J 960 NJ 960 NJ 960 NJ 960 N 960 2750 960 3190 680 NJ
+preplace netloc MUXALU_0_ALU_OUT 1 1 8 650J 1140 1220J 1040 NJ 1040 NJ 1040 NJ 1040 NJ 1040 3300J 1170 3740
+preplace netloc blk_mem_gen_1_doutb 1 1 8 640J 1130 NJ 1130 NJ 1130 NJ 1130 N 1130 2770 1070 3290 1160 3740J
+preplace netloc Mux2to1_2_Dout 1 5 1 2190
+preplace netloc Logic_Unit_0_RESULT 1 7 1 3230
+preplace netloc Demux1to2_0_RegData 1 4 3 1850 680 NJ 680 NJ
+preplace netloc xlslice_0_Dout 1 7 1 3240J
+preplace netloc FSMController_0_RamAddSelA 1 1 5 620J 640 NJ 640 NJ 640 NJ 640 2180J
+preplace netloc FSMController_0_RamAddSelB 1 1 6 640J 650 NJ 650 NJ 650 NJ 650 NJ 650 2720J
+preplace netloc DecodeUnit_0_Halt 1 0 9 -40 1150 NJ 1150 1240J 1120 NJ 1120 NJ 1120 N 1120 2580 1220 3230 1200 NJ
+preplace netloc AccumReg_0_Accum_Out 1 2 1 1210
+preplace netloc Arith_Unit_0_RESULT 1 7 1 3170
+preplace netloc divider_0_done 1 0 8 -50 1160 NJ 1160 1230J 1070 NJ 1070 NJ 1070 NJ 1070 2700J 1050 3160
+preplace netloc Mux2to1_1_Dout 1 3 1 1500
+preplace netloc DecodeUnit_0_SrcA 1 4 4 1870 220 NJ 220 NJ 220 3170
+preplace netloc FSMController_0_Count 1 1 5 590J 630 NJ 630 NJ 630 1860 690 2170
+preplace netloc Multiplier_VHDL_0_CCR 1 7 1 3350
+preplace netloc Net 1 6 3 2780J 1350 NJ 1350 3730
+preplace netloc DecodeUnit_0_SrcB 1 6 3 2790 1210 3190 1210 3770J
+preplace netloc ALUMuxB_0_Dout 1 7 1 3260
+preplace netloc Net1 1 6 3 2790J 1360 NJ 1360 3720
+preplace netloc Net2 1 0 9 -70J 1700 NJ 1700 NJ 1700 NJ 1700 NJ 1700 N 1700 2670 1750 3180 1970 3770J
+preplace netloc DecodeUnit_0_Opcode 1 0 9 -80J 1770 NJ 1770 NJ 1770 NJ 1770 NJ 1770 N 1770 2590 1770 3220 2300 3760J
+preplace netloc FSMController_0_RegEn 1 1 8 580J 410 NJ 410 NJ 410 NJ 410 NJ 410 2760J 300 NJ 300 NJ
+preplace netloc Arith_Unit_0_CCR 1 7 1 3190
+preplace netloc Mux4to1_0_Dout 1 2 1 N
+preplace netloc FSMController_0_PCINC 1 1 6 540J 450 NJ 450 NJ 450 NJ 450 N 450 2690
+preplace netloc FSMController_0_CounterSel 1 1 4 570J 580 NJ 580 NJ 580 N
+preplace netloc RegisterBank_0_DoutA 1 1 8 620J 1420 NJ 1420 NJ 1420 N 1420 2150 1510 2680 270 3190 430 NJ
+preplace netloc PCounter_0_Address 1 7 2 3230 2030 NJ
+preplace netloc Logic_Unit_0_CCR 1 7 1 3170
+preplace netloc RegisterBank_0_DoutB 1 1 8 650J 670 NJ 670 NJ 670 NJ 670 N 670 2760 580 3190 450 NJ
+preplace netloc RamAddAMux_0_Add 1 6 3 2710 900 3200J 780 NJ
+preplace netloc FSMController_0_RamWA 1 1 8 540J 200 NJ 200 NJ 200 NJ 200 NJ 200 NJ 200 3360 800 NJ
+preplace netloc FSMController_0_RamWB 1 1 8 540J 370 NJ 370 NJ 370 NJ 370 N 370 2630 250 3350 740 NJ
+preplace netloc FSMController_0_RegWriteSel 1 1 6 630J 660 NJ 660 NJ 660 NJ 660 N 660 2650
+preplace netloc blk_mem_gen_0_douta 1 6 3 2800 1780 3210 1960 3750J
+preplace netloc FSMController_0_PCEN 1 1 6 550J 400 NJ 400 NJ 400 NJ 400 N 400 2600
+preplace netloc FSMController_0_ALUSELB 1 1 7 540J 390 NJ 390 NJ 390 NJ 390 NJ 390 2720J 570 3320
+preplace netloc FSMController_0_AccumEn 1 1 8 540 920 NJ 920 1520J 830 NJ 830 N 830 N 830 NJ 830 3720
+preplace netloc FSMController_0_ExecEn 1 1 8 NJ 600 NJ 600 NJ 600 1870J 630 2190 610 N 610 3310 700 NJ
+preplace netloc DecodeUnit_0_Immediate 1 3 5 1510 1140 NJ 1140 N 1140 2610 1320 3150
+preplace netloc RamAddBMux_0_Add 1 7 2 3360 1150 3720
+levelinfo -pg 1 -110 370 1030 1370 1690 2020 2420 2980 3540 3790 -top -410 -bot 2920
+",
+}
+0

@@ -1,0 +1,3 @@
+blockram_blk_mem_gen_0_0.v,verilog,xil_defaultlib,../../../bd/blockram/ip/blockram_blk_mem_gen_0_0/sim/blockram_blk_mem_gen_0_0.v,
+blockram.vhd,vhdl,xil_defaultlib,../../../bd/blockram/sim/blockram.vhd,
+glbl.v,Verilog,xil_defaultlib,glbl.v

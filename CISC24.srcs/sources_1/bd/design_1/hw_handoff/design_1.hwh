@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sat Mar 24 10:47:52 2018" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="design_1" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="1" NAME="Din" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_Din">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="DinA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="1" NAME="DinB" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_DinB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="DinB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AddA" SIGIS="undef" SIGNAME="External_Ports_AddA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="AddA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="AddB" SIGIS="undef" SIGNAME="External_Ports_AddB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="AddB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="WriteB" SIGIS="data" SIGNAME="External_Ports_WriteB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="WriteB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="WriteA" SIGIS="undef" SIGNAME="External_Ports_WriteA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="WriteA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="CLK" SIGIS="undef" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="CLK"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="ReadEn" SIGIS="data" SIGNAME="External_Ports_ReadEn">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="ReadEn"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="En" SIGIS="undef" SIGNAME="External_Ports_En">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="En"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="Dout" RIGHT="0" SIGIS="data" SIGNAME="RegisterBank_0_DoutA">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutA"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="DoutB" RIGHT="0" SIGIS="data" SIGNAME="RegisterBank_0_DoutB">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="RegisterBank_0" PORT="DoutB"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/RegisterBank_0" HWVERSION="1.0" INSTANCE="RegisterBank_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="RegisterBank" VLNV="xilinx.com:module_ref:RegisterBank:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_RegisterBank_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WriteA" SIGIS="undef" SIGNAME="External_Ports_WriteA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="WriteA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="WriteB" SIGIS="undef" SIGNAME="External_Ports_WriteB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="WriteB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="ReadEn" SIGIS="undef" SIGNAME="External_Ports_ReadEn">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ReadEn"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="En" SIGIS="undef" SIGNAME="External_Ports_En">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="En"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="AddA" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_AddA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AddA"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="2" NAME="AddB" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_AddB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="AddB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="DinA" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Din">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Din"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="DinB" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_DinB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DinB"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="DoutA" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutA">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Dout"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="DoutB" RIGHT="0" SIGIS="undef" SIGNAME="RegisterBank_0_DoutB">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DoutB"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

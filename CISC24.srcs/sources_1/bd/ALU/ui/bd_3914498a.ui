@@ -1,0 +1,39 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port CLK -pg 1 -y 90 -defaultsOSRD
+preplace port done -pg 1 -y -140 -defaultsOSRD
+preplace port DIVEN -pg 1 -y -220 -defaultsOSRD
+preplace portBus A -pg 1 -y -80 -defaultsOSRD
+preplace portBus B -pg 1 -y 190 -defaultsOSRD
+preplace portBus Op -pg 1 -y 0 -defaultsOSRD
+preplace portBus CCR -pg 1 -y 170 -defaultsOSRD
+preplace portBus ALU_OUT -pg 1 -y 70 -defaultsOSRD
+preplace inst ALU_Shift_Unit_0 -pg 1 -lvl 1 -y 420 -defaultsOSRD
+preplace inst MUXALU_0 -pg 1 -lvl 2 -y 160 -defaultsOSRD
+preplace inst Logic_Unit_0 -pg 1 -lvl 1 -y 290 -defaultsOSRD
+preplace inst Arith_Unit_0 -pg 1 -lvl 1 -y 20 -defaultsOSRD
+preplace inst divider_0 -pg 1 -lvl 1 -y -130 -defaultsOSRD
+preplace inst Multiplier_VHDL_0 -pg 1 -lvl 1 -y 160 -defaultsOSRD
+preplace netloc A_1 1 0 1 -20
+preplace netloc CLK_1 1 0 1 -30
+preplace netloc divider_0_CCR 1 1 1 340
+preplace netloc MUXALU_0_CCR_OUT 1 2 1 N
+preplace netloc Multiplier_VHDL_0_CCR 1 1 1 310
+preplace netloc DIVEN_1 1 0 1 -40
+preplace netloc Logic_Unit_0_RESULT 1 1 1 330
+preplace netloc divider_0_done 1 1 2 N -150 740J
+preplace netloc Multiplier_VHDL_0_Result 1 1 1 N
+preplace netloc Arith_Unit_0_RESULT 1 1 1 330
+preplace netloc Arith_Unit_0_CCR 1 1 1 320
+preplace netloc Op_1 1 0 2 -50 -210 370
+preplace netloc ALU_Shift_Unit_0_RESULT 1 1 1 350
+preplace netloc Logic_Unit_0_CCR 1 1 1 340
+preplace netloc B_1 1 0 1 -10
+preplace netloc divider_0_Result 1 1 1 360
+preplace netloc MUXALU_0_ALU_OUT 1 2 1 740
+levelinfo -pg 1 -70 150 560 1640 -top -240 -bot 820
+",
+}
+

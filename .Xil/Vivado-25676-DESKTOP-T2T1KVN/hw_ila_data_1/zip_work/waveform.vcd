@@ -1,0 +1,75 @@
+$date
+        2018-Apr-24 20:02:07
+$end
+$version
+        Vivado v2017.4 (64-bit)
+$end
+$timescale
+        1ps
+$end
+$scope module dut $end
+$var reg 24 " CISC24HW_i/ALUMuxB_0_Dout [23:0] $end
+$var reg 24 : CISC24HW_i/Mux2to1_0_Dout [23:0] $end
+$var reg 2 R CISC24HW_i/FSMController_0_RegWriteSel [1:0] $end
+$var reg 9 T CISC24HW_i/PCounter_0_Address [8:0] $end
+$var reg 24 ] u_ila_0_ExecReg_0_DoutB [23:0] $end
+$var reg 2 u u_ila_0_FSMController_0_RamAddSelA [1:0] $end
+$var reg 24 w CISC24HW_i/MUXALU_0_ALU_OUT [23:0] $end
+$var reg 24 1" CISC24HW_i/ExecReg_0_DoutA [23:0] $end
+$var reg 2 I" CISC24HW_i/FSMController_0_RamAddSelB [1:0] $end
+$var reg 2 K" CISC24HW_i/FSMController_0_SBSel [1:0] $end
+$var reg 24 M" CISC24HW_i/RegSelMux_0_OutA [23:0] $end
+$var reg 24 e" CISC24HW_i/RegSelMux_0_OutB [23:0] $end
+$var reg 24 }" CISC24HW_i/blk_mem_gen_0_douta [23:0] $end
+$var reg 1 7# CISC24HW_i/FSMController_0_AccumEn $end
+$var reg 1 8# CISC24HW_i/FSMController_0_ALUSELB $end
+$var reg 1 9# CISC24HW_i/FSMController_0_ExecEn $end
+$var reg 1 :# CISC24HW_i/FSMController_0_IRWrite $end
+$var reg 1 ;# CISC24HW_i/FSMController_0_Lprom $end
+$var reg 1 <# CISC24HW_i/FSMController_0_PCEN $end
+$var reg 1 =# CISC24HW_i/FSMController_0_PCINC $end
+$var reg 1 ># CISC24HW_i/FSMController_0_RamWA $end
+$var reg 1 ?# CISC24HW_i/FSMController_0_RamWB $end
+$var reg 1 @# u_ila_0_FSMController_0_RegEn $end
+$var reg 1 A# CISC24HW_i/FSMController_0_RegRead $end
+$var reg 1 B# u_ila_0_FSMController_0_RegWA $end
+$var reg 1 C# CISC24HW_i/FSMController_0_RegWB $end
+$var reg 1 D# _TRIGGER $end
+$var reg 1 E# _WINDOW $end
+$var reg 1 F# _GAP $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 "
+b0 :
+b0 R
+b100110 T
+b1111 ]
+b1 u
+b0 w
+b0 1"
+b0 I"
+b10 K"
+b0 M"
+b10001 e"
+b10000000000000000000 }"
+07#
+18#
+09#
+0:#
+1;#
+1<#
+0=#
+0>#
+0?#
+1@#
+1A#
+0B#
+0C#
+0D#
+1E#
+0F#
+$end
+#512
+1D#

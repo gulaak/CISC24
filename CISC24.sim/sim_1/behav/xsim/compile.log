@@ -1,0 +1,4 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/new/FSMController.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity FSMController
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/hdl/CISC24HW_wrapper.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity CISC24HW_wrapper

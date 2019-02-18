@@ -1,0 +1,438 @@
+
+*** Running vivado
+    with args -log CISC24HW_FSMController_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source CISC24HW_FSMController_0_0.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source CISC24HW_FSMController_0_0.tcl -notrace
+Command: synth_design -top CISC24HW_FSMController_0_0 -part xc7a100tcsg324-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 14656 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 357.445 ; gain = 103.133
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'CISC24HW_FSMController_0_0' [c:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_FSMController_0_0/synth/CISC24HW_FSMController_0_0.vhd:107]
+INFO: [Synth 8-3491] module 'FSMController' declared at 'C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/new/FSMController.vhd:35' bound to instance 'U0' of component 'FSMController' [c:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_FSMController_0_0/synth/CISC24HW_FSMController_0_0.vhd:173]
+INFO: [Synth 8-638] synthesizing module 'FSMController' [C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/new/FSMController.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'FSMController' (1#1) [C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/new/FSMController.vhd:80]
+INFO: [Synth 8-256] done synthesizing module 'CISC24HW_FSMController_0_0' (2#1) [c:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/bd/CISC24HW/ip/CISC24HW_FSMController_0_0/synth/CISC24HW_FSMController_0_0.vhd:107]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[23]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[22]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[21]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[20]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[19]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[18]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[17]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[16]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[15]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[14]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[13]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[12]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[11]
+WARNING: [Synth 8-3331] design FSMController has unconnected port SrcB[10]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 410.457 ; gain = 156.145
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 410.457 ; gain = 156.145
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 749.398 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 749.398 ; gain = 495.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 749.398 ; gain = 495.086
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 749.398 ; gain = 495.086
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4471] merging register 'CCREn_reg' into 'AccumEn_reg' [C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/new/FSMController.vhd:105]
+WARNING: [Synth 8-6014] Unused sequential element CCREn_reg was removed.  [C:/Users/Aiden/Desktop/CISC24/CISC24.srcs/sources_1/new/FSMController.vhd:105]
+INFO: [Synth 8-802] inferred FSM for state register 'next_state_reg' in module 'FSMController'
+INFO: [Synth 8-802] inferred FSM for state register 'rti_state_reg' in module 'FSMController'
+INFO: [Synth 8-802] inferred FSM for state register 'int_state_reg' in module 'FSMController'
+INFO: [Synth 8-5546] ROM "Reset" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCINC" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MaskEn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCLoad" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ClrCCR" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "RamWA" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "RamAddSelA" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "RamAddSelB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "PCSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "CounterSel" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5587] ROM size for "MMSel" is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5546] ROM "ALUSELB" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Count" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "next_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "rti_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "int_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                pcreturn |                              000 |                              000
+               ccrreturn |                              001 |                              001
+              ccrreturn2 |                              010 |                              010
+                opaccess |                              011 |                              011
+               opaccess2 |                              100 |                              100
+               opaccess3 |                              101 |                              101
+                   write |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rti_state_reg' using encoding 'sequential' in module 'FSMController'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  pcsave |                            00001 |                              000
+                 ccrsave |                            00010 |                              001
+                opaccess |                            00100 |                              010
+                   write |                            01000 |                              011
+             loadaddress |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'int_state_reg' using encoding 'one-hot' in module 'FSMController'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                   fetch |          00000000000000000000001 |                            00000
+               interrupt |          00000000000000000000010 |                            00101
+                  decode |          00000000000000000000100 |                            00001
+                 decode2 |          00000000000000000001000 |                            00010
+                opaccess |          00000000000000000010000 |                            01001
+             statebranch |          00000000000000000100000 |                            00011
+           opaccessmemmm |          00000000000000001000000 |                            10010
+                rtistate |          00000000000000010000000 |                            00110
+              subroutine |          00000000000000100000000 |                            00111
+               returnsub |          00000000000001000000000 |                            01000
+            returnsubinc |          00000000000010000000000 |                            00100
+            opaccessinca |          00000000000100000000000 |                            01100
+             opaccessmem |          00000000001000000000000 |                            01010
+         opaccessincmmab |          00000000010000000000000 |                            10001
+          opaccessincmmb |          00000000100000000000000 |                            10000
+          opaccessincmma |          00000001000000000000000 |                            01111
+           opaccessincab |          00000010000000000000000 |                            01110
+            opaccessincb |          00000100000000000000000 |                            01101
+                 execute |          00001000000000000000000 |                            10011
+                     div |          00010000000000000000000 |                            01011
+                   write |          00100000000000000000000 |                            10100
+                writeram |          01000000000000000000000 |                            10110
+                writereg |          10000000000000000000000 |                            10101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'next_state_reg' using encoding 'one-hot' in module 'FSMController'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 749.398 ; gain = 495.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	  71 Input     23 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	  23 Input     10 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  23 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	  20 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	  23 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 2     
+	  20 Input      1 Bit        Muxes := 10    
+	  23 Input      1 Bit        Muxes := 37    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module FSMController 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	  71 Input     23 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	  23 Input     10 Bit        Muxes := 2     
+	   4 Input      7 Bit        Muxes := 1     
+	   6 Input      5 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
+	  23 Input      4 Bit        Muxes := 1     
+	   7 Input      3 Bit        Muxes := 1     
+	   8 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	  20 Input      3 Bit        Muxes := 1     
+	  23 Input      3 Bit        Muxes := 1     
+	   7 Input      2 Bit        Muxes := 1     
+	  20 Input      2 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 1     
+	  23 Input      2 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 11    
+	   7 Input      1 Bit        Muxes := 11    
+	   5 Input      1 Bit        Muxes := 2     
+	  20 Input      1 Bit        Muxes := 10    
+	  23 Input      1 Bit        Muxes := 37    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3917] design CISC24HW_FSMController_0_0 has port INTADD[9] driven by constant 0
+INFO: [Synth 8-3917] design CISC24HW_FSMController_0_0 has port INTADD[8] driven by constant 0
+INFO: [Synth 8-3917] design CISC24HW_FSMController_0_0 has port INTADD[7] driven by constant 0
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[23]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[22]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[21]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[20]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[19]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[18]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[17]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[16]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[15]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[14]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[13]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[12]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[11]
+WARNING: [Synth 8-3331] design CISC24HW_FSMController_0_0 has unconnected port SrcB[10]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/RegEn_reg )
+INFO: [Synth 8-3886] merging instance 'U0/INTADD_reg[0]' (FDE) to 'U0/INTADD_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/INTADD_reg[4]' (FDE) to 'U0/INTADD_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/INTADD_reg[5]' (FDE) to 'U0/INTADD_reg[6]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/INTADD_reg[6] )
+INFO: [Synth 8-3332] Sequential element (U0/INTADD_reg[6]) is unused and will be removed from module CISC24HW_FSMController_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/RegEn_reg) is unused and will be removed from module CISC24HW_FSMController_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 749.398 ; gain = 495.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 752.617 ; gain = 498.305
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:24 ; elapsed = 00:00:26 . Memory (MB): peak = 753.063 ; gain = 498.750
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |     1|
+|2     |LUT1   |     1|
+|3     |LUT2   |    25|
+|4     |LUT3   |    16|
+|5     |LUT4   |    28|
+|6     |LUT5   |    48|
+|7     |LUT6   |   103|
+|8     |FDCE   |    23|
+|9     |FDPE   |     1|
+|10    |FDRE   |    72|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+--------------+------+
+|      |Instance |Module        |Cells |
++------+---------+--------------+------+
+|1     |top      |              |   318|
+|2     |  U0     |FSMController |   318|
++------+---------+--------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 15 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:21 . Memory (MB): peak = 776.207 ; gain = 182.953
+Synthesis Optimization Complete : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 776.207 ; gain = 521.895
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+58 Infos, 29 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:30 . Memory (MB): peak = 776.207 ; gain = 532.652
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24HW_FSMController_0_0_synth_1/CISC24HW_FSMController_0_0.dcp' has been generated.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Aiden/Desktop/CISC24/CISC24.runs/CISC24HW_FSMController_0_0_synth_1/CISC24HW_FSMController_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file CISC24HW_FSMController_0_0_utilization_synth.rpt -pb CISC24HW_FSMController_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.035 . Memory (MB): peak = 776.207 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Fri May  4 00:05:30 2018...

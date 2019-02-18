@@ -1,0 +1,33 @@
+{
+   ExpandedHierarchyInLayout: "",
+   guistr: "# # String gsaved with Nlview 6.6.11  2017-06-12 bk=1.3860 VDI=40 GEI=35 GUI=JA:1.6
+#  -string -flagsOSRD
+preplace port CLOCK -pg 1 -y -140 -defaultsOSRD
+preplace port RSTA -pg 1 -y -90 -defaultsOSRD
+preplace port WeA -pg 1 -y -40 -defaultsOSRD
+preplace port RSTB -pg 1 -y -60 -defaultsOSRD
+preplace port WeB -pg 1 -y 80 -defaultsOSRD
+preplace port RSTAO -pg 1 -y -20 -defaultsOSRD
+preplace portBus AddA -pg 1 -y 20 -defaultsOSRD
+preplace portBus AddB -pg 1 -y -110 -defaultsOSRD
+preplace portBus DinA -pg 1 -y -160 -defaultsOSRD
+preplace portBus DinB -pg 1 -y 100 -defaultsOSRD
+preplace portBus DoutA -pg 1 -y -110 -defaultsOSRD
+preplace portBus DoutB -pg 1 -y 150 -defaultsOSRD
+preplace inst blk_mem_gen_0 -pg 1 -lvl 1 -y -40 -defaultsOSRD
+preplace netloc RSTA_1 1 0 1 -40
+preplace netloc DinB_1 1 0 1 -30
+preplace netloc DinA_1 1 0 1 0
+preplace netloc blk_mem_gen_0_rsta_busy 1 1 1 270
+preplace netloc CLOCK_1 1 0 1 -20
+preplace netloc AddA_1 1 0 1 -10
+preplace netloc WeA_1 1 0 1 N
+preplace netloc AddB_1 1 0 1 -30
+preplace netloc blk_mem_gen_0_douta 1 0 2 10 -210 280J
+preplace netloc WeB_1 1 0 1 N
+preplace netloc blk_mem_gen_0_rstb_busy 1 1 1 280
+preplace netloc blk_mem_gen_0_doutb 1 0 2 10 150 NJ
+levelinfo -pg 1 -60 140 300 -top -230 -bot 180
+",
+}
+0

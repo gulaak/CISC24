@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1525452279">
+  <File Type="PA-TCL" Name="ps2Controller.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="ps2Controller_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="ps2Controller_reports.tcl"/>
+  <File Type="RDS-RDS" Name="ps2Controller.vds"/>
+  <File Type="RDS-UTIL" Name="ps2Controller_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="ps2Controller_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="ps2Controller.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="ps2Controller_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="ps2Controller_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/ps2Controller.vhd">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/imports/Desktop/ps2Controller.vhd"/>
+        <Attr Name="ImportTime" Val="1524589818"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/InterruptHandler.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DecodeUnit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/FSMController.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ALUMuxB.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_shift_unit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../alu_shift_unit.vhd"/>
+        <Attr Name="ImportTime" Val="1520746277"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AccumReg.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_arithmetic_unit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../alu_arithmetic_unit.vhd"/>
+        <Attr Name="ImportTime" Val="1520746277"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Demux1to2.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ExecReg.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_logic_unit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../alu_logic_unit.vhd"/>
+        <Attr Name="ImportTime" Val="1520747089"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/alu_mux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../alu_mux.vhd"/>
+        <Attr Name="ImportTime" Val="1520747358"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/multiply.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../multiplier/multiplier.srcs/sources_1/new/multiply.vhd"/>
+        <Attr Name="ImportTime" Val="1521340038"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux2to1.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Mux4to1.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PCounter.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RamAddAMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RamAddBMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegSelMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegisterBank.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/divider.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../multiplier/multiplier.srcs/sources_1/new/divider.vhd"/>
+        <Attr Name="ImportTime" Val="1521341774"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/clockdiv.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/clockdiv.vhd"/>
+        <Attr Name="ImportTime" Val="1519014064"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/debugmux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/sevenseg.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/sevenseg.vhd"/>
+        <Attr Name="ImportTime" Val="1519014176"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/MemDebugMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RegDebugMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/BranchUnit.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/PCAddressMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/RamDataMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AMAMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Keyboard/ScanToAscii.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/imports/Lab 3 - Feb 16 - 2018/Keyboard/ScanToAscii.vhd"/>
+        <Attr Name="ImportTime" Val="1519181494"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/shiftregister.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/DynamicMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Desktop/PS2Timeout.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../PS2Timeout.vhd"/>
+        <Attr Name="ImportTime" Val="1525190950"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/CISC24HW/CISC24HW.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/CISC24HW/hdl/CISC24HW_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/interruptcont/interruptcont.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/interruptcont/hdl/interruptcont_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/WriteRamMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/blockram/hdl/blockram_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/regselmux_tb.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ALU/ALU.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ALU/hdl/ALU_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/blockram/blockram.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/Divider_Clk.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/AutoIncMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tristatebuffMM.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/tristatebuff.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/CISC24_blk_mem_gen_0_0.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/CISC24HW/ip/CISC24HW_blk_mem_gen_0_0/romint.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ControlUnit/ControlUnit.bd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/ControlUnit/hdl/ControlUnit_wrapper.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/ProgRamMux.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/bd/CISC24HW/ip/CISC24HW_blk_mem_gen_0_0/test.coe">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/tilememory.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/tilememory.vhd"/>
+        <Attr Name="ImportTime" Val="1525406081"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/mux8to1.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/mux8to1.vhd"/>
+        <Attr Name="ImportTime" Val="1519264006"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/fontrom.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/ps2vga.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/ps2vga.vhd"/>
+        <Attr Name="ImportTime" Val="1524550211"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/new/vgasync.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="ImportPath" Val="$PPRDIR/../368_Lab3/368_Lab3.srcs/sources_1/new/vgasync.vhd"/>
+        <Attr Name="ImportTime" Val="1519172462"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/vga_controller.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/clock_divide.vhd">
+      <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="ps2Controller"/>
+      <Option Name="TopLib" Val="xil_defaultlib"/>
+      <Option Name="TopArchitecture" Val="Behavioral"/>
+      <Option Name="TopRTLFile" Val="$PSRCDIR/sources_1/imports/Desktop/ps2Controller.vhd"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Nexys-4-DDR-Master.xdc"/>
+        <Attr Name="ImportTime" Val="1517418036"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/test.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="TargetConstrsFile" Val="$PSRCDIR/constrs_1/imports/Desktop/Nexys-4-DDR-Master.xdc"/>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2017">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_MUXALU_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_Mux4to1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_RegSelMux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_Mux2to1_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_Mux2to1_0_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_Mux2to1_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_Demux1to2_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_RamDataMux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_Multiplier_VHDL_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_ALU_Shift_Unit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_xlslice_6_5"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_blk_mem_gen_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_FSMController_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_PCounter_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ALU_divider_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_ALUMuxB_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_Arith_Unit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_xlslice_6_3"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_blk_mem_gen_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_xlslice_6_4"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_shiftregister_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_xlslice_6_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="ALU_Arith_Unit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_xlslice_6_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_xlslice_6_2"/>
+  <BlockFileSet Type="BlockSrcs" Name="ALU_ALU_Shift_Unit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_ExecReg_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_ScanToAscii_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_divider_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_AMAMux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_AccumReg_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_Logic_Unit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ALU_MUXALU_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_MemDebugMux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ALU_Logic_Unit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="ALU_Multiplier_VHDL_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_InterruptHandler_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_PCAddressMux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_RamAddBMux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_RegisterBank_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_PS2Timeout_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_RamAddAMux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_decoder_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_clockdivider18_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_DecodeUnit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_DynamicMux_1_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_ps2Controller_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_BranchUnit_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_debugmux_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="CISC24HW_RegDebugMux_0_0"/>
+</GenRun>

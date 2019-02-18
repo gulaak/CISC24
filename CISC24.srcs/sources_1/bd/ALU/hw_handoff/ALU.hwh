@@ -1,0 +1,316 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Sun Apr  1 20:27:50 2018" VIVADOVERSION="2017.4">
+
+  <SYSTEMINFO ARCH="artix7" DEVICE="7a100t" NAME="ALU" PACKAGE="csg324" SPEEDGRADE="-1"/>
+
+  <EXTERNALPORTS>
+    <PORT DIR="I" LEFT="4" NAME="Op" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_Op">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="ALU_Shift_Unit_0" PORT="OP"/>
+        <CONNECTION INSTANCE="MUXALU_0" PORT="OP"/>
+        <CONNECTION INSTANCE="Arith_Unit_0" PORT="OP"/>
+        <CONNECTION INSTANCE="Logic_Unit_0" PORT="OP"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_A">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divider_0" PORT="A"/>
+        <CONNECTION INSTANCE="Multiplier_VHDL_0" PORT="A"/>
+        <CONNECTION INSTANCE="ALU_Shift_Unit_0" PORT="A"/>
+        <CONNECTION INSTANCE="Arith_Unit_0" PORT="A"/>
+        <CONNECTION INSTANCE="Logic_Unit_0" PORT="A"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="data" SIGNAME="External_Ports_B">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divider_0" PORT="B"/>
+        <CONNECTION INSTANCE="Multiplier_VHDL_0" PORT="B"/>
+        <CONNECTION INSTANCE="ALU_Shift_Unit_0" PORT="COUNT"/>
+        <CONNECTION INSTANCE="Arith_Unit_0" PORT="B"/>
+        <CONNECTION INSTANCE="Arith_Unit_0" PORT="IMMED"/>
+        <CONNECTION INSTANCE="Logic_Unit_0" PORT="B"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="data" SIGNAME="MUXALU_0_CCR_OUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_OUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="23" NAME="ALU_OUT" RIGHT="0" SIGIS="data" SIGNAME="MUXALU_0_ALU_OUT">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="MUXALU_0" PORT="ALU_OUT"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" NAME="done" SIGIS="data" SIGNAME="divider_0_done">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divider_0" PORT="done"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT CLKFREQUENCY="100000000" DIR="I" NAME="CLK" SIGIS="clk" SIGNAME="External_Ports_CLK">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divider_0" PORT="clk"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="I" NAME="DIVEN" SIGIS="undef" SIGNAME="External_Ports_DIVEN">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="divider_0" PORT="divEn"/>
+      </CONNECTIONS>
+    </PORT>
+  </EXTERNALPORTS>
+
+  <EXTERNALINTERFACES/>
+
+  <MODULES>
+    <MODULE FULLNAME="/ALU_Shift_Unit_0" HWVERSION="1.0" INSTANCE="ALU_Shift_Unit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="ALU_Shift_Unit" VLNV="xilinx.com:module_ref:ALU_Shift_Unit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_ALU_Shift_Unit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="COUNT" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="OP" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Op">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Op"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RESULT" RIGHT="0" SIGIS="undef" SIGNAME="ALU_Shift_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="SHIFT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Arith_Unit_0" HWVERSION="1.0" INSTANCE="Arith_Unit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Arith_Unit" VLNV="xilinx.com:module_ref:Arith_Unit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_Arith_Unit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="OP" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Op">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Op"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="IMMED" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="Arith_Unit_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_ARITH"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RESULT" RIGHT="0" SIGIS="undef" SIGNAME="Arith_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="ARITH"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Logic_Unit_0" HWVERSION="1.0" INSTANCE="Logic_Unit_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Logic_Unit" VLNV="xilinx.com:module_ref:Logic_Unit:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_Logic_Unit_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="4" NAME="OP" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Op">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Op"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="Logic_Unit_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_LOGIC"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="RESULT" RIGHT="0" SIGIS="undef" SIGNAME="Logic_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="LOGIC"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/MUXALU_0" HWVERSION="1.0" INSTANCE="MUXALU_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="MUXALU" VLNV="xilinx.com:module_ref:MUXALU:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_MUXALU_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="4" NAME="OP" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_Op">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="Op"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="ARITH" RIGHT="0" SIGIS="undef" SIGNAME="Arith_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Arith_Unit_0" PORT="RESULT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="LOGIC" RIGHT="0" SIGIS="undef" SIGNAME="Logic_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Logic_Unit_0" PORT="RESULT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="SHIFT" RIGHT="0" SIGIS="undef" SIGNAME="ALU_Shift_Unit_0_RESULT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="ALU_Shift_Unit_0" PORT="RESULT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="MULT" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_VHDL_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_VHDL_0" PORT="Result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="DIV" RIGHT="0" SIGIS="undef" SIGNAME="divider_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="divider_0" PORT="Result"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR_DIV" RIGHT="0" SIGIS="undef" SIGNAME="divider_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="divider_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR_MULT" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_VHDL_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Multiplier_VHDL_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR_ARITH" RIGHT="0" SIGIS="undef" SIGNAME="Arith_Unit_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Arith_Unit_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="3" NAME="CCR_LOGIC" RIGHT="0" SIGIS="undef" SIGNAME="Logic_Unit_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="Logic_Unit_0" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="ALU_OUT" RIGHT="0" SIGIS="undef" SIGNAME="MUXALU_0_ALU_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="ALU_OUT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR_OUT" RIGHT="0" SIGIS="undef" SIGNAME="MUXALU_0_CCR_OUT">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CCR"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/Multiplier_VHDL_0" HWVERSION="1.0" INSTANCE="Multiplier_VHDL_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="Multiplier_VHDL" VLNV="xilinx.com:module_ref:Multiplier_VHDL:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_Multiplier_VHDL_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Result" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_VHDL_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="MULT"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="Multiplier_VHDL_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_MULT"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE FULLNAME="/divider_0" HWVERSION="1.0" INSTANCE="divider_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="divider" VLNV="xilinx.com:module_ref:divider:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="Component_Name" VALUE="ALU_divider_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT DIR="I" LEFT="23" NAME="A" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_A">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="A"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="23" NAME="B" RIGHT="0" SIGIS="undef" SIGNAME="External_Ports_B">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="B"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="External_Ports_CLK">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="CLK"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="divEn" SIGIS="undef" SIGNAME="External_Ports_DIVEN">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="DIVEN"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="done" SIGIS="undef" SIGNAME="divider_0_done">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="done"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="23" NAME="Result" RIGHT="0" SIGIS="undef" SIGNAME="divider_0_Result">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="DIV"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="CCR" RIGHT="0" SIGIS="undef" SIGNAME="divider_0_CCR">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="MUXALU_0" PORT="CCR_DIV"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+  </MODULES>
+
+</EDKSYSTEM>

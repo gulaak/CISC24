@@ -1,0 +1,5 @@
+vhdl xil_defaultlib  \
+"../../../bd/interruptcont/ip/interruptcont_axi_intc_0_0/sim/interruptcont_axi_intc_0_0.vhd" \
+"../../../bd/interruptcont/sim/interruptcont.vhd" \
+
+nosort
